@@ -109,6 +109,11 @@ a {
   color: red;
 }
 
+iframe {
+  width: 95%;
+  height: 400px;
+}
+
 header {
   display: flex;
   flex-direction: column;
