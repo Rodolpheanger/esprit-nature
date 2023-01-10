@@ -5,15 +5,27 @@ header {
   align-items: stretch;
   height: 100vh;
   width: 100%;
+  background-color: $color-bg;
   .container {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(252, 250, 235, 0.85);
     text-decoration: none;
     padding: 1rem;
   }
   .logo {
-    font-family: Darleston;
+    font-family: "Darleston";
     font-size: 7rem;
     text-align: center;
+    padding: 2rem;
+    @include tablet {
+      font-size: 10rem;
+    }
+    &:after {
+      display: block;
+      content: "";
+      margin: auto;
+      border-bottom: 2px solid darkcyan;
+      width: 10rem;
+    }
   }
 }

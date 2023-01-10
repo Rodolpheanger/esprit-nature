@@ -1,0 +1,25 @@
+footer {
+  padding: 2rem;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: azure;
+  background-color: rgb(37, 25, 14);
+  .links {
+    width: 100%;
+    font-size: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    @include tablet {
+      width: 50%;
+    }
+  }
+  .marcapar-logo {
+    width: 10rem;
+  }
+  .copyright {
+    padding: 1.5rem;
+  }
+}
