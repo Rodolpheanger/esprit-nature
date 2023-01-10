@@ -1,0 +1,13 @@
+.scrollToTop {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  .far {
+    font-size: 2.5rem;
+    &:hover {
+      color: blue;
+      cursor: pointer;
+      transition: 300ms ease-in-out;
+    }
+  }
+}
