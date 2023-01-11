@@ -1,0 +1,37 @@
+.tables-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.table-container {
+  padding: 2rem;
+  border: 1px solid black;
+}
+table {
+  tr,
+  td {
+    width: 25rem;
+    padding: 0.5rem;
+  }
+  tr {
+    // &:nth-child(even) {
+    //   background-color: rgb(230, 230, 230);
+    // }
+    &:nth-child(odd) {
+      background-color: $color-bg;
+    }
+  }
+  th {
+    background-color: white;
+    text-align: left;
+    font-size: 2rem;
+    color: $color-primary;
+    // border-bottom: 1px dotted black;
+    padding-bottom: 1rem;
+  }
+  td:last-child {
+    text-align: end;
+  }
+}

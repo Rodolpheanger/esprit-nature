@@ -8,3 +8,17 @@
     @content;
   }
 }
+
+@mixin underliner(
+  $color,
+  $width,
+  $margin: 0 auto 2rem auto,
+  $padding-bottom: 2rem
+) {
+  display: block;
+  content: "";
+  margin: $margin;
+  padding-bottom: $padding-bottom;
+  border-bottom: 2px solid $color;
+  width: $width;
+}
