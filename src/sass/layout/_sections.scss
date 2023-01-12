@@ -52,6 +52,11 @@ section {
   p {
     margin-top: 1rem;
   }
+  img {
+    border-radius: 2rem;
+    width: 80%;
+    max-width: 400px;
+  }
 }
 
 @-webkit-keyframes fadeIn {
