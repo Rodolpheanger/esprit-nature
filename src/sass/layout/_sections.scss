@@ -16,6 +16,8 @@ section {
       transform: rotate(2deg) scale(1.2);
     }
   }
+  // TODO : voir problème centrage h2 à partir de @tablet quand l'image passe en float !!!
+
   h2 {
     padding-top: 4rem;
     text-align: center;
@@ -29,6 +31,10 @@ section {
     color: $color-secondary;
     font-size: 2.5rem;
     font-weight: 700;
+    &:after,
+    &:before {
+      @include underliner($color-primary, 25%);
+    }
   }
 }
 
@@ -37,7 +43,8 @@ section {
   background-position: center;
   background-size: cover;
   padding: 2rem;
-  div {
+  text-align: center;
+  .presentation-container {
     background-color: rgba(255, 255, 255, 0.3);
     padding: 3rem 1.5rem;
     border: 1px solid black;
@@ -52,56 +59,90 @@ section {
   p {
     margin-top: 1rem;
   }
-  img {
-    border-radius: 2rem;
-    width: 80%;
-    max-width: 400px;
+  .img-container {
+    margin: 3rem auto;
+    float: none;
   }
 }
 
+// TODO: voir pour rendre l'animation plus fluide !!!!!!!!!!!!!
+
 @-webkit-keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
-    transform: translateY(-15px);
+    max-height: 0;
+    overflow: hidden;
   }
-  to {
+  95% {
+    opacity: 0;
+    max-height: var(--max-height);
+    overflow: visible;
+  }
+  100% {
     opacity: 1;
-    transform: translateY(0px);
   }
 }
 
 @keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
-    transform: translateY(-15px);
-    height: 0;
+    max-height: 0;
+    overflow: hidden;
   }
-  to {
+  95% {
+    opacity: 0;
+    max-height: var(--max-height);
+    overflow: visible;
+  }
+  100% {
     opacity: 1;
-    transform: translateY(0px);
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
   }
 }
 
-#questions-frequentes {
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0;
+    max-height: var(--max-height);
+    overflow: visible;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0;
+    max-height: var(--max-height);
+    overflow: visible;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+}
+
+#faq {
   .faq-container {
-    p:nth-child(even) {
-      height: 0;
-      opacity: 0;
-      // transform: translateY(-15px);
-      // transition: all ease-in-out 500ms;
-      // overflow: hidden;
-      // display: none;
+    p:nth-child(even):not(.visible) {
+      -webkit-animation: fadeOut 800ms ease-in-out forwards;
+      animation: fadeOut 800ms ease-in-out forwards;
     }
     p:nth-child(odd) {
       font-size: 2rem;
     }
     .visible {
-      height: auto;
-      -webkit-animation: fadeIn 3000ms ease-in-out;
-      animation: fadeIn 500ms ease-in-out forwards;
+      -webkit-animation: fadeIn 800ms ease-in-out;
+      animation: fadeIn 800ms ease-in-out forwards;
     }
   }
 }
