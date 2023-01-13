@@ -1,13 +1,23 @@
 #infos {
   text-align: center;
   .title__container {
-    background-image: url(/src/assets/images/infos.png);
+    background-image: url(/src/assets/images/infos.jpeg);
   }
 
   .infos__sector {
     font-style: italic;
     padding: 3rem;
     font-size: 1.5rem;
+  }
+  .opening-hours__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    div {
+      width: 25vw;
+    }
   }
 }
 
