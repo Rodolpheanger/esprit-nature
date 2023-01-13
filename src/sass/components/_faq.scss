@@ -65,8 +65,8 @@
 }
 
 #faq {
-  .faq-container {
-    p:nth-child(even):not(.visible) {
+  .content__container {
+    p:nth-child(even):not(.faq__response--visible) {
       padding: 0 2rem;
       -webkit-animation: fadeOut 800ms ease-in-out forwards;
       animation: fadeOut 800ms ease-in-out forwards;
@@ -91,7 +91,7 @@
         margin: 0 0 0.25rem 0.25rem;
       }
     }
-    .visible {
+    .faq__response--visible {
       padding: 0 2rem;
       -webkit-animation: fadeIn 800ms ease-in-out;
       animation: fadeIn 800ms ease-in-out forwards;

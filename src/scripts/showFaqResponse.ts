@@ -1,6 +1,6 @@
 export const showFaqResponse = (): void => {
   const questions = document.querySelectorAll(
-    ".question"
+    ".faq__question"
   ) as NodeListOf<HTMLParagraphElement>;
 
   questions.forEach((question) => {
@@ -9,7 +9,7 @@ export const showFaqResponse = (): void => {
       response.style.setProperty("--max-height", response.offsetHeight + "px");
     response &&
       question.addEventListener("click", () => {
-        response.classList.toggle("visible");
+        response.classList.toggle("faq__response--visible");
       });
   });
 };

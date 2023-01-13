@@ -109,24 +109,37 @@ header {
   width: 100%;
   background-color: #faf2e5;
 }
-header .container {
+header .header__contact {
+  z-index: 200;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(109, 0, 109);
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.5rem 2rem;
+}
+header .header__container {
+  margin-top: 2rem;
   width: 100%;
   background-color: #faf2e5;
   text-decoration: none;
   padding: 1rem;
 }
-header .logo {
+header .header__logo {
   font-family: "Darleston";
   font-size: 7rem;
   text-align: center;
   padding: 2rem;
 }
 @media screen and (min-width: 768px) {
-  header .logo {
+  header .header__logo {
     font-size: 10rem;
   }
 }
-header .logo:after {
+header .header__logo:after {
   display: block;
   content: "";
   margin: auto;
@@ -134,7 +147,7 @@ header .logo:after {
   width: 10rem;
 }
 
-.hero-banner {
+.hero {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,7 +156,7 @@ header .logo:after {
   background-position: center;
   background-size: cover;
 }
-.hero-banner h2 {
+.hero h2 {
   padding: 1rem;
   color: rgb(17, 30, 46);
   font-size: 5rem;
@@ -151,7 +164,7 @@ header .logo:after {
   background-color: rgba(255, 255, 255, 0.5);
 }
 @media screen and (min-width: 768px) {
-  .hero-banner h2 {
+  .hero h2 {
     font-size: 8rem;
   }
 }
@@ -164,7 +177,7 @@ main {
   font-weight: 500;
 }
 
-section .title-container {
+section .title__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,12 +186,12 @@ section .title-container {
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
-  section .title-container {
+  section .title__container {
     height: 25vh;
   }
 }
 @media screen and (min-width: 992px) {
-  section .title-container {
+  section .title__container {
     height: 33vh;
   }
 }
@@ -221,21 +234,21 @@ footer {
   color: azure;
   background-color: rgb(37, 25, 14);
 }
-footer .links {
+footer .footer__links {
   width: 100%;
   font-size: 5rem;
   display: flex;
   justify-content: space-evenly;
 }
 @media screen and (min-width: 768px) {
-  footer .links {
+  footer .footer__links {
     width: 50%;
   }
 }
-footer .marcapar-logo {
+footer .marcapar__logo {
   width: 10rem;
 }
-footer .copyright {
+footer .footer__copyright {
   padding: 1.5rem;
 }
 
@@ -282,7 +295,7 @@ nav li:hover:after {
   padding: 2rem;
   text-align: center;
 }
-#presentation .presentation-container {
+#presentation .presentation__container {
   background-color: rgba(255, 255, 255, 0.3);
   padding: 3rem 1.5rem;
   border: 1px solid black;
@@ -306,38 +319,38 @@ nav li:hover:after {
 #presentation p {
   margin-top: 1rem;
 }
-#presentation .img-container {
+#presentation .image__container {
   margin: 3rem auto;
   float: none;
   width: 75%;
 }
 @media screen and (min-width: 768px) {
-  #presentation .img-container {
+  #presentation .image__container {
     max-width: 50vw;
   }
 }
 @media screen and (min-width: 992px) {
-  #presentation .img-container {
+  #presentation .image__container {
     max-width: 25vw;
   }
 }
 
-#colorations-vegetales .title-container {
+#colorations .title__container {
   background-image: url(/src/assets/images/coloration-cheveux-vegetale-henne-couleur-poudres1.jpg);
 }
 
-#meches-argile .title-container {
+#meches .title__container {
   background-image: url(/src/assets/images/meches_header_bg.webp);
 }
 
-.tables-container {
+.tables__container {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
   justify-content: center;
 }
 
-.table-container {
+.table__container {
   padding: 2rem;
   border: 1px solid black;
 }
@@ -364,12 +377,16 @@ table td:last-child {
   text-align: end;
 }
 
-#infos-pratiques {
+#infos {
   text-align: center;
 }
-#infos-pratiques p {
+#infos .title__container {
+  background-image: url(/src/assets/images/infos.png);
+}
+#infos .infos__sector {
   font-style: italic;
   padding: 3rem;
+  font-size: 1.5rem;
 }
 
 iframe {
@@ -442,12 +459,12 @@ iframe {
     overflow: hidden;
   }
 }
-#faq .faq-container p:nth-child(even):not(.visible) {
+#faq .content__container p:nth-child(even):not(.faq__response--visible) {
   padding: 0 2rem;
   -webkit-animation: fadeOut 800ms ease-in-out forwards;
   animation: fadeOut 800ms ease-in-out forwards;
 }
-#faq .faq-container p:nth-child(odd) {
+#faq .content__container p:nth-child(odd) {
   font-size: 2rem;
   padding-bottom: 1rem;
   margin: 2rem 0 2rem 2rem;
@@ -456,7 +473,7 @@ iframe {
   width: fit-content;
   border-bottom: 2px solid black;
 }
-#faq .faq-container p:nth-child(odd)::after {
+#faq .content__container p:nth-child(odd)::after {
   content: "";
   display: inline-block;
   font-weight: 500;
@@ -467,13 +484,13 @@ iframe {
   transform: rotate(45deg);
   margin: 0 0 0.25rem 0.25rem;
 }
-#faq .faq-container .visible {
+#faq .content__container .faq__response--visible {
   padding: 0 2rem;
   -webkit-animation: fadeIn 800ms ease-in-out;
   animation: fadeIn 800ms ease-in-out forwards;
 }
 
-.scroll-to-top {
+.scroll-top {
   all: unset;
   position: fixed;
   right: 15px;
@@ -483,26 +500,26 @@ iframe {
   transform: translate(60px);
   transition: all 800ms cubic-bezier(0.5, 1.8, 0.64, 1);
 }
-.scroll-to-top .fas {
+.scroll-top .fa-chevron-circle-up {
   font-size: 2.8rem;
 }
-.scroll-to-top .fas:hover {
+.scroll-top .fa-chevron-circle-up:hover {
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
-  .scroll-to-top {
+  .scroll-top {
     right: 30px;
     bottom: 30px;
   }
-  .scroll-to-top .fas {
+  .scroll-top .fas {
     font-size: 4rem;
   }
 }
 
-.visible {
+.scroll-top--visible {
   opacity: 0.5;
   transform: translate(0);
 }
-.visible:hover {
+.scroll-top--visible:hover {
   opacity: 1;
 }/*# sourceMappingURL=index.css.map */

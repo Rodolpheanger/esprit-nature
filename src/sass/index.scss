@@ -6,16 +6,16 @@
 @import "./base/base";
 
 @import "./layout/header";
-@import "./layout/hero-banner";
+@import "./layout/hero";
 @import "./layout/main";
 @import "./layout/sections";
 @import "./layout/footer";
 
 @import "./components/nav";
-@import "./components/section-presentation";
-@import "./components/section-colorations-vegetales";
-@import "./components/section-meches";
-@import "./components/section-tarifs";
-@import "./components/section-infos-pratiques";
-@import "./components/section-faq";
-@import "./components/scroll-to-top-button";
+@import "./components/presentation";
+@import "./components/colorations";
+@import "./components/meches";
+@import "./components/tarifs";
+@import "./components/infos";
+@import "./components/faq";
+@import "./components/scroll-top-button";

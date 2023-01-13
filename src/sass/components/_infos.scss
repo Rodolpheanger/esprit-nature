@@ -1,8 +1,13 @@
-#infos-pratiques {
+#infos {
   text-align: center;
-  p {
+  .title__container {
+    background-image: url(/src/assets/images/infos.png);
+  }
+
+  .infos__sector {
     font-style: italic;
     padding: 3rem;
+    font-size: 1.5rem;
   }
 }
 

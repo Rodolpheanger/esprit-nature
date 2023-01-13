@@ -1,11 +1,11 @@
-.tables-container {
+.tables__container {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
   justify-content: center;
 }
 
-.table-container {
+.table__container {
   padding: 2rem;
   border: 1px solid black;
 }

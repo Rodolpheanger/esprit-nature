@@ -7,7 +7,7 @@ footer {
   align-items: center;
   color: azure;
   background-color: rgb(37, 25, 14);
-  .links {
+  .footer__links {
     width: 100%;
     font-size: 5rem;
     display: flex;
@@ -16,10 +16,10 @@ footer {
       width: 50%;
     }
   }
-  .marcapar-logo {
+  .marcapar__logo {
     width: 10rem;
   }
-  .copyright {
+  .footer__copyright {
     padding: 1.5rem;
   }
 }
