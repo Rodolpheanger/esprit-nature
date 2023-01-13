@@ -1,0 +1,15 @@
+#infos-pratiques {
+  text-align: center;
+  p {
+    font-style: italic;
+    padding: 3rem;
+  }
+}
+
+iframe {
+  width: 95%;
+  height: 50vh;
+  @include tablet {
+    width: 75%;
+  }
+}

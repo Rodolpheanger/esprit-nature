@@ -16,9 +16,9 @@ table {
     padding: 0.5rem;
   }
   tr {
-    // &:nth-child(even) {
-    //   background-color: rgb(230, 230, 230);
-    // }
+    &:nth-child(even) {
+      background-color: rgb(236, 221, 238);
+    }
     &:nth-child(odd) {
       background-color: $color-bg;
     }

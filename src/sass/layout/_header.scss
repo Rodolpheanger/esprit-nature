@@ -8,7 +8,7 @@ header {
   background-color: $color-bg;
   .container {
     width: 100%;
-    background-color: rgba(252, 250, 235, 0.85);
+    background-color: $color-bg;
     text-decoration: none;
     padding: 1rem;
   }
@@ -24,7 +24,7 @@ header {
       display: block;
       content: "";
       margin: auto;
-      border-bottom: 2px solid $color-secondary;
+      border-bottom: 2px solid $color-primary;
       width: 10rem;
     }
   }

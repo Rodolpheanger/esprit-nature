@@ -1,0 +1,31 @@
+.scroll-to-top {
+  all: unset;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  opacity: 0;
+  color: $color-secondary;
+  transform: translate(60px);
+  transition: all 800ms cubic-bezier(0.5, 1.8, 0.64, 1);
+
+  .fas {
+    font-size: 2.8rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  @include tablet {
+    right: 30px;
+    bottom: 30px;
+    .fas {
+      font-size: 4rem;
+    }
+  }
+}
+.visible {
+  opacity: 0.5;
+  transform: translate(0);
+  &:hover {
+    opacity: 1;
+  }
+}

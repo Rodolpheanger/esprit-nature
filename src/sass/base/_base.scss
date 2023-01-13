@@ -9,6 +9,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   color: #111e2e;
+  background-color: $color-bg;
 }
 
 h2 {
@@ -19,13 +20,4 @@ h2 {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-.text-red {
-  color: red;
-}
-
-iframe {
-  width: 95%;
-  height: 400px;
 }

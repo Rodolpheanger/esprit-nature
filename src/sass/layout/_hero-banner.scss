@@ -8,9 +8,9 @@
   background-size: cover;
   h2 {
     padding: 1rem;
-    color: rgb(17, 30, 46);
+    color: $text-darkgrey;
     font-size: 5rem;
-    border: solid 1px rgb(17, 30, 46);
+    border: solid 1px $text-darkgrey;
     background-color: rgba(255, 255, 255, 0.5);
     @include tablet {
       font-size: 8rem;

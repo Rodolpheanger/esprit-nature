@@ -87,6 +87,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   color: #111e2e;
+  background-color: #faf2e5;
 }
 
 h2 {
@@ -99,15 +100,6 @@ a {
   color: inherit;
 }
 
-.text-red {
-  color: red;
-}
-
-iframe {
-  width: 95%;
-  height: 400px;
-}
-
 header {
   display: flex;
   flex-direction: column;
@@ -115,11 +107,11 @@ header {
   align-items: stretch;
   height: 100vh;
   width: 100%;
-  background-color: #ffecc8;
+  background-color: #faf2e5;
 }
 header .container {
   width: 100%;
-  background-color: rgba(252, 250, 235, 0.85);
+  background-color: #faf2e5;
   text-decoration: none;
   padding: 1rem;
 }
@@ -138,7 +130,7 @@ header .logo:after {
   display: block;
   content: "";
   margin: auto;
-  border-bottom: 2px solid darkcyan;
+  border-bottom: 2px solid rgb(109, 0, 109);
   width: 10rem;
 }
 
@@ -172,37 +164,37 @@ main {
   font-weight: 500;
 }
 
-section .img-container {
-  width: 100%;
-  display: block;
-  overflow: hidden;
+section .title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  background-position: center;
+  background-size: cover;
 }
 @media screen and (min-width: 768px) {
-  section .img-container {
-    float: left;
-    max-width: 25%;
+  section .title-container {
+    height: 25vh;
   }
 }
-section img {
-  width: 100%;
-  height: 100%;
-  transition: all 0.4s ease-in-out;
-}
-section img:hover {
-  transform: rotate(2deg) scale(1.2);
+@media screen and (min-width: 992px) {
+  section .title-container {
+    height: 33vh;
+  }
 }
 section h2 {
-  padding-top: 4rem;
-  text-align: center;
-  color: rgb(109, 0, 109);
+  padding: 1rem;
+  color: rgb(17, 30, 46);
+  font-size: 2rem;
+  border: solid 1px rgb(17, 30, 46);
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
-section h2:after {
-  display: block;
-  content: "";
-  margin: 0 auto 2rem auto;
-  padding-bottom: 2rem;
-  border-bottom: 2px solid rgb(109, 0, 109);
-  width: 10rem;
+@media screen and (min-width: 768px) {
+  section h2 {
+    font-size: 5rem;
+  }
 }
 section h3 {
   text-align: center;
@@ -217,110 +209,6 @@ section h3:after, section h3:before {
   padding-bottom: 2rem;
   border-bottom: 2px solid rgb(109, 0, 109);
   width: 25%;
-}
-
-#presentation {
-  background-image: url("/src/assets/images/accueil_background02.webp");
-  background-position: center;
-  background-size: cover;
-  padding: 2rem;
-  text-align: center;
-}
-#presentation .presentation-container {
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 3rem 1.5rem;
-  border: 1px solid black;
-  margin: 3rem 0 3rem 0;
-}
-#presentation h2 {
-  padding-top: 0;
-}
-#presentation h2:before {
-  display: block;
-  content: "";
-  margin: 0 auto 2rem auto;
-  padding-bottom: 2rem;
-  border-bottom: 2px solid rgb(109, 0, 109);
-  width: 10rem;
-}
-#presentation p {
-  margin-top: 1rem;
-}
-#presentation .img-container {
-  margin: 3rem auto;
-  float: none;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-  }
-  95% {
-    opacity: 0;
-    max-height: var(--max-height);
-    overflow: visible;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-  }
-  95% {
-    opacity: 0;
-    max-height: var(--max-height);
-    overflow: visible;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  5% {
-    opacity: 0;
-    max-height: var(--max-height);
-    overflow: visible;
-  }
-  100% {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  5% {
-    opacity: 0;
-    max-height: var(--max-height);
-    overflow: visible;
-  }
-  100% {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-  }
-}
-#faq .faq-container p:nth-child(even):not(.visible) {
-  -webkit-animation: fadeOut 800ms ease-in-out forwards;
-  animation: fadeOut 800ms ease-in-out forwards;
-}
-#faq .faq-container p:nth-child(odd) {
-  font-size: 2rem;
-}
-#faq .faq-container .visible {
-  -webkit-animation: fadeIn 800ms ease-in-out;
-  animation: fadeIn 800ms ease-in-out forwards;
 }
 
 footer {
@@ -376,15 +264,70 @@ nav li:after {
   content: "";
   margin: 1rem auto 0 auto;
   width: 80%;
-  border-bottom: solid 2px darkcyan;
+  border-bottom: solid 2px rgb(109, 0, 109);
   transform: scaleX(0);
   transition: all 0.5s ease-in-out;
 }
 nav li:hover {
-  color: darkcyan;
+  color: rgb(109, 0, 109);
 }
 nav li:hover:after {
   transform: scaleX(1);
+}
+
+#presentation {
+  background-image: url("/src/assets/images/accueil_background02.webp");
+  background-position: center;
+  background-size: cover;
+  padding: 2rem;
+  text-align: center;
+}
+#presentation .presentation-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 3rem 1.5rem;
+  border: 1px solid black;
+  margin: 3rem 0 3rem 0;
+}
+#presentation h2 {
+  padding-top: 0;
+  color: rgb(109, 0, 109);
+  font-size: 3rem;
+  border: none;
+  background: none;
+}
+#presentation h2::before, #presentation h2::after {
+  display: block;
+  content: "";
+  margin: 0 auto 2rem auto;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgb(109, 0, 109);
+  width: 10rem;
+}
+#presentation p {
+  margin-top: 1rem;
+}
+#presentation .img-container {
+  margin: 3rem auto;
+  float: none;
+  width: 75%;
+}
+@media screen and (min-width: 768px) {
+  #presentation .img-container {
+    max-width: 50vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  #presentation .img-container {
+    max-width: 25vw;
+  }
+}
+
+#colorations-vegetales .title-container {
+  background-image: url(/src/assets/images/coloration-cheveux-vegetale-henne-couleur-poudres1.jpg);
+}
+
+#meches-argile .title-container {
+  background-image: url(/src/assets/images/meches_header_bg.webp);
 }
 
 .tables-container {
@@ -404,8 +347,11 @@ table td {
   width: 25rem;
   padding: 0.5rem;
 }
+table tr:nth-child(even) {
+  background-color: rgb(236, 221, 238);
+}
 table tr:nth-child(odd) {
-  background-color: #ffecc8;
+  background-color: #faf2e5;
 }
 table th {
   background-color: white;
@@ -418,21 +364,145 @@ table td:last-child {
   text-align: end;
 }
 
-.scrollToTop {
+#infos-pratiques {
+  text-align: center;
+}
+#infos-pratiques p {
+  font-style: italic;
+  padding: 3rem;
+}
+
+iframe {
+  width: 95%;
+  height: 50vh;
+}
+@media screen and (min-width: 768px) {
+  iframe {
+    width: 75%;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+  95% {
+    opacity: 0.5;
+    max-height: var(--max-height);
+    overflow: visible;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+  95% {
+    opacity: 0.5;
+    max-height: var(--max-height);
+    overflow: visible;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0.5;
+    max-height: var(--max-height);
+    overflow: visible;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0.5;
+    max-height: var(--max-height);
+    overflow: visible;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+}
+#faq .faq-container p:nth-child(even):not(.visible) {
+  padding: 0 2rem;
+  -webkit-animation: fadeOut 800ms ease-in-out forwards;
+  animation: fadeOut 800ms ease-in-out forwards;
+}
+#faq .faq-container p:nth-child(odd) {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  margin: 2rem 0 2rem 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 2px solid black;
+}
+#faq .faq-container p:nth-child(odd)::after {
+  content: "";
+  display: inline-block;
+  font-weight: 500;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  transform: rotate(45deg);
+  margin: 0 0 0.25rem 0.25rem;
+}
+#faq .faq-container .visible {
+  padding: 0 2rem;
+  -webkit-animation: fadeIn 800ms ease-in-out;
+  animation: fadeIn 800ms ease-in-out forwards;
+}
+
+.scroll-to-top {
+  all: unset;
   position: fixed;
-  right: 30px;
-  bottom: 30px;
-  visibility: hidden;
+  right: 15px;
+  bottom: 15px;
+  opacity: 0;
+  color: darkcyan;
+  transform: translate(60px);
+  transition: all 800ms cubic-bezier(0.5, 1.8, 0.64, 1);
 }
-.scrollToTop .far {
-  font-size: 2.5rem;
+.scroll-to-top .fas {
+  font-size: 2.8rem;
 }
-.scrollToTop .far:hover {
-  color: blue;
+.scroll-to-top .fas:hover {
   cursor: pointer;
-  transition: 300ms ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .scroll-to-top {
+    right: 30px;
+    bottom: 30px;
+  }
+  .scroll-to-top .fas {
+    font-size: 4rem;
+  }
 }
 
 .visible {
-  visibility: visible;
+  opacity: 0.5;
+  transform: translate(0);
+}
+.visible:hover {
+  opacity: 1;
 }/*# sourceMappingURL=index.css.map */
