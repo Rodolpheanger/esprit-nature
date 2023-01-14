@@ -10,6 +10,7 @@ export const showFaqResponse = (): void => {
     response &&
       question.addEventListener("click", () => {
         response.classList.toggle("faq__response--visible");
+        question.classList.toggle("faq__question--active");
       });
   });
 };

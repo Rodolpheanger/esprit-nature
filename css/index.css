@@ -175,6 +175,7 @@ main {
   flex-direction: column;
   font-size: 1.6rem;
   font-weight: 500;
+  line-height: 3rem;
 }
 
 section .title__container {
@@ -196,7 +197,7 @@ section .title__container {
   }
 }
 section h2 {
-  padding: 1rem;
+  padding: 2rem 2.25rem;
   color: rgb(17, 30, 46);
   font-size: 2rem;
   border: solid 1px rgb(17, 30, 46);
@@ -342,68 +343,108 @@ nav li:hover:after {
 #meches .title__container {
   background-image: url(/src/assets/images/meches_header_bg.webp);
 }
+#meches .content__container {
+  margin: 2rem 0;
+}
+#meches .content__container p {
+  padding: 2rem;
+  line-height: 3rem;
+}
 
 #tarifs .title__container {
   background-image: url(/src/assets/images/tarifs.jpg);
 }
-
-.tables__container {
+#tarifs .content__container {
+  margin: 3rem 0;
+}
+#tarifs .content__container p {
+  text-align: center;
+  padding: 2rem;
+}
+#tarifs .tables__container {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
   justify-content: center;
 }
-
-.table__container {
+#tarifs .table__container {
   padding: 2rem;
   border: 1px solid black;
 }
-
-table tr,
-table td {
-  width: 25rem;
-  padding: 0.5rem;
-}
-table tr:nth-child(even) {
-  background-color: rgb(236, 221, 238);
-}
-table tr:nth-child(odd) {
-  background-color: #faf2e5;
-}
-table th {
+#tarifs table th {
   background-color: white;
   text-align: left;
   font-size: 2rem;
+  font-weight: 700;
   color: rgb(109, 0, 109);
-  padding-bottom: 1rem;
+  padding: 0.75rem 1rem;
 }
-table td:last-child {
+#tarifs table tr,
+#tarifs table td {
+  width: 25rem;
+  padding: 0.5rem 1rem;
+}
+#tarifs table tr:nth-child(even) {
+  background-color: rgb(236, 221, 238);
+}
+#tarifs table tr:nth-child(odd) {
+  background-color: #faf2e5;
+}
+#tarifs table td:last-child {
   text-align: end;
 }
 
-#infos {
-  text-align: center;
-}
 #infos .title__container {
   background-image: url(/src/assets/images/infos.jpeg);
 }
+#infos .content__container {
+  text-align: center;
+  margin: 3rem 0;
+}
+#infos .infos__contact {
+  font-size: 2rem;
+  font-weight: 600;
+}
+#infos .infos__phonenumber {
+  padding: 2rem;
+  font-size: 4rem;
+  font-weight: 600;
+  color: rgb(109, 0, 109);
+}
 #infos .infos__sector {
   font-style: italic;
-  padding: 3rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  padding: 2rem;
+  font-weight: 400;
 }
 #infos .opening-hours__container {
+  margin: 5rem auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+@media screen and (min-width: 992px) {
+  #infos .opening-hours__container {
+    width: 50%;
+  }
+}
+#infos .opening-hours__container .day {
+  color: rgb(109, 0, 109);
+  font-weight: 700;
+  background-color: white;
+}
+#infos .opening-hours__container .hours {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
   align-items: center;
-}
-#infos .opening-hours__container div {
-  width: 25vw;
+  background-color: rgb(236, 221, 238);
+  height: 6rem;
+  font-style: italic;
 }
 
 iframe {
+  margin: 3rem 0;
   width: 95%;
   height: 50vh;
 }
@@ -426,6 +467,8 @@ iframe {
   }
   100% {
     opacity: 1;
+    max-height: var(--max-height);
+    overflow: visible;
   }
 }
 @keyframes fadeIn {
@@ -441,11 +484,15 @@ iframe {
   }
   100% {
     opacity: 1;
+    max-height: var(--max-height);
+    overflow: visible;
   }
 }
 @-webkit-keyframes fadeOut {
   0% {
     opacity: 1;
+    max-height: var(--max-height);
+    overflow: visible;
   }
   5% {
     opacity: 0.5;
@@ -461,6 +508,8 @@ iframe {
 @keyframes fadeOut {
   0% {
     opacity: 1;
+    max-height: var(--max-height);
+    overflow: visible;
   }
   5% {
     opacity: 0.5;
@@ -476,21 +525,44 @@ iframe {
 #faq .title__container {
   background-image: url(/src/assets/images/adam-winger-yGCj9aMSBNI-unsplash.jpg);
 }
-#faq .content__container p:nth-child(even):not(.faq__response--visible) {
-  padding: 0 2rem;
-  -webkit-animation: fadeOut 800ms ease-in-out forwards;
-  animation: fadeOut 800ms ease-in-out forwards;
+#faq .content__container {
+  margin: 3rem 0;
 }
-#faq .content__container p:nth-child(odd) {
+#faq .content__container .faq__question:not(.faq__question--active) {
   font-size: 2rem;
-  padding-bottom: 1rem;
-  margin: 2rem 0 2rem 2rem;
+  padding: 1rem 0;
+  margin: 0 2rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-bottom: 2px solid black;
+  transition: all 800ms ease-in-out;
+  cursor: help;
 }
-#faq .content__container p:nth-child(odd)::before {
+#faq .content__container .faq__question:not(.faq__question--active)::before {
+  content: "";
+  display: inline-block;
+  font-weight: 500;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  transform: rotate(-45deg);
+  margin-right: 1.5rem;
+  transition: all 800ms ease-in-out;
+}
+#faq .content__container .faq__question--active {
+  font-size: 2rem;
+  padding: 1rem 0;
+  margin: 0 2rem 2rem 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 2px solid black;
+  transition: all 800ms ease-in-out;
+  cursor: help;
+}
+#faq .content__container .faq__question--active::before {
   content: "";
   display: inline-block;
   font-weight: 500;
@@ -499,12 +571,21 @@ iframe {
   border-bottom: 2px solid black;
   border-right: 2px solid black;
   transform: rotate(45deg);
-  margin: 0 1.5rem 0.25rem 0;
+  margin: 0 1rem 0.25rem 0.5rem;
+  transition: all 800ms ease-in-out;
+}
+#faq .content__container .faq__response:not(.faq__response--visible) {
+  padding: 0 2rem 1rem 2rem;
+  -webkit-animation: fadeOut 800ms ease-in-out forwards;
+  animation: fadeOut 800ms ease-in-out forwards;
+  transition: all 800ms ease-in-out;
 }
 #faq .content__container .faq__response--visible {
-  padding: 0 2rem;
+  padding: 0 2rem 2rem 2rem;
   -webkit-animation: fadeIn 800ms ease-in-out;
   animation: fadeIn 800ms ease-in-out forwards;
+  transition: all 800ms ease-in-out;
+  margin-bottom: 2rem;
 }
 
 .scroll-top {

@@ -2,42 +2,48 @@
   .title__container {
     background-image: url(/src/assets/images/tarifs.jpg);
   }
-}
-
-.tables__container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  justify-content: center;
-}
-
-.table__container {
-  padding: 2rem;
-  border: 1px solid black;
-}
-table {
-  tr,
-  td {
-    width: 25rem;
-    padding: 0.5rem;
-  }
-  tr {
-    &:nth-child(even) {
-      background-color: rgb(236, 221, 238);
-    }
-    &:nth-child(odd) {
-      background-color: $color-bg;
+  .content__container {
+    margin: 3rem 0;
+    p {
+      text-align: center;
+      padding: 2rem;
     }
   }
-  th {
-    background-color: white;
-    text-align: left;
-    font-size: 2rem;
-    color: $color-primary;
-    // border-bottom: 1px dotted black;
-    padding-bottom: 1rem;
+  .tables__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
   }
-  td:last-child {
-    text-align: end;
+
+  .table__container {
+    padding: 2rem;
+    border: 1px solid black;
+  }
+  table {
+    th {
+      background-color: white;
+      text-align: left;
+      font-size: 2rem;
+      font-weight: 700;
+      color: $color-primary;
+      padding: 0.75rem 1rem;
+    }
+    tr,
+    td {
+      width: 25rem;
+      padding: 0.5rem 1rem;
+    }
+    tr {
+      &:nth-child(even) {
+        background-color: rgb(236, 221, 238);
+      }
+      &:nth-child(odd) {
+        background-color: $color-bg;
+      }
+    }
+    td:last-child {
+      text-align: end;
+    }
   }
 }
