@@ -1,4 +1,4 @@
-header {
+.header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -6,39 +6,51 @@ header {
   height: 100vh;
   width: 100%;
   background-color: $color-bg;
-  .header__contact {
+  &__contact {
     z-index: 200;
     position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: $color-primary;
-    color: white;
+    background-color: $color-bg;
+    color: $color-primary;
     font-size: 2rem;
     font-weight: 700;
     padding: 0.5rem 2rem;
   }
-  .header__container {
+  &__phonenumber:hover {
+    color: $color-green;
+  }
+  &__facebook-logo {
+    font-size: 2.5rem;
+    color: #3982e4;
+    &:hover {
+      color: #4f91e7;
+    }
+  }
+  &__container {
     margin-top: 2rem;
     width: 100%;
     background-color: $color-bg;
     text-decoration: none;
     padding: 1rem;
   }
-  .header__logo {
+  &__logo {
     font-family: "Darleston";
     font-size: 7rem;
     text-align: center;
     padding: 2rem;
+    color: $color-green;
+    // color: #27ab4a;
     @include tablet {
       font-size: 10rem;
     }
-    &:after {
-      display: block;
-      content: "";
-      margin: auto;
-      border-bottom: 2px solid $color-primary;
-      width: 10rem;
-    }
+  }
+  &__logo::after {
+    display: block;
+    content: "";
+    margin: auto;
+    border-bottom: 2px solid $color-primary;
+    width: 10rem;
   }
 }

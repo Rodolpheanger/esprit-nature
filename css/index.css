@@ -100,7 +100,7 @@ a {
   color: inherit;
 }
 
-header {
+.header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -109,64 +109,63 @@ header {
   width: 100%;
   background-color: #faf2e5;
 }
-header .header__contact {
+.header__contact {
   z-index: 200;
   position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(109, 0, 109);
-  color: white;
+  background-color: #faf2e5;
+  color: #59314b;
   font-size: 2rem;
   font-weight: 700;
   padding: 0.5rem 2rem;
 }
-header .header__container {
+.header__phonenumber:hover {
+  color: #4e6b17;
+}
+.header__facebook-logo {
+  font-size: 2.5rem;
+  color: #3982e4;
+}
+.header__facebook-logo:hover {
+  color: #4f91e7;
+}
+.header__container {
   margin-top: 2rem;
   width: 100%;
   background-color: #faf2e5;
   text-decoration: none;
   padding: 1rem;
 }
-header .header__logo {
+.header__logo {
   font-family: "Darleston";
   font-size: 7rem;
   text-align: center;
   padding: 2rem;
+  color: #4e6b17;
 }
 @media screen and (min-width: 768px) {
-  header .header__logo {
+  .header__logo {
     font-size: 10rem;
   }
 }
-header .header__logo:after {
+.header__logo::after {
   display: block;
   content: "";
   margin: auto;
-  border-bottom: 2px solid rgb(109, 0, 109);
+  border-bottom: 2px solid #59314b;
   width: 10rem;
 }
 
 .hero {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   height: 100%;
   background-image: url("/src/assets/images/hero_banner.webp");
   background-position: center;
   background-size: cover;
-}
-.hero h2 {
-  padding: 1rem;
-  color: rgb(17, 30, 46);
-  font-size: 5rem;
-  border: solid 1px rgb(17, 30, 46);
-  background-color: rgba(255, 255, 255, 0.5);
-}
-@media screen and (min-width: 768px) {
-  .hero h2 {
-    font-size: 8rem;
-  }
 }
 
 main {
@@ -198,9 +197,9 @@ section .title__container {
 }
 section h2 {
   padding: 2rem 2.25rem;
-  color: rgb(17, 30, 46);
+  color: rgb(28, 17, 46);
   font-size: 2rem;
-  border: solid 1px rgb(17, 30, 46);
+  border: solid 1px rgb(28, 17, 46);
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
@@ -221,7 +220,21 @@ section h3:after, section h3:before {
   content: "";
   margin: 0 auto 2rem auto;
   padding-bottom: 2rem;
-  border-bottom: 2px solid rgb(109, 0, 109);
+  border-bottom: 2px solid #59314b;
+  width: 25%;
+}
+section h4 {
+  text-align: center;
+  color: darkcyan;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+section h4:after {
+  display: block;
+  content: "";
+  margin: 0 auto 2rem auto;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #59314b;
   width: 25%;
 }
 
@@ -262,7 +275,7 @@ nav ul {
   flex-wrap: wrap;
 }
 nav li {
-  color: rgb(17, 30, 46);
+  color: rgb(28, 17, 46);
   padding: 1.2rem;
   text-align: center;
   font-size: 1.6rem;
@@ -278,66 +291,74 @@ nav li:after {
   content: "";
   margin: 1rem auto 0 auto;
   width: 80%;
-  border-bottom: solid 2px rgb(109, 0, 109);
+  border-bottom: solid 2px #59314b;
   transform: scaleX(0);
   transition: all 0.5s ease-in-out;
 }
 nav li:hover {
-  color: rgb(109, 0, 109);
+  color: #59314b;
 }
 nav li:hover:after {
   transform: scaleX(1);
 }
 
-#presentation {
+.presentation {
   background-image: url("/src/assets/images/accueil_background02.webp");
   background-position: center;
   background-size: cover;
   padding: 2rem;
   text-align: center;
 }
-#presentation .presentation__container {
+.presentation__container {
   background-color: rgba(255, 255, 255, 0.3);
   padding: 3rem 1.5rem;
   border: 1px solid black;
   margin: 3rem 0 3rem 0;
 }
-#presentation h2 {
-  padding-top: 0;
-  color: rgb(109, 0, 109);
-  font-size: 3rem;
-  border: none;
-  background: none;
-}
-#presentation h2::before, #presentation h2::after {
+.presentation__title::before, .presentation__title::after {
   display: block;
   content: "";
   margin: 0 auto 2rem auto;
   padding-bottom: 2rem;
-  border-bottom: 2px solid rgb(109, 0, 109);
+  border-bottom: 2px solid #59314b;
   width: 10rem;
 }
-#presentation p {
+.presentation h2 {
+  padding-top: 2rem;
+  color: #59314b;
+  font-size: 3rem;
+  border: none;
+  background: none;
+  line-height: 4rem;
+}
+.presentation p {
   margin-top: 1rem;
 }
-#presentation .image__container {
+.presentation .image__container {
   margin: 3rem auto;
-  float: none;
-  width: 75%;
+  width: 50vw;
 }
 @media screen and (min-width: 768px) {
-  #presentation .image__container {
+  .presentation .image__container {
     max-width: 50vw;
   }
 }
 @media screen and (min-width: 992px) {
-  #presentation .image__container {
+  .presentation .image__container {
     max-width: 25vw;
   }
 }
 
 #colorations .title__container {
   background-image: url(/src/assets/images/coloration-cheveux-vegetale-henne-couleur-poudres1.jpg);
+}
+#colorations .content__container {
+  text-align: center;
+  margin: 2rem 0;
+}
+#colorations .content__container p {
+  padding: 2rem;
+  line-height: 3rem;
 }
 
 #meches .title__container {
@@ -352,7 +373,7 @@ nav li:hover:after {
 }
 
 #tarifs .title__container {
-  background-image: url(/src/assets/images/tarifs.jpg);
+  background-image: url(/src/assets/images/polina-rytova-1dGMs4hhcVA-unsplash.jpg);
 }
 #tarifs .content__container {
   margin: 3rem 0;
@@ -376,7 +397,7 @@ nav li:hover:after {
   text-align: left;
   font-size: 2rem;
   font-weight: 700;
-  color: rgb(109, 0, 109);
+  color: #59314b;
   padding: 0.75rem 1rem;
 }
 #tarifs table tr,
@@ -404,12 +425,18 @@ nav li:hover:after {
 #infos .infos__contact {
   font-size: 2rem;
   font-weight: 600;
+  padding: 2rem;
 }
 #infos .infos__phonenumber {
   padding: 2rem;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
-  color: rgb(109, 0, 109);
+  color: #59314b;
+}
+@media screen and (min-width: 768px) {
+  #infos .infos__phonenumber {
+    font-size: 4rem;
+  }
 }
 #infos .infos__sector {
   font-style: italic;
@@ -422,7 +449,7 @@ nav li:hover:after {
   width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  gap: 3rem;
 }
 @media screen and (min-width: 992px) {
   #infos .opening-hours__container {
@@ -430,7 +457,7 @@ nav li:hover:after {
   }
 }
 #infos .opening-hours__container .day {
-  color: rgb(109, 0, 109);
+  color: #59314b;
   font-weight: 700;
   background-color: white;
 }
@@ -439,7 +466,6 @@ nav li:hover:after {
   justify-content: center;
   align-items: center;
   background-color: rgb(236, 221, 238);
-  height: 6rem;
   font-style: italic;
 }
 
@@ -450,7 +476,9 @@ iframe {
 }
 @media screen and (min-width: 768px) {
   iframe {
+    height: 60vh;
     width: 75%;
+    max-width: 90vh;
   }
 }
 

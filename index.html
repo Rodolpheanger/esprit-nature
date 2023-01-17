@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Esprit nature - Coiffure à domicile près de Besançon</title>
+    <meta name="description" content="Esprit Nature c'est Nadège, coiffeuse à domicile sur le secteur de Besançon ouest qui viens chez vous pour vos colorations végétales et autres prestations coiffure.">
+    <meta name="description" content="Envie d'une coloration végétale naturelle réalisée par une professionnelle à votre domicile sur le secteur de Besançon ouest, appelez moi vite...">
 
     <link rel="stylesheet" href="./css/index.css" />
     <link
@@ -19,14 +20,14 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div class="header__contact">
-        <div><i class="fa-solid fa-phone"></i> 06.09.02.50.23</div>
+        <a href="tel:+33609025023" class="header__phonenumber"><i class="fa-solid fa-phone"></i> 06 09 02 50 23</a>
         <a
           href="https://www.facebook.com/profile.php?id=100063717044199"
           target="_blank"
           rel="noopener noreferrer"
-          ><i class="fab fa-facebook"></i
+          ><i class="fab fa-facebook header__facebook-logo"></i
         ></a>
       </div>
       <div class="header__container">
@@ -43,44 +44,47 @@
       </div>
 
       <div class="hero">
-        <h2>Bienvenue</h2>
+
+ <!--  TODO: h2 titre bienvenu sur le header (voir si à garder) ou pas -->
+
+        <!-- <h2>Bienvenue</h2> -->
       </div>
     </header>
 
     <main>
     
-        <section id="presentation">
+        <section id="presentation" class="presentation">
           <div class="presentation__container">
-            <h2>
+            <div class="presentation__title">
+              <h2>
               Relaxez-vous...
-              <br />
-              Nadège s'occupe de tout !
-            </h2>
+              </h2><h2>Nadège s'occupe de tout !</h2>
+            
+          </div>
             <p>
-              Je me déplace chez vous pour réaliser vos coupes: hommes, femmes,
-              enfants, coiffages, colorations végétales, mèches à l'argile,
-              chignons, tresses ou encore soins capillaires.
+              Titulaire d'un  C.A.P et d'un Brevet Professionnel en coiffure, j'ai travaillée de nombreuses années en salon et suis aujourd’hui à votre service en tant que coiffeuse à domicile sur le secteur de Besançon ouest.</p>
+            <p>
+              Fini les déplacements et les salles d'attentes, c'est moi qui viens à vous pour réaliser vos coupes: hommes, femmes, enfants, coiffages, colorations végétales, mèches à l'argile, chignons, tresses ou encore soins capillaires.
+            </p>
+            <p>
+              Je vous conseille en fonction de votre morphologie, de la texture de vos cheveux et avant tout de vos envies.
             </p>
 
             <p>
-              Je vous conseille en fonction de votre morphologie, de la texture
-              de vos cheveux et surtout de vos envies.
+              J'ai tout l'équipement nécessaire pour vous coiffer à votre domicile comme si vous étiez en salon.
             </p>
 
             <p>
-              J'ai tout l'équipement nécessaire pour vous coiffer à votre
-              domicile comme si vous étiez en salon.
+              Coiffeuse coloriste végétale, j'utilise uniquement des colorations végétales et des mèches à l'argile, j'ai fais ce choix par soucis de respect de vos cheveux, de votre santé ainsi que de la mienne.
             </p>
 
             <p>
-              J'utilise uniquement des colorations végétales et des mèches à
-              l'argile, j'ai fais ce choix par soucis de respect de vos cheveux
-              , de votre santé ainsi que de la mienne.
+              Je ne réalise donc pas de colorations chimiques, d'oxydation ou encore de permanente.
             </p>
+            <p>Consultez les sections tarifs et foire aux questions pour en savoir plus.</p>
 
             <p>
-              Je ne réalise donc pas de colorations chimiques, d'oxydation, ni
-              de permanente.
+              Alors pour profiter d'un moment de détente et de bien-être dans le confort de votre domicile, attrapez votre téléphone et composez mon numéro, j'attend votre appel.
             </p>
             <div class="image__container">
               <img
@@ -95,7 +99,29 @@
           <div class="title__container">
             <h2>Colorations végétales</h2>
           </div>
-          <div class="content__container">
+          <article class="content__container">
+            <h3>Toutes les colorations avec lesquelles je travaille sont 100% végétales.</h3>
+                <p>Les colorations végétales de la marque <strong>"MARCAPAR"</strong> créée en 1991 par un <em>coiffeur Lyonnais</em> sont <strong>formulées et fabriquées en France</strong><br />
+                Elle est composée de <strong>plantes tinctoriales</strong> (colorantes) comme : <em>le henné, la garance, le noyer, la camomille, le curcuma, le lichen, le laurier à indigo, l'indigotier, la gaude et bien d'autres...</em><br />
+                Les colorations, appelées bain de plantes, se présentent sous forme de poudre que l'on mélange à de l'eau chaude ou en décoction ( plantes que l'on fait bouillir dans de l'eau).<br /> 
+                La coloration <em>ne pénètre pas dans la fibre capillaire</em>. Elle va l'enrober, s'enrouler, agir comme un aimant sur le cheveu, le gainer et le fortifier.<br />
+                On obtient une <strong>couverture totale des cheveux blancs</strong> ainsi qu'une très grande luminosité qui <strong>dure dans le temps</strong>.
+                </p>
+            <h4>Les avantages de la coloration végétale:</h4>
+                <ul>
+                    <li>Un soin qui va avant tout gainer et fortifier vos cheveux.</li>
+                    <li>Très bien tolérée par les cuirs chevelus sensibles ou allergiques.</li>
+                    <li>Compatible avec des traitements de chimiothérapie.</li>
+                    <li>Des cheveux plus beaux, plus lumineux, pleins de vitalité.</li>
+                    <li>De beaux reflets chauds, une très bonne tenue dans le temps.</li>
+                </ul> 
+            <h4>Les limites de la coloration végétale:</h4>
+                <ul>
+                    <li>Il n'est pas possible d'éclaircir les cheveux.</li>
+                </ul>
+            </article>
+            <!-- TODO: texte généré par IA, voir si à garder -->
+          <!-- <div class="content__container">
             <p>
               En tant que coiffeuse à domicile, je suis toujours à la recherche
               de produits de qualité qui respectent la santé et l'environnement.
@@ -128,12 +154,21 @@
               prendre rendez-vous. Je suis impatiente de vous rencontrer et de
               vous aider à trouver la couleur qui vous correspond le mieux !
             </p>
-          </div>
+          </div> -->
         </section>
 
         <section id="meches">
           <div class="title__container"><h2>Mèches à l'argile</h2></div>
-          <div class="content__container">
+          <article class="content__container">
+            <h3>J'ai recherché pour vous <span class="underline">le produit le plus naturel possible</span> pour pouvoir vous faire des mèches.</h3>
+            <p>
+            Le produit pour les mèches de la marque <strong>"Sunglitz"</strong> permet d'éclaircir les cheveux . "SunGlitz" est le système innovateur pour reproduire l'action du Soleil sur les cheveux en <strong>éclaircissant</strong> et en créant des <strong>reflets multidimensionnels variés</strong> en une seule étape. En rehaussant et neutralisant différentes couleurs on obtient des effets multidimensionnels qui accentuent les styles et les coupes modernes.<br />
+            Il est composé: <em>d'argile bentolique, d'huile d'olive, de protéine de soie, de miel, d'extrait de lait, de pigments organiques et végétaux</em>.<br />
+            Produit <strong>sans ammoniaque</strong>, <strong>non testé sur les animaux</strong> et <strong>100% biodégradable</strong>.
+            </p>
+        </article>
+            <!-- TODO: texte généré par IA, voir si à garder -->
+          <!-- <div class="content__container">
             <p>
               En tant que coiffeuse à domicile, j'ai toujours été à la recherche
               de produits de qualité qui respectent la santé et l'environnement.
@@ -162,53 +197,23 @@
               et de vous aider à trouver la couleur qui vous correspond le mieux
               !
             </p>
-          </div>
+          </div> -->
         </section>
 
         <section id="tarifs">
-          <div class="title__container"><h2>Tarifs 2023</h2></div>
+          <div class="title__container"><h2>Tarifs</h2></div>
           <div class="content__container">
             <p>
-              Vous trouverez ci-dessous mes tarifs pour les différents services
-              que je propose en tant que coiffeuse à domicile.
+              Vous trouverez ci-dessous mes tarifs pour les différents services que je propose en tant que coiffeuse à domicile.
               <br />
               Tous les prix sont indiqués en euros et sont à titre indicatif.
               <br />
-              N'hésitez pas à me contacter pour plus d'informations ou pour
-              obtenir un devis personnalisé.
+              N'hésitez pas à me contacter au 06 09 02 50 23 pour plus d'informations ou pour obtenir un devis personnalisé.
             </p>
 
             <h3>Femmes</h3>
 
             <div class="tables__container">
-              <div class="table__container">
-                <table>
-                  <thead>
-                    <tr>
-                      <th colspan="2">Shampooing + Coupe</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <colgroup>
-                      <col />
-                      <col />
-                    </colgroup>
-                    <tr>
-                      <td>Court</td>
-                      <td>25€</td>
-                    </tr>
-                    <tr>
-                      <td>Mi-long</td>
-                      <td>28€</td>
-                    </tr>
-                    <tr>
-                      <td>Long</td>
-                      <td>31€</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
               <div class="table__container">
                 <table>
                   <thead>
@@ -247,35 +252,15 @@
                   <tbody>
                     <tr>
                       <td>Court</td>
-                      <td>32€ (29€)</td>
+                      <td>33€ (30€)</td>
                     </tr>
                     <tr>
                       <td>Mi-long</td>
-                      <td>34€ (31€)</td>
+                      <td>35€ (32€)</td>
                     </tr>
                     <tr>
                       <td>Long</td>
-                      <td>37€ (33€)</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <div class="table__container">
-                <table>
-                  <thead>
-                    <tr>
-                      <th colspan="2">Shampooing + mise en plis</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>simple</td>
-                      <td>29€</td>
-                    </tr>
-                    <tr>
-                      <td>+ coupe</td>
-                      <td>37€</td>
+                      <td>38€ (34€)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -293,19 +278,19 @@
                   <tbody>
                     <tr>
                       <td>Court</td>
-                      <td>61€</td>
+                      <td>62€</td>
                     </tr>
                     <tr>
                       <td>Carré</td>
-                      <td>65€</td>
+                      <td>66€</td>
                     </tr>
                     <tr>
                       <td>Mi-long</td>
-                      <td>69€</td>
+                      <td>70€</td>
                     </tr>
                     <tr>
                       <td>Long</td>
-                      <td>73€</td>
+                      <td>75€</td>
                     </tr>
                   </tbody>
                 </table>
@@ -323,19 +308,19 @@
                   <tbody>
                     <tr>
                       <td>Court</td>
-                      <td>33€ (16€)</td>
+                      <td>34€ (16€)</td>
                     </tr>
                     <tr>
                       <td>Carré</td>
-                      <td>35€ (18€)</td>
+                      <td>36€ (18€)</td>
                     </tr>
                     <tr>
                       <td>Mi-long</td>
-                      <td>38€ (24€)</td>
+                      <td>39€ (24€)</td>
                     </tr>
                     <tr>
                       <td>Long</td>
-                      <td>41€ (28€)</td>
+                      <td>42€ (28€)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -345,25 +330,25 @@
                 <table>
                   <thead>
                     <tr>
-                      <th colspan="2">Mèches à l'argile (ou 1/2 tête)</th>
+                      <th colspan="2">Mèches à l'argile</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>Court</td>
-                      <td>41€ (32€)</td>
+                      <td>43€</td>
                     </tr>
                     <tr>
                       <td>Carré</td>
-                      <td>45€ (34€)</td>
+                      <td>47€</td>
                     </tr>
                     <tr>
                       <td>Mi-long</td>
-                      <td>51€ (36€)</td>
+                      <td>53€</td>
                     </tr>
                     <tr>
                       <td>Long</td>
-                      <td>59€ (39€)</td>
+                      <td>61€</td>
                     </tr>
                   </tbody>
                 </table>
@@ -410,20 +395,12 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Shampooing + Coupe</td>
-                      <td>22€</td>
+                      <td>Shampooing + Coupe + coiffage</td>
+                      <td>23€</td>
                     </tr>
                     <tr>
-                      <td>Coupe seule</td>
-                      <td>19€</td>
-                    </tr>
-                    <tr>
-                      <td>Barbe</td>
-                      <td>9€</td>
-                    </tr>
-                    <tr>
-                      <td>Mèches</td>
-                      <td>29€</td>
+                      <td>Coupe + coiffage</td>
+                      <td>20€</td>
                     </tr>
                   </tbody>
                 </table>
@@ -443,11 +420,11 @@
                   <tbody>
                     <tr>
                       <td>moins de 5 ans</td>
-                      <td>11€</td>
+                      <td>12€</td>
                     </tr>
                     <tr>
                       <td>de 5 à 10 ans</td>
-                      <td>14€</td>
+                      <td>15€</td>
                     </tr>
                   </tbody>
                 </table>
@@ -463,19 +440,19 @@
                   <tbody>
                     <tr>
                       <td>Filles de 10 à 15 ans</td>
-                      <td>19€</td>
+                      <td>21€</td>
                     </tr>
                     <tr>
                       <td>Filles de 15 à 18 ans</td>
-                      <td>26€</td>
+                      <td>27€</td>
                     </tr>
                     <tr>
                       <td>Garçons de 10 à 15 ans</td>
-                      <td>15€</td>
+                      <td>16€</td>
                     </tr>
                     <tr>
                       <td>Garçons de 15 à 18 ans</td>
-                      <td>17€</td>
+                      <td>18€</td>
                     </tr>
                   </tbody>
                 </table>
@@ -490,15 +467,11 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Tresses</td>
-                      <td>24€</td>
-                    </tr>
-                    <tr>
-                      <td>Chignons moins de 10 ans</td>
+                      <td>moins de 10 ans</td>
                       <td>25€</td>
                     </tr>
                     <tr>
-                      <td>Chignons de 10 à 15 ans</td>
+                      <td>de 10 à 16 ans</td>
                       <td>39€</td>
                     </tr>
                   </tbody>
@@ -524,10 +497,6 @@
                     <tr>
                       <td>Soin + massage</td>
                       <td>6€</td>
-                    </tr>
-                    <tr>
-                      <td>Masque violet</td>
-                      <td>9€</td>
                     </tr>
                   </tbody>
                 </table>
@@ -566,11 +535,11 @@
             <div class="opening-hours__container">
               <div>
                 <div class="day">Lundi</div>
-                <div class="hours">9h-12h <br/>14h-16h</div>
+                <div class="hours">9h-17h</div>
               </div>
               <div>
                 <div class="day">Mardi</div>
-                <div class="hours">9h-12h <br/>14h-16h</div>
+                <div class="hours">9h-17h</div>
               </div>
               <div>
                 <div class="day">Mercredi</div>
@@ -578,11 +547,11 @@
               </div>
               <div>
                 <div class="day">Jeudi</div>
-                <div class="hours">9h-12h <br/>14h-16h</div>
+                <div class="hours">9h-19h</div>
               </div>
               <div>
                 <div class="day">Vendredi</div>
-                <div class="hours">9h-20h</div>
+                <div class="hours">9h-19h</div>
               </div>
               <div>
                 <div class="day">Samedi</div>
@@ -597,67 +566,63 @@
 
           <div class="content__container">
             <p class="faq__question">
-              Quels produits utilisez-vous pour les colorations végétales ?
-              <!-- <i class="fa-solid fa-angles-down"></i> -->
+              Esprit Nature c'est seulement pour les femmes ?
             </p>
 
             <p class="faq__response">
-              J'utilise les colorations végétales de Marcapar, qui sont
-              fabriquées à partir d'ingrédients biologiques et écologiques tels
-              que l'henné, la garance et le casse. Je suis convaincue que la
-              beauté peut être naturelle et respectueuse de la santé, c'est
-              pourquoi j'ai choisi de travailler avec cette marque qui offre des
-              produits de qualité professionnelle et respectueux de
-              l'environnement.
+              Pas du tout ! Je propose des prestations pour toute la famille: hommes, ados et enfants.
             </p>
 
             <p class="faq__question">
-              Quels sont les avantages des mèches à l'argile par rapport aux
-              mèches chimiques ?
-              <!-- <i class="fa-solid fa-angles-down"></i> -->
+              Dois-je me laver les cheveux ?
             </p>
 
             <p class="faq__response">
-              Les mèches à l'argile sont une excellente alternative aux
-              mèches chimiques, car elles sont fabriquées à partir d'ingrédients
-              naturels et biologiques tels que l'argile et les pigments
-              végétaux. Elles ne contiennent pas de substances nocives pour la
-              santé ou l'environnement, et sont donc moins irritantes pour la
-              peau et les cheveux. De plus, elles nourrissent en profondeur les
-              cheveux en même temps qu'elles les colorent, ce qui les rend plus
-              forts et plus brillants.
+              ...............................................................................................................  
+            </p>
+            <p class="faq__question">
+              Comment préparer au mieux mon rendez-vous ?
+            </p>
+
+            <p class="faq__response">
+              Laissez moi simplement suffisamment d'espace pour pouvoir vous installer confortablement et installer mon materiel et ensuite relaxez-vous, je m'occupe du reste !  
+            </p>
+            <p class="faq__question">
+              Puis-je acheter des produits ?</p>
+
+            <p class="faq__response">
+              Bien sûr je dispose de toute la gamme des produits Marcapar: shampooing, masque, gel, spray, mousse...
             </p>
 
             <p class="faq__question">
-              Pouvez-vous vous déplacer à mon domicile pour les prestations
-              ?
-              <!-- <i class="fa-solid fa-angles-down"></i> -->
+              Dans quel secteur vous déplacer vous ?
             </p>
 
             <p class="faq__response">
-              Oui, en tant que coiffeuse à domicile, je me déplace dans le
-              secteur de Grandfontaine près de Besançon pour proposer mes
-              services chez vous. Cela vous permet de profiter d'un moment de
-              détente et de bien-être dans le confort de votre domicile, sans
-              avoir à vous déplacer. N'hésitez pas à me contacter pour plus
-              d'informations ou pour prendre rendez-vous.
+              Je me déplace dans le secteur de Besançon ouest, plus précisément dans un rayon d'environ 15km autour de Grandfontaine.
+            </p>
+            <p class="faq__question">
+              Comment puis-je vous payer ?
+            </p>
+
+            <p class="faq__response">
+              Vous pouvez me régler par chèques ou en espèces.
             </p>
 
             <p class="faq__question">
               Comment puis-je prendre rendez-vous ?
-              <!-- <i class="fa-solid fa-angles-down"></i> -->
             </p>
 
             <p class="faq__response">
-              Vous pouvez me contacter par téléphone ou par e-mail pour
-              prendre rendez-vous. Je vous demanderai de m'indiquer la
-              prestation souhaitée, la date et l'horaire qui vous conviennent,
-              et je vous confirmerai la disponibilité. Je vous conseille de
-              réserver votre rendez-vous à l'avance pour être sûr de trouver une
-              plage horaire qui vous convienne. Je suis impatiente de vous
-              rencontrer et de vous offrir un moment de détente et de bien-être
-              !
+              C'est simple comme au coup de fil, il suffit de m'appeler au 06.09.02.50.23 ou de m'envoyer un SMS et je me ferais une joie de convenir avec vous d'un rendez-vous selon vos disponibilités et les miennes !
             </p>
+
+            <p class="faq__question">
+              Ai-je droit à des petits plus ?
+            </p>
+
+            <p class="faq__response">
+              Bien sûr, une carte de fidélité vous est offerte lors de votre 1er rendez-vous. Elle vous fera bénéficier d'une réduction de 10% sur votre 10ème prestation.</p>
           </div>
         </section>
      
@@ -683,6 +648,7 @@
       </div>
         <p class="footer__copyright">
           copyright &copy; Esprit Nature 2023 / Dev by Rodolphe ANGER
+        </p>
       </div>
     </footer>
     <button class="scroll-top">

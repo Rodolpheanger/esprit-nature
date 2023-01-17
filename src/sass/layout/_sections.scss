@@ -36,4 +36,13 @@ section {
       @include underliner($color-primary, 25%);
     }
   }
+  h4 {
+    text-align: center;
+    color: $color-secondary;
+    font-size: 1.5rem;
+    font-weight: 700;
+    &:after {
+      @include underliner($color-primary, 25%);
+    }
+  }
 }

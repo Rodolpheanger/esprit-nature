@@ -1,19 +1,22 @@
 .hero {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   height: 100%;
   background-image: url("/src/assets/images/hero_banner.webp");
   background-position: center;
   background-size: cover;
-  h2 {
-    padding: 1rem;
-    color: $text-darkgrey;
-    font-size: 5rem;
-    border: solid 1px $text-darkgrey;
-    background-color: rgba(255, 255, 255, 0.5);
-    @include tablet {
-      font-size: 8rem;
-    }
-  }
+
+  // TODO: h2 titre bienvenu sur le header (voir si à garder) ou pas
+  // h2 {
+  //   padding: 1rem;
+  //   color: $text-darkgrey;
+  //   font-size: 5rem;
+  //   border: solid 1px $text-darkgrey;
+  //   background-color: rgba(255, 255, 255, 0.5);
+  //   margin-bottom: 10rem;
+  //   @include tablet {
+  //     font-size: 8rem;
+  //   }
+  // }
 }
