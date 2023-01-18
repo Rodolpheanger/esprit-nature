@@ -1,45 +1,45 @@
 .header {
   display: flex;
+  align-items: stretch;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
   height: 100vh;
   width: 100%;
   background-color: $color-bg;
   &__contact {
     z-index: 200;
     position: fixed;
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: $color-bg;
+    width: 100%;
+    padding: 0.5rem 2rem;
     color: $color-primary;
     font-size: 2rem;
     font-weight: 700;
-    padding: 0.5rem 2rem;
+    background-color: $color-bg;
   }
   &__phonenumber:hover {
     color: $color-green;
   }
   &__facebook-logo {
-    font-size: 2.5rem;
     color: #3982e4;
+    font-size: 2.5rem;
     &:hover {
       color: #4f91e7;
     }
   }
   &__container {
-    margin-top: 2rem;
     width: 100%;
-    background-color: $color-bg;
-    text-decoration: none;
+    margin-top: 2rem;
     padding: 1rem;
+    text-decoration: none;
+    background-color: $color-bg;
   }
   &__logo {
+    padding: 2rem;
     font-family: "Darleston";
     font-size: 7rem;
     text-align: center;
-    padding: 2rem;
     color: $color-green;
     // color: #27ab4a;
     @include tablet {
@@ -47,10 +47,10 @@
     }
   }
   &__logo::after {
-    display: block;
     content: "";
+    display: block;
+    width: 10rem;
     margin: auto;
     border-bottom: 2px solid $color-primary;
-    width: 10rem;
   }
 }

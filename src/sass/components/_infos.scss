@@ -3,35 +3,35 @@
     background-image: url(/src/assets/images/infos.jpeg);
   }
   .content__container {
-    text-align: center;
     margin: 3rem 0;
+    text-align: center;
   }
   .infos__contact {
+    padding: 2rem;
     font-size: 2rem;
     font-weight: 600;
-    padding: 2rem;
   }
   .infos__phonenumber {
     padding: 2rem;
+    color: $color-primary;
     font-size: 3rem;
     font-weight: 600;
-    color: $color-primary;
     @include tablet {
       font-size: 4rem;
     }
   }
   .infos__sector {
-    font-style: italic;
-    font-size: 2rem;
     padding: 2rem;
+    font-size: 2rem;
+    font-style: italic;
     font-weight: 400;
   }
   .opening-hours__container {
-    margin: 5rem auto;
-    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
+    width: 90%;
+    margin: 5rem auto;
     @include desktop {
       width: 50%;
     }
@@ -42,18 +42,18 @@
     }
     .hours {
       display: flex;
-      justify-content: center;
       align-items: center;
-      background-color: rgb(236, 221, 238);
+      justify-content: center;
       font-style: italic;
+      background-color: rgb(236, 221, 238);
     }
   }
 }
 
 iframe {
-  margin: 3rem 0;
-  width: 95%;
   height: 50vh;
+  width: 95%;
+  margin: 3rem 0;
   @include tablet {
     height: 60vh;
     width: 75%;

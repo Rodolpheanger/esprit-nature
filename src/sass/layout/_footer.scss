@@ -1,17 +1,17 @@
 footer {
-  padding: 2rem;
-  min-height: 10vh;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  min-height: 10vh;
+  padding: 2rem;
   color: azure;
   background-color: rgb(37, 25, 14);
   .footer__links {
-    width: 100%;
-    font-size: 5rem;
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+    font-size: 5rem;
     @include tablet {
       width: 50%;
     }

@@ -2,24 +2,23 @@ nav {
   width: 100%;
   ul {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
   }
   li {
-    color: $text-darkgrey;
     padding: 1.2rem;
-    text-align: center;
+    color: $text-darkgrey;
     font-size: 1.6rem;
+    text-align: center;
     @include tablet {
       padding: 2rem;
       font-size: 2rem;
     }
     &:after {
-      display: block;
       content: "";
-      margin: 1rem auto 0 auto;
-
+      display: block;
       width: 80%;
+      margin: 1rem auto 0 auto;
       border-bottom: solid 2px $color-primary;
       transform: scaleX(0);
       transition: all 0.5s ease-in-out;

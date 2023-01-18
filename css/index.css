@@ -85,26 +85,26 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
   color: #111e2e;
+  font-family: "Montserrat", sans-serif;
   background-color: #faf2e5;
 }
 
 h2 {
-  font-weight: 700;
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 .header {
   display: flex;
+  align-items: stretch;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
   height: 100vh;
   width: 100%;
   background-color: #faf2e5;
@@ -112,37 +112,37 @@ a {
 .header__contact {
   z-index: 200;
   position: fixed;
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #faf2e5;
+  width: 100%;
+  padding: 0.5rem 2rem;
   color: #59314b;
   font-size: 2rem;
   font-weight: 700;
-  padding: 0.5rem 2rem;
+  background-color: #faf2e5;
 }
 .header__phonenumber:hover {
   color: #4e6b17;
 }
 .header__facebook-logo {
-  font-size: 2.5rem;
   color: #3982e4;
+  font-size: 2.5rem;
 }
 .header__facebook-logo:hover {
   color: #4f91e7;
 }
 .header__container {
-  margin-top: 2rem;
   width: 100%;
-  background-color: #faf2e5;
-  text-decoration: none;
+  margin-top: 2rem;
   padding: 1rem;
+  text-decoration: none;
+  background-color: #faf2e5;
 }
 .header__logo {
+  padding: 2rem;
   font-family: "Darleston";
   font-size: 7rem;
   text-align: center;
-  padding: 2rem;
   color: #4e6b17;
 }
 @media screen and (min-width: 768px) {
@@ -151,27 +151,62 @@ a {
   }
 }
 .header__logo::after {
-  display: block;
   content: "";
+  display: block;
+  width: 10rem;
   margin: auto;
   border-bottom: 2px solid #59314b;
-  width: 10rem;
 }
 
 .hero {
   display: flex;
-  justify-content: center;
   align-items: flex-end;
+  justify-content: center;
   height: 100%;
   background-image: url("/src/assets/images/hero_banner.webp");
   background-position: center;
   background-size: cover;
 }
+@-webkit-keyframes fadeInAndOut {}
+@keyframes fadeInAndOut {
+  0% {
+    opacity: 0;
+    transform: translateY(70vh);
+  }
+  40% {
+    opacity: 1;
+    transform: translate(0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-70vh);
+  }
+}
+.hero h2 {
+  opacity: 0;
+  margin: auto;
+  padding: 1rem;
+  border: solid 1px rgb(28, 17, 46);
+  color: rgb(28, 17, 46);
+  font-size: 5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-animation: fadeInAndOut 3000ms ease-in-out;
+  animation: fadeInAndOut 6000ms ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .hero h2 {
+    font-size: 8rem;
+  }
+}
 
 main {
-  width: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 3rem;
@@ -179,8 +214,8 @@ main {
 
 section .title__container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 25vh;
   background-position: center;
   background-size: cover;
@@ -197,12 +232,12 @@ section .title__container {
 }
 section h2 {
   padding: 2rem 2.25rem;
+  border: solid 1px rgb(28, 17, 46);
   color: rgb(28, 17, 46);
   font-size: 2rem;
-  border: solid 1px rgb(28, 17, 46);
   background-color: rgba(255, 255, 255, 0.8);
-  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 @media screen and (min-width: 768px) {
   section h2 {
@@ -210,49 +245,49 @@ section h2 {
   }
 }
 section h3 {
-  text-align: center;
   color: darkcyan;
   font-size: 2.5rem;
   font-weight: 700;
+  text-align: center;
 }
 section h3:after, section h3:before {
-  display: block;
   content: "";
+  display: block;
+  width: 25%;
   margin: 0 auto 2rem auto;
   padding-bottom: 2rem;
   border-bottom: 2px solid #59314b;
-  width: 25%;
 }
 section h4 {
-  text-align: center;
   color: darkcyan;
   font-size: 1.5rem;
   font-weight: 700;
+  text-align: center;
 }
 section h4:after {
-  display: block;
   content: "";
+  display: block;
+  width: 25%;
   margin: 0 auto 2rem auto;
   padding-bottom: 2rem;
   border-bottom: 2px solid #59314b;
-  width: 25%;
 }
 
 footer {
-  padding: 2rem;
-  min-height: 10vh;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  min-height: 10vh;
+  padding: 2rem;
   color: azure;
   background-color: rgb(37, 25, 14);
 }
 footer .footer__links {
-  width: 100%;
-  font-size: 5rem;
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
+  font-size: 5rem;
 }
 @media screen and (min-width: 768px) {
   footer .footer__links {
@@ -271,14 +306,14 @@ nav {
 }
 nav ul {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 nav li {
-  color: rgb(28, 17, 46);
   padding: 1.2rem;
-  text-align: center;
+  color: rgb(28, 17, 46);
   font-size: 1.6rem;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   nav li {
@@ -287,10 +322,10 @@ nav li {
   }
 }
 nav li:after {
-  display: block;
   content: "";
-  margin: 1rem auto 0 auto;
+  display: block;
   width: 80%;
+  margin: 1rem auto 0 auto;
   border-bottom: solid 2px #59314b;
   transform: scaleX(0);
   transition: all 0.5s ease-in-out;
@@ -303,40 +338,40 @@ nav li:hover:after {
 }
 
 .presentation {
+  padding: 2rem;
+  text-align: center;
   background-image: url("/src/assets/images/accueil_background02.webp");
   background-position: center;
   background-size: cover;
-  padding: 2rem;
-  text-align: center;
 }
 .presentation__container {
-  background-color: rgba(255, 255, 255, 0.3);
+  margin: 3rem 0 3rem 0;
   padding: 3rem 1.5rem;
   border: 1px solid black;
-  margin: 3rem 0 3rem 0;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .presentation__title::before, .presentation__title::after {
-  display: block;
   content: "";
+  display: block;
+  width: 10rem;
   margin: 0 auto 2rem auto;
   padding-bottom: 2rem;
   border-bottom: 2px solid #59314b;
-  width: 10rem;
 }
 .presentation h2 {
   padding-top: 2rem;
+  border: none;
   color: #59314b;
   font-size: 3rem;
-  border: none;
-  background: none;
   line-height: 4rem;
+  background: none;
 }
 .presentation p {
   margin-top: 1rem;
 }
 .presentation .image__container {
-  margin: 3rem auto;
   width: 50vw;
+  margin: 3rem auto;
 }
 @media screen and (min-width: 768px) {
   .presentation .image__container {
@@ -353,8 +388,8 @@ nav li:hover:after {
   background-image: url(/src/assets/images/coloration-cheveux-vegetale-henne-couleur-poudres1.jpg);
 }
 #colorations .content__container {
-  text-align: center;
   margin: 2rem 0;
+  text-align: center;
 }
 #colorations .content__container p {
   padding: 2rem;
@@ -393,12 +428,12 @@ nav li:hover:after {
   border: 1px solid black;
 }
 #tarifs table th {
-  background-color: white;
-  text-align: left;
+  padding: 0.75rem 1rem;
+  color: #59314b;
   font-size: 2rem;
   font-weight: 700;
-  color: #59314b;
-  padding: 0.75rem 1rem;
+  text-align: left;
+  background-color: white;
 }
 #tarifs table tr,
 #tarifs table td {
@@ -419,19 +454,19 @@ nav li:hover:after {
   background-image: url(/src/assets/images/infos.jpeg);
 }
 #infos .content__container {
-  text-align: center;
   margin: 3rem 0;
+  text-align: center;
 }
 #infos .infos__contact {
+  padding: 2rem;
   font-size: 2rem;
   font-weight: 600;
-  padding: 2rem;
 }
 #infos .infos__phonenumber {
   padding: 2rem;
+  color: #59314b;
   font-size: 3rem;
   font-weight: 600;
-  color: #59314b;
 }
 @media screen and (min-width: 768px) {
   #infos .infos__phonenumber {
@@ -439,17 +474,17 @@ nav li:hover:after {
   }
 }
 #infos .infos__sector {
-  font-style: italic;
-  font-size: 2rem;
   padding: 2rem;
+  font-size: 2rem;
+  font-style: italic;
   font-weight: 400;
 }
 #infos .opening-hours__container {
-  margin: 5rem auto;
-  width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
+  width: 90%;
+  margin: 5rem auto;
 }
 @media screen and (min-width: 992px) {
   #infos .opening-hours__container {
@@ -463,16 +498,16 @@ nav li:hover:after {
 }
 #infos .opening-hours__container .hours {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: rgb(236, 221, 238);
+  justify-content: center;
   font-style: italic;
+  background-color: rgb(236, 221, 238);
 }
 
 iframe {
-  margin: 3rem 0;
-  width: 95%;
   height: 50vh;
+  width: 95%;
+  margin: 3rem 0;
 }
 @media screen and (min-width: 768px) {
   iframe {
@@ -484,69 +519,69 @@ iframe {
 
 @-webkit-keyframes fadeIn {
   0% {
-    opacity: 0;
     max-height: 0;
+    opacity: 0;
     overflow: hidden;
   }
   95% {
-    opacity: 0.5;
     max-height: var(--max-height);
+    opacity: 0.5;
     overflow: visible;
   }
   100% {
-    opacity: 1;
     max-height: var(--max-height);
+    opacity: 1;
     overflow: visible;
   }
 }
 @keyframes fadeIn {
   0% {
-    opacity: 0;
     max-height: 0;
+    opacity: 0;
     overflow: hidden;
   }
   95% {
-    opacity: 0.5;
     max-height: var(--max-height);
+    opacity: 0.5;
     overflow: visible;
   }
   100% {
-    opacity: 1;
     max-height: var(--max-height);
+    opacity: 1;
     overflow: visible;
   }
 }
 @-webkit-keyframes fadeOut {
   0% {
-    opacity: 1;
     max-height: var(--max-height);
+    opacity: 1;
     overflow: visible;
   }
   5% {
-    opacity: 0.5;
     max-height: var(--max-height);
+    opacity: 0.5;
     overflow: visible;
   }
   100% {
-    opacity: 0;
     max-height: 0;
+    opacity: 0;
     overflow: hidden;
   }
 }
 @keyframes fadeOut {
   0% {
-    opacity: 1;
     max-height: var(--max-height);
+    opacity: 1;
     overflow: visible;
   }
   5% {
-    opacity: 0.5;
     max-height: var(--max-height);
+    opacity: 0.5;
     overflow: visible;
   }
   100% {
-    opacity: 0;
     max-height: 0;
+    opacity: 0;
     overflow: hidden;
   }
 }
@@ -557,70 +592,70 @@ iframe {
   margin: 3rem 0;
 }
 #faq .content__container .faq__question:not(.faq__question--active) {
-  font-size: 2rem;
-  padding: 1rem 0;
-  margin: 0 2rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  margin: 0 2rem;
+  padding: 1rem 0;
   border-bottom: 2px solid black;
+  font-size: 2rem;
   transition: all 800ms ease-in-out;
   cursor: help;
 }
 #faq .content__container .faq__question:not(.faq__question--active)::before {
   content: "";
   display: inline-block;
-  font-weight: 500;
   height: 1.5rem;
   width: 1.5rem;
+  margin-right: 1.5rem;
   border-bottom: 2px solid black;
   border-right: 2px solid black;
+  font-weight: 500;
   transform: rotate(-45deg);
-  margin-right: 1.5rem;
   transition: all 800ms ease-in-out;
 }
 #faq .content__container .faq__question--active {
-  font-size: 2rem;
-  padding: 1rem 0;
-  margin: 0 2rem 2rem 2rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  margin: 0 2rem 2rem 2rem;
+  padding: 1rem 0;
   border-bottom: 2px solid black;
+  font-size: 2rem;
   transition: all 800ms ease-in-out;
   cursor: help;
 }
 #faq .content__container .faq__question--active::before {
   content: "";
   display: inline-block;
-  font-weight: 500;
   height: 1.5rem;
   width: 1.5rem;
+  margin: 0 1rem 0.25rem 0.5rem;
   border-bottom: 2px solid black;
   border-right: 2px solid black;
+  font-weight: 500;
   transform: rotate(45deg);
-  margin: 0 1rem 0.25rem 0.5rem;
   transition: all 800ms ease-in-out;
 }
 #faq .content__container .faq__response:not(.faq__response--visible) {
   padding: 0 2rem 1rem 2rem;
-  -webkit-animation: fadeOut 800ms ease-in-out forwards;
   animation: fadeOut 800ms ease-in-out forwards;
+  -webkit-animation: fadeOut 800ms ease-in-out forwards;
   transition: all 800ms ease-in-out;
 }
 #faq .content__container .faq__response--visible {
-  padding: 0 2rem 2rem 2rem;
-  -webkit-animation: fadeIn 800ms ease-in-out;
-  animation: fadeIn 800ms ease-in-out forwards;
-  transition: all 800ms ease-in-out;
   margin-bottom: 2rem;
+  padding: 0 2rem 2rem 2rem;
+  animation: fadeIn 800ms ease-in-out forwards;
+  -webkit-animation: fadeIn 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
 }
 
 .scroll-top {
   all: unset;
   position: fixed;
-  right: 15px;
   bottom: 15px;
+  right: 15px;
   opacity: 0;
   color: darkcyan;
   transform: translate(60px);
@@ -634,8 +669,8 @@ iframe {
 }
 @media screen and (min-width: 768px) {
   .scroll-top {
-    right: 30px;
     bottom: 30px;
+    right: 30px;
   }
   .scroll-top .fas {
     font-size: 4rem;

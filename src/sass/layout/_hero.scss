@@ -1,22 +1,48 @@
 .hero {
   display: flex;
-  justify-content: center;
   align-items: flex-end;
+  justify-content: center;
   height: 100%;
   background-image: url("/src/assets/images/hero_banner.webp");
   background-position: center;
   background-size: cover;
 
   // TODO: h2 titre bienvenu sur le header (voir si à garder) ou pas
-  // h2 {
-  //   padding: 1rem;
-  //   color: $text-darkgrey;
-  //   font-size: 5rem;
-  //   border: solid 1px $text-darkgrey;
-  //   background-color: rgba(255, 255, 255, 0.5);
-  //   margin-bottom: 10rem;
-  //   @include tablet {
-  //     font-size: 8rem;
-  //   }
-  // }
+
+  @-webkit-keyframes fadeInAndOut {
+  }
+
+  @keyframes fadeInAndOut {
+    0% {
+      opacity: 0;
+      transform: translateY(70vh);
+    }
+    40% {
+      opacity: 1;
+      transform: translate(0);
+    }
+    60% {
+      opacity: 1;
+      transform: translate(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-70vh);
+    }
+  }
+
+  h2 {
+    opacity: 0;
+    margin: auto;
+    padding: 1rem;
+    border: solid 1px $text-darkgrey;
+    color: $text-darkgrey;
+    font-size: 5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-animation: fadeInAndOut 3000ms ease-in-out;
+    animation: fadeInAndOut 6000ms ease-in-out;
+    @include tablet {
+      font-size: 8rem;
+    }
+  }
 }

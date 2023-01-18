@@ -1,71 +1,71 @@
 @-webkit-keyframes fadeIn {
   0% {
-    opacity: 0;
     max-height: 0;
+    opacity: 0;
     overflow: hidden;
   }
   95% {
-    opacity: 0.5;
     max-height: var(--max-height);
+    opacity: 0.5;
     overflow: visible;
   }
   100% {
-    opacity: 1;
     max-height: var(--max-height);
+    opacity: 1;
     overflow: visible;
   }
 }
 
 @keyframes fadeIn {
   0% {
-    opacity: 0;
     max-height: 0;
+    opacity: 0;
     overflow: hidden;
   }
   95% {
-    opacity: 0.5;
     max-height: var(--max-height);
+    opacity: 0.5;
     overflow: visible;
   }
   100% {
-    opacity: 1;
     max-height: var(--max-height);
+    opacity: 1;
     overflow: visible;
   }
 }
 
 @-webkit-keyframes fadeOut {
   0% {
-    opacity: 1;
     max-height: var(--max-height);
+    opacity: 1;
     overflow: visible;
   }
   5% {
-    opacity: 0.5;
     max-height: var(--max-height);
+    opacity: 0.5;
     overflow: visible;
   }
   100% {
-    opacity: 0;
     max-height: 0;
+    opacity: 0;
     overflow: hidden;
   }
 }
 
 @keyframes fadeOut {
   0% {
-    opacity: 1;
     max-height: var(--max-height);
+    opacity: 1;
     overflow: visible;
   }
   5% {
-    opacity: 0.5;
     max-height: var(--max-height);
+    opacity: 0.5;
     overflow: visible;
   }
   100% {
-    opacity: 0;
     max-height: 0;
+    opacity: 0;
     overflow: hidden;
   }
 }
@@ -78,64 +78,64 @@
   .content__container {
     margin: 3rem 0;
     .faq__question:not(.faq__question--active) {
-      font-size: 2rem;
-      padding: 1rem 0;
-      margin: 0 2rem;
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
       width: fit-content;
+      width: -moz-fit-content;
+      width: -webkit-fit-content;
+      margin: 0 2rem;
+      padding: 1rem 0;
       border-bottom: 2px solid black;
+      font-size: 2rem;
       transition: all 800ms ease-in-out;
       cursor: help;
       &::before {
         content: "";
         display: inline-block;
-        font-weight: 500;
         height: 1.5rem;
         width: 1.5rem;
+        margin-right: 1.5rem;
         border-bottom: 2px solid black;
         border-right: 2px solid black;
+        font-weight: 500;
         transform: rotate(-45deg);
-        margin-right: 1.5rem;
         transition: all 800ms ease-in-out;
       }
     }
     .faq__question--active {
-      font-size: 2rem;
-      padding: 1rem 0;
-      margin: 0 2rem 2rem 2rem;
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
       width: fit-content;
+      width: -moz-fit-content;
+      width: -webkit-fit-content;
+      margin: 0 2rem 2rem 2rem;
+      padding: 1rem 0;
       border-bottom: 2px solid black;
+      font-size: 2rem;
       transition: all 800ms ease-in-out;
 
       cursor: help;
       &::before {
         content: "";
         display: inline-block;
-        font-weight: 500;
         height: 1.5rem;
         width: 1.5rem;
+        margin: 0 1rem 0.25rem 0.5rem;
         border-bottom: 2px solid black;
         border-right: 2px solid black;
+        font-weight: 500;
         transform: rotate(45deg);
-        margin: 0 1rem 0.25rem 0.5rem;
         transition: all 800ms ease-in-out;
       }
     }
     .faq__response:not(.faq__response--visible) {
       padding: 0 2rem 1rem 2rem;
-      -webkit-animation: fadeOut 800ms ease-in-out forwards;
       animation: fadeOut 800ms ease-in-out forwards;
+      -webkit-animation: fadeOut 800ms ease-in-out forwards;
       transition: all 800ms ease-in-out;
     }
     .faq__response--visible {
-      padding: 0 2rem 2rem 2rem;
-      -webkit-animation: fadeIn 800ms ease-in-out;
-      animation: fadeIn 800ms ease-in-out forwards;
-      transition: all 800ms ease-in-out;
       margin-bottom: 2rem;
+      padding: 0 2rem 2rem 2rem;
+      animation: fadeIn 800ms ease-in-out forwards;
+      -webkit-animation: fadeIn 800ms ease-in-out;
+      transition: all 800ms ease-in-out;
     }
   }
 }

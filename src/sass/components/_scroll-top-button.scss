@@ -1,8 +1,8 @@
 .scroll-top {
   all: unset;
   position: fixed;
-  right: 15px;
   bottom: 15px;
+  right: 15px;
   opacity: 0;
   color: $color-secondary;
   transform: translate(60px);
@@ -15,8 +15,8 @@
     }
   }
   @include tablet {
-    right: 30px;
     bottom: 30px;
+    right: 30px;
     .fas {
       font-size: 4rem;
     }
