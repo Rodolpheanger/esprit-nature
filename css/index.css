@@ -301,6 +301,14 @@ footer .footer__copyright {
   padding: 1.5rem;
 }
 
+.link-to {
+  cursor: pointer;
+  color: #4e6b17;
+}
+.link-to--strong {
+  font-weight: 700;
+}
+
 nav {
   width: 100%;
 }
@@ -384,50 +392,50 @@ nav li:hover:after {
   }
 }
 
-#colorations .title__container {
+.colorations .title__container {
   background-image: url(/src/assets/images/coloration-cheveux-vegetale-henne-couleur-poudres1.jpg);
 }
-#colorations .content__container {
+.colorations .content__container {
   margin: 2rem 0;
   text-align: center;
 }
-#colorations .content__container p {
+.colorations .content__container p {
   padding: 2rem;
   line-height: 3rem;
 }
 
-#meches .title__container {
+.meches .title__container {
   background-image: url(/src/assets/images/meches_header_bg.webp);
 }
-#meches .content__container {
+.meches .content__container {
   margin: 2rem 0;
 }
-#meches .content__container p {
+.meches .content__container p {
   padding: 2rem;
   line-height: 3rem;
 }
 
-#tarifs .title__container {
+.tarifs .title__container {
   background-image: url(/src/assets/images/polina-rytova-1dGMs4hhcVA-unsplash.jpg);
 }
-#tarifs .content__container {
+.tarifs .content__container {
   margin: 3rem 0;
 }
-#tarifs .content__container p {
+.tarifs .content__container p {
   text-align: center;
   padding: 2rem;
 }
-#tarifs .tables__container {
+.tarifs .tables__container {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
   justify-content: center;
 }
-#tarifs .table__container {
+.tarifs .table__container {
   padding: 2rem;
   border: 1px solid black;
 }
-#tarifs table th {
+.tarifs table th {
   padding: 0.75rem 1rem;
   color: #59314b;
   font-size: 2rem;
@@ -435,51 +443,51 @@ nav li:hover:after {
   text-align: left;
   background-color: white;
 }
-#tarifs table tr,
-#tarifs table td {
+.tarifs table tr,
+.tarifs table td {
   width: 25rem;
   padding: 0.5rem 1rem;
 }
-#tarifs table tr:nth-child(even) {
+.tarifs table tr:nth-child(even) {
   background-color: rgb(236, 221, 238);
 }
-#tarifs table tr:nth-child(odd) {
+.tarifs table tr:nth-child(odd) {
   background-color: #faf2e5;
 }
-#tarifs table td:last-child {
+.tarifs table td:last-child {
   text-align: end;
 }
 
-#infos .title__container {
+.infos .title__container {
   background-image: url(/src/assets/images/infos.jpeg);
 }
-#infos .content__container {
+.infos .content__container {
   margin: 3rem 0;
   text-align: center;
 }
-#infos .infos__contact {
+.infos__contact {
   padding: 2rem;
   font-size: 2rem;
   font-weight: 600;
 }
-#infos .infos__phonenumber {
+.infos__phonenumber {
   padding: 2rem;
   color: #59314b;
   font-size: 3rem;
   font-weight: 600;
 }
 @media screen and (min-width: 768px) {
-  #infos .infos__phonenumber {
+  .infos__phonenumber {
     font-size: 4rem;
   }
 }
-#infos .infos__sector {
+.infos__sector {
   padding: 2rem;
   font-size: 2rem;
   font-style: italic;
   font-weight: 400;
 }
-#infos .opening-hours__container {
+.infos .opening-hours__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
@@ -487,16 +495,16 @@ nav li:hover:after {
   margin: 5rem auto;
 }
 @media screen and (min-width: 992px) {
-  #infos .opening-hours__container {
+  .infos .opening-hours__container {
     width: 50%;
   }
 }
-#infos .opening-hours__container .day {
+.infos .opening-hours__container .day {
   color: #59314b;
   font-weight: 700;
   background-color: white;
 }
-#infos .opening-hours__container .hours {
+.infos .opening-hours__container .hours {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -585,13 +593,13 @@ iframe {
     overflow: hidden;
   }
 }
-#faq .title__container {
+.faq .title__container {
   background-image: url(/src/assets/images/adam-winger-yGCj9aMSBNI-unsplash.jpg);
 }
-#faq .content__container {
+.faq .content__container {
   margin: 3rem 0;
 }
-#faq .content__container .faq__question:not(.faq__question--active) {
+.faq .content__container__question:not(.faq__question--active) {
   width: fit-content;
   width: -moz-fit-content;
   width: -webkit-fit-content;
@@ -602,7 +610,7 @@ iframe {
   transition: all 800ms ease-in-out;
   cursor: help;
 }
-#faq .content__container .faq__question:not(.faq__question--active)::before {
+.faq .content__container__question:not(.faq__question--active)::before {
   content: "";
   display: inline-block;
   height: 1.5rem;
@@ -614,7 +622,7 @@ iframe {
   transform: rotate(-45deg);
   transition: all 800ms ease-in-out;
 }
-#faq .content__container .faq__question--active {
+.faq .content__container__question--active {
   width: fit-content;
   width: -moz-fit-content;
   width: -webkit-fit-content;
@@ -625,7 +633,7 @@ iframe {
   transition: all 800ms ease-in-out;
   cursor: help;
 }
-#faq .content__container .faq__question--active::before {
+.faq .content__container__question--active::before {
   content: "";
   display: inline-block;
   height: 1.5rem;
@@ -637,13 +645,13 @@ iframe {
   transform: rotate(45deg);
   transition: all 800ms ease-in-out;
 }
-#faq .content__container .faq__response:not(.faq__response--visible) {
+.faq .content__container__response:not(.faq__response--visible) {
   padding: 0 2rem 1rem 2rem;
   animation: fadeOut 800ms ease-in-out forwards;
   -webkit-animation: fadeOut 800ms ease-in-out forwards;
   transition: all 800ms ease-in-out;
 }
-#faq .content__container .faq__response--visible {
+.faq .content__container__response--visible {
   margin-bottom: 2rem;
   padding: 0 2rem 2rem 2rem;
   animation: fadeIn 800ms ease-in-out forwards;

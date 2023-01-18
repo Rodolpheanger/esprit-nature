@@ -1,0 +1,7 @@
+.link-to {
+  cursor: pointer;
+  color: $color-green;
+  &--strong {
+    font-weight: 700;
+  }
+}

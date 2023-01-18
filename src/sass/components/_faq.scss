@@ -70,14 +70,14 @@
   }
 }
 
-#faq {
+.faq {
   .title__container {
     background-image: url(/src/assets/images/adam-winger-yGCj9aMSBNI-unsplash.jpg);
   }
 
   .content__container {
     margin: 3rem 0;
-    .faq__question:not(.faq__question--active) {
+    &__question:not(.faq__question--active) {
       width: fit-content;
       width: -moz-fit-content;
       width: -webkit-fit-content;
@@ -100,7 +100,7 @@
         transition: all 800ms ease-in-out;
       }
     }
-    .faq__question--active {
+    &__question--active {
       width: fit-content;
       width: -moz-fit-content;
       width: -webkit-fit-content;
@@ -124,13 +124,13 @@
         transition: all 800ms ease-in-out;
       }
     }
-    .faq__response:not(.faq__response--visible) {
+    &__response:not(.faq__response--visible) {
       padding: 0 2rem 1rem 2rem;
       animation: fadeOut 800ms ease-in-out forwards;
       -webkit-animation: fadeOut 800ms ease-in-out forwards;
       transition: all 800ms ease-in-out;
     }
-    .faq__response--visible {
+    &__response--visible {
       margin-bottom: 2rem;
       padding: 0 2rem 2rem 2rem;
       animation: fadeIn 800ms ease-in-out forwards;
