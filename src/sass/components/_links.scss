@@ -1,7 +1,10 @@
 .link-to {
-  cursor: pointer;
-  color: $color-green;
   &--strong {
     font-weight: 700;
+    color: $color-primary;
+  }
+  &--normal {
+    font-weight: 400;
+    color: $color-primary;
   }
 }

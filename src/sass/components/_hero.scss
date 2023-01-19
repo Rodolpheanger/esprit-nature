@@ -1,0 +1,89 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100%;
+  background-image: url("/src/assets/images/hero_banner_s.webp");
+  background-position: center;
+  background-size: cover;
+  @include tablet-S {
+    background-image: url("/src/assets/images/hero_banner_m.webp");
+  }
+  @include tablet-L {
+    background-image: url("/src/assets/images/hero_banner_l.webp");
+  }
+  @include laptop {
+    background-image: url("/src/assets/images/hero_banner_xl.webp");
+  }
+  @include desktop {
+    background-image: url("/src/assets/images/hero_banner_xl.webp");
+  }
+
+  // TODO: voir si avec ou sans translate !!!
+
+  @-webkit-keyframes fadeInAndOut {
+    0% {
+      opacity: 0;
+      // transform: translate(-70vh);
+    }
+    40% {
+      opacity: 1;
+      // transform: translate(0);
+    }
+    60% {
+      opacity: 1;
+      // transform: translate(0);
+    }
+    100% {
+      opacity: 0;
+      // transform: translate(70vh);
+    }
+  }
+
+  @keyframes fadeInAndOut {
+    0% {
+      opacity: 0;
+      // transform: translate(-70vh);
+    }
+    40% {
+      opacity: 1;
+      // transform: translate(0);
+    }
+    60% {
+      opacity: 1;
+      // transform: translate(0);
+    }
+    100% {
+      opacity: 0;
+      // transform: translate(70vh);
+    }
+  }
+
+  h2 {
+    opacity: 0;
+    padding: 1rem;
+    border: solid 1px $text-color-primary;
+    color: $text-color-primary;
+    font-size: 4rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: fadeInAndOut 6000ms ease-in-out;
+    -webkit-animation: fadeInAndOut 3000ms ease-in-out;
+
+    @include mobile-L {
+      font-size: 5rem;
+    }
+    @include tablet-S {
+      font-size: 6rem;
+    }
+    @include tablet-L {
+      font-size: 7rem;
+    }
+    @include laptop {
+      font-size: 8rem;
+    }
+    @include desktop {
+      font-size: 9rem;
+    }
+  }
+}

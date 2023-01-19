@@ -6,28 +6,52 @@ nav {
     justify-content: center;
   }
   li {
-    padding: 1.2rem;
-    color: $text-darkgrey;
-    font-size: 1.6rem;
+    padding: 1rem;
     text-align: center;
-    @include tablet {
-      padding: 2rem;
-      font-size: 2rem;
+    @include mobile-L {
+      padding: 1.2rem;
     }
+    @include tablet-S {
+      padding: 1.4rem;
+    }
+    @include laptop {
+      padding: 1.8rem;
+    }
+    @include desktop {
+      padding: 2.5rem;
+    }
+    @include widescreen {
+      padding: 3rem;
+    }
+
     &:after {
       content: "";
       display: block;
-      width: 80%;
+      width: 75%;
       margin: 1rem auto 0 auto;
       border-bottom: solid 2px $color-primary;
       transform: scaleX(0);
       transition: all 0.5s ease-in-out;
     }
-    &:hover {
-      color: $color-primary;
-    }
     &:hover:after {
       transform: scaleX(1);
+    }
+  }
+  .navlink {
+    color: $color-primary;
+    font-size: 1.4rem;
+    font-weight: 500;
+    @include mobile-L {
+      font-size: 1.6rem;
+    }
+    @include laptop {
+      font-size: 1.8rem;
+    }
+    @include desktop {
+      font-size: 2rem;
+    }
+    @include widescreen {
+      font-size: 2.2rem;
     }
   }
 }

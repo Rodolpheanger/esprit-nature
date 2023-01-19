@@ -12,11 +12,12 @@
     font-weight: 600;
   }
   &__phonenumber {
+    display: inline-block;
     padding: 2rem;
     color: $color-primary;
     font-size: 3rem;
     font-weight: 600;
-    @include tablet {
+    @include tablet-S {
       font-size: 4rem;
     }
   }
@@ -54,7 +55,7 @@ iframe {
   height: 50vh;
   width: 95%;
   margin: 3rem 0;
-  @include tablet {
+  @include tablet-S {
     height: 60vh;
     width: 75%;
     max-width: 90vh;

@@ -1,15 +1,16 @@
 $breakpoints: (
-  tablet: 768px,
-  desktop: 992px,
+  mobile-L: 376px,
+  tablet-S: 426px,
+  tablet-L: 769px,
+  laptop: 1025px,
+  desktop: 1441px,
+  widescreen: 1921px,
 );
 // $color-primary: rgb(109, 0, 109);
 // $color-primary: #f75d20;
-$color-primary: #59314b;
-
-$color-secondary: darkcyan;
-
-$color-green: #4e6b17;
-
+// $color-primary: #59314b;
+$color-primary: #f2055c;
+$color-secondary: #4e6b17;
+$color-tertiary: #59314b;
 $color-bg: #faf2e5;
-
-$text-darkgrey: rgb(28, 17, 46);
+$text-color-primary: rgb(28, 17, 46);

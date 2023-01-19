@@ -4,7 +4,7 @@
   bottom: 15px;
   right: 15px;
   opacity: 0;
-  color: $color-secondary;
+  color: $color-primary;
   transform: translate(60px);
   transition: all 800ms cubic-bezier(0.5, 1.8, 0.64, 1);
 
@@ -14,7 +14,7 @@
       cursor: pointer;
     }
   }
-  @include tablet {
+  @include tablet-S {
     bottom: 30px;
     right: 30px;
     .fas {

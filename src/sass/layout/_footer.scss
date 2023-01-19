@@ -12,9 +12,13 @@ footer {
     justify-content: space-evenly;
     width: 100%;
     font-size: 5rem;
-    @include tablet {
+
+    @include tablet-S {
       width: 50%;
     }
+  }
+  .fa-facebook {
+    color: white;
   }
   .marcapar__logo {
     width: 10rem;

@@ -1,5 +1,21 @@
-@mixin tablet {
-  @media screen and (min-width: map-get($breakpoints, tablet)) {
+@mixin mobile-L {
+  @media screen and (min-width: map-get($breakpoints, mobile-L)) {
+    @content;
+  }
+}
+
+@mixin tablet-S {
+  @media screen and (min-width: map-get($breakpoints, tablet-S)) {
+    @content;
+  }
+}
+@mixin tablet-L {
+  @media screen and (min-width: map-get($breakpoints, tablet-L)) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (min-width: map-get($breakpoints, laptop)) {
     @content;
   }
 }
@@ -8,12 +24,26 @@
     @content;
   }
 }
+@mixin widescreen {
+  @media screen and (min-width: map-get($breakpoints, widescreen)) {
+    @content;
+  }
+}
 
-@mixin underliner(
+@mixin underliner($color, $width, $padding-bottom: 2rem, $margin: 0 auto) {
+  content: "";
+  display: block;
+  width: $width;
+  margin: $margin;
+  padding-bottom: $padding-bottom;
+  border-bottom: 2px solid $color;
+}
+
+@mixin overliner(
   $color,
   $width,
-  $margin: 0 auto 2rem auto,
-  $padding-bottom: 2rem
+  $padding-bottom: 2rem,
+  $margin: 0 auto 2rem auto
 ) {
   content: "";
   display: block;
