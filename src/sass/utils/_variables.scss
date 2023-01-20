@@ -1,10 +1,10 @@
 $breakpoints: (
-  mobile-L: 376px,
-  tablet-S: 426px,
-  tablet-L: 769px,
-  laptop: 1025px,
-  desktop: 1441px,
-  widescreen: 1921px,
+  "xsmall": 376px,
+  "small": 426px,
+  "medium": 769px,
+  "large": 1025px,
+  "xlarge": 1441px,
+  "xxlarge": 1921px,
 );
 // $color-primary: rgb(109, 0, 109);
 // $color-primary: #f75d20;

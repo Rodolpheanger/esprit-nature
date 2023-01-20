@@ -4,13 +4,13 @@
 @import "./utils/mixins";
 
 @import "./base/base";
+@import "./base/typography";
 
 @import "./layout/header";
 @import "./layout/main";
 @import "./layout/sections";
 @import "./layout/footer";
 
-@import "./components/links";
 @import "./components/nav";
 @import "./components/hero";
 @import "./components/presentation";

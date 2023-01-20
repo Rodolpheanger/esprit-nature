@@ -1,57 +1,32 @@
 nav {
   width: 100%;
   ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex(null, center, null, null, wrap);
   }
   li {
     padding: 1rem;
-    text-align: center;
-    @include mobile-L {
+    @include responsive("xsmall") {
       padding: 1.2rem;
     }
-    @include tablet-S {
+    @include responsive("small") {
       padding: 1.4rem;
     }
-    @include laptop {
+    @include responsive("large") {
       padding: 1.8rem;
     }
-    @include desktop {
+    @include responsive("xlarge") {
       padding: 2.5rem;
     }
-    @include widescreen {
+    @include responsive("xxlarge") {
       padding: 3rem;
     }
-
-    &:after {
-      content: "";
-      display: block;
-      width: 75%;
-      margin: 1rem auto 0 auto;
-      border-bottom: solid 2px $color-primary;
+    @include underliner($color-primary, 75%, 0, 1rem auto 0 auto);
+    &::after {
       transform: scaleX(0);
       transition: all 0.5s ease-in-out;
     }
-    &:hover:after {
+    &:hover::after {
       transform: scaleX(1);
-    }
-  }
-  .navlink {
-    color: $color-primary;
-    font-size: 1.4rem;
-    font-weight: 500;
-    @include mobile-L {
-      font-size: 1.6rem;
-    }
-    @include laptop {
-      font-size: 1.8rem;
-    }
-    @include desktop {
-      font-size: 2rem;
-    }
-    @include widescreen {
-      font-size: 2.2rem;
     }
   }
 }

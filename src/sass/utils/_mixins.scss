@@ -1,42 +1,33 @@
-@mixin mobile-L {
-  @media screen and (min-width: map-get($breakpoints, mobile-L)) {
+@mixin responsive($breakpoint) {
+  @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
     @content;
   }
 }
 
-@mixin tablet-S {
-  @media screen and (min-width: map-get($breakpoints, tablet-S)) {
-    @content;
-  }
-}
-@mixin tablet-L {
-  @media screen and (min-width: map-get($breakpoints, tablet-L)) {
-    @content;
-  }
-}
-@mixin laptop {
-  @media screen and (min-width: map-get($breakpoints, laptop)) {
-    @content;
-  }
-}
-@mixin desktop {
-  @media screen and (min-width: map-get($breakpoints, desktop)) {
-    @content;
-  }
-}
-@mixin widescreen {
-  @media screen and (min-width: map-get($breakpoints, widescreen)) {
-    @content;
-  }
+@mixin flex(
+  $align-items,
+  $justify-content,
+  $direction: raw,
+  $gap: 0,
+  $wrap: nowrap
+) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-direction: $direction;
+  gap: $gap;
+  flex-wrap: $wrap;
 }
 
 @mixin underliner($color, $width, $padding-bottom: 2rem, $margin: 0 auto) {
-  content: "";
-  display: block;
-  width: $width;
-  margin: $margin;
-  padding-bottom: $padding-bottom;
-  border-bottom: 2px solid $color;
+  &::after {
+    content: "";
+    display: block;
+    width: $width;
+    margin: $margin;
+    padding-bottom: $padding-bottom;
+    border-bottom: 2px solid $color;
+  }
 }
 
 @mixin overliner(
@@ -45,10 +36,12 @@
   $padding-bottom: 2rem,
   $margin: 0 auto 2rem auto
 ) {
-  content: "";
-  display: block;
-  width: $width;
-  margin: $margin;
-  padding-bottom: $padding-bottom;
-  border-bottom: 2px solid $color;
+  &::before {
+    content: "";
+    display: block;
+    width: $width;
+    margin: $margin;
+    padding-bottom: $padding-bottom;
+    border-bottom: 2px solid $color;
+  }
 }

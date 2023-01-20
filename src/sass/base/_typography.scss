@@ -1,0 +1,194 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $text-color-primary;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+a {
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.link-to {
+  &--strong {
+    font-weight: 700;
+    color: $color-primary;
+  }
+  &--normal {
+    font-weight: 400;
+    color: $color-primary;
+  }
+}
+
+.header {
+  &__contact {
+    color: $color-primary;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  &__phonenumber {
+    color: white;
+  }
+  // TODO: trouver une couleur pour le hover du phonenumber et du facebook
+
+  &__phonenumber:hover {
+    color: $color-tertiary;
+  }
+  &__facebook-logo {
+    color: white;
+    font-size: 3rem;
+    &:hover {
+      color: $color-tertiary;
+    }
+  }
+  &__container {
+    text-align: center;
+  }
+  &__logo {
+    color: $color-secondary;
+    font-family: "Darleston";
+    font-size: 6rem;
+    text-align: center;
+    @include responsive("xsmall") {
+      font-size: 7rem;
+    }
+    @include responsive("small") {
+      font-size: 8rem;
+    }
+    @include responsive("medium") {
+      font-size: 9rem;
+    }
+
+    @include responsive("large") {
+      font-size: 10rem;
+    }
+    @include responsive("xlarge") {
+      font-size: 12rem;
+    }
+  }
+}
+
+.nav {
+  li {
+    text-align: center;
+  }
+  .navlink {
+    color: $color-primary;
+    font-size: 1.4rem;
+    font-weight: 500;
+    @include responsive("xsmall") {
+      font-size: 1.6rem;
+    }
+    @include responsive("large") {
+      font-size: 1.8rem;
+    }
+    @include responsive("xlarge") {
+      font-size: 2rem;
+    }
+    @include responsive("xxlarge") {
+      font-size: 2.2rem;
+    }
+  }
+}
+.hero {
+  h2 {
+    color: $text-color-primary;
+    font-size: 4rem;
+    @include responsive("xsmall") {
+      font-size: 5rem;
+    }
+    @include responsive("small") {
+      font-size: 6rem;
+    }
+    @include responsive("medium") {
+      font-size: 7rem;
+    }
+    @include responsive("large") {
+      font-size: 8rem;
+    }
+    @include responsive("xlarge") {
+      font-size: 9rem;
+    }
+  }
+}
+.main {
+  line-height: 3rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  @include responsive("medium") {
+    font-size: 1.6rem;
+    line-height: 4rem;
+  }
+  @include responsive("large") {
+    font-size: 1.8rem;
+    line-height: 5rem;
+  }
+}
+section {
+  h2 {
+    color: $text-color-primary;
+    font-size: 2rem;
+    text-align: center;
+    @include responsive("small") {
+      font-size: 2.5rem;
+    }
+    @include responsive("medium") {
+      font-size: 3rem;
+    }
+    @include responsive("medium") {
+      font-size: 4rem;
+    }
+    @include responsive("large") {
+      font-size: 5rem;
+    }
+  }
+  h3 {
+    color: $color-tertiary;
+    font-size: 1.8rem;
+    text-align: center;
+    @include responsive("small") {
+      font-size: 2rem;
+    }
+    @include responsive("large") {
+      font-size: 2.5rem;
+    }
+  }
+  h4 {
+    color: $color-tertiary;
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration: underline;
+    @include responsive("small") {
+      font-size: 1.8rem;
+    }
+    @include responsive("large") {
+      font-size: 2rem;
+    }
+  }
+  p,
+  li {
+    text-align: left;
+  }
+  li::before {
+    font-weight: 700;
+  }
+}
+.presentation {
+  text-align: center;
+}
+.presentation__title {
+  h2 {
+    color: $color-secondary;
+    line-height: 4rem;
+    font-style: oblique;
+  }
+}

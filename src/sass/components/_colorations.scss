@@ -2,12 +2,25 @@
   .title__container {
     background-image: url(/src/assets/images/coloration-cheveux-vegetale-henne-couleur-poudres1.jpg);
   }
-  .content__container {
-    margin: 2rem 0;
-    text-align: center;
-    p {
-      padding: 2rem;
-      line-height: 3rem;
+  &__plus-minus {
+    max-width: 90%;
+    margin: auto;
+    @include flex(center, center, column);
+    @include responsive("medium") {
+      max-width: 80%;
     }
+    @include responsive("large") {
+      max-width: 60%;
+    }
+  }
+  .plus::before {
+    content: "+";
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+  .minus::before {
+    content: "-";
+    display: inline-block;
+    margin-right: 0.5rem;
   }
 }

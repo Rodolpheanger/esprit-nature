@@ -1,45 +1,20 @@
 .header {
-  display: flex;
-  align-items: stretch;
-  flex-direction: column;
-  justify-content: space-between;
+  @include flex(stretch, space-between, column);
   height: 100vh;
   width: 100%;
   background-color: $color-bg;
   &__contact {
     z-index: 200;
     position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(center, space-between);
     width: 100%;
     padding: 0.5rem 2rem;
-    color: $color-primary;
-    font-size: 2rem;
-    font-weight: 700;
     background-color: $color-primary;
-  }
-  &__phonenumber {
-    color: white;
-  }
-  // TODO: trouver une couleur pour le hover du phonenumber
-
-  &__phonenumber:hover {
-    color: $color-tertiary;
-  }
-  &__facebook-logo {
-    color: white;
-    font-size: 3rem;
-    &:hover {
-      color: $color-tertiary;
-    }
   }
   &__container {
     width: 100%;
     margin-top: 2rem;
     padding: 1rem;
-    text-align: center;
-    text-decoration: none;
     background-color: $color-bg;
     h1 {
       display: inline-block;
@@ -48,31 +23,16 @@
   &__logo {
     margin: 1rem 0;
     padding: 2rem 0;
-    color: $color-secondary;
-    font-family: "Darleston";
-    font-size: 6rem;
-    text-align: center;
-    @include mobile-L {
-      font-size: 7rem;
-    }
-    @include tablet-S {
+    @include underliner($color-secondary, 50%, 0);
+    @include responsive("small") {
       margin: 1.5rem 0;
-      font-size: 8rem;
     }
-    @include tablet-L {
+    @include responsive("medium") {
       margin: 1.5rem 0;
-      font-size: 9rem;
     }
 
-    @include laptop {
+    @include responsive("large") {
       margin: 2rem 0;
-      font-size: 10rem;
     }
-    @include desktop {
-      font-size: 12rem;
-    }
-  }
-  &__logo::after {
-    @include underliner($color-secondary, 50%, 0);
   }
 }

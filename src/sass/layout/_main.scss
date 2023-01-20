@@ -1,8 +1,13 @@
 main {
-  display: flex;
-  flex-direction: column;
+  @include flex(null, null, column);
   width: 100%;
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 3rem;
+}
+.content__container {
+  margin: 2rem 0;
+  @include responsive("medium") {
+    margin: 4rem 0;
+  }
+  @include responsive("large") {
+    margin: 5rem 0;
+  }
 }

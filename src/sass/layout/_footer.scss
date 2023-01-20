@@ -1,19 +1,15 @@
 footer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  @include flex(center, center, column);
   min-height: 10vh;
   padding: 2rem;
   color: azure;
   background-color: rgb(37, 25, 14);
   .footer__links {
-    display: flex;
-    justify-content: space-evenly;
+    @include flex(null, space-evenly);
     width: 100%;
     font-size: 5rem;
 
-    @include tablet-S {
+    @include responsive("small") {
       width: 50%;
     }
   }

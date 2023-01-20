@@ -3,13 +3,13 @@
     background-image: url(/src/assets/images/infos.jpeg);
   }
   .content__container {
-    margin: 3rem 0;
     text-align: center;
   }
   &__contact {
     padding: 2rem;
     font-size: 2rem;
     font-weight: 600;
+    text-align: center;
   }
   &__phonenumber {
     display: inline-block;
@@ -17,7 +17,7 @@
     color: $color-primary;
     font-size: 3rem;
     font-weight: 600;
-    @include tablet-S {
+    @include responsive("small") {
       font-size: 4rem;
     }
   }
@@ -33,7 +33,7 @@
     gap: 3rem;
     width: 90%;
     margin: 5rem auto;
-    @include desktop {
+    @include responsive("xlarge") {
       width: 50%;
     }
     .day {
@@ -42,9 +42,7 @@
       background-color: white;
     }
     .hours {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flex(center, center);
       font-style: italic;
       background-color: rgb(236, 221, 238);
     }
@@ -55,7 +53,7 @@ iframe {
   height: 50vh;
   width: 95%;
   margin: 3rem 0;
-  @include tablet-S {
+  @include responsive("small") {
     height: 60vh;
     width: 75%;
     max-width: 90vh;

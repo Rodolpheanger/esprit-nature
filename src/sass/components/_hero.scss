@@ -1,22 +1,20 @@
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(center, center);
   overflow: hidden;
   height: 100%;
   background-image: url("/src/assets/images/hero_banner_s.webp");
   background-position: center;
   background-size: cover;
-  @include tablet-S {
+  @include responsive("small") {
     background-image: url("/src/assets/images/hero_banner_m.webp");
   }
-  @include tablet-L {
+  @include responsive("medium") {
     background-image: url("/src/assets/images/hero_banner_l.webp");
   }
-  @include laptop {
+  @include responsive("large") {
     background-image: url("/src/assets/images/hero_banner_xl.webp");
   }
-  @include desktop {
+  @include responsive("xlarge") {
     background-image: url("/src/assets/images/hero_banner_xl.webp");
   }
 
@@ -64,26 +62,8 @@
     opacity: 0;
     padding: 1rem;
     border: solid 1px $text-color-primary;
-    color: $text-color-primary;
-    font-size: 4rem;
     background-color: rgba(255, 255, 255, 0.5);
     animation: fadeInAndOut 6000ms ease-in-out;
     -webkit-animation: fadeInAndOut 3000ms ease-in-out;
-
-    @include mobile-L {
-      font-size: 5rem;
-    }
-    @include tablet-S {
-      font-size: 6rem;
-    }
-    @include tablet-L {
-      font-size: 7rem;
-    }
-    @include laptop {
-      font-size: 8rem;
-    }
-    @include desktop {
-      font-size: 9rem;
-    }
   }
 }

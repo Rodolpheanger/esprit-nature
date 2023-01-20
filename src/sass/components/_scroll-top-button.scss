@@ -14,7 +14,7 @@
       cursor: pointer;
     }
   }
-  @include tablet-S {
+  @include responsive("small") {
     bottom: 30px;
     right: 30px;
     .fas {
