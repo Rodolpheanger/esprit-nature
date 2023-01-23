@@ -2,30 +2,16 @@
   .title__container {
     background-image: url(/src/assets/images/infos.jpeg);
   }
-  .content__container {
-    text-align: center;
-  }
   &__contact {
     padding: 2rem;
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
   }
   &__phonenumber {
     display: inline-block;
     padding: 2rem;
     color: $color-primary;
-    font-size: 3rem;
-    font-weight: 600;
-    @include responsive("small") {
-      font-size: 4rem;
-    }
   }
   &__sector {
     padding: 2rem;
-    font-size: 2rem;
-    font-style: italic;
-    font-weight: 400;
   }
   .opening-hours__container {
     display: grid;
@@ -37,13 +23,10 @@
       width: 50%;
     }
     .day {
-      color: $color-primary;
-      font-weight: 700;
       background-color: white;
     }
     .hours {
       @include flex(center, center);
-      font-style: italic;
       background-color: rgb(236, 221, 238);
     }
   }

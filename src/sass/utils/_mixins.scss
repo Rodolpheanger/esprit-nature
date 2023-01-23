@@ -45,3 +45,56 @@
     border-bottom: 2px solid $color;
   }
 }
+
+@mixin faq-question(
+  $active: false,
+  $margin: 0 2rem,
+  $before-margin: 0 1.5rem 0 0,
+  $before-rotation: rotate(-45deg)
+) {
+  @if ($active == true) {
+    $margin: 0 2rem 2rem 2rem;
+    $before-margin: 0 1rem 0.25rem 0.5rem;
+    $before-rotation: rotate(45deg);
+  }
+
+  width: fit-content;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  margin: $margin;
+  padding: 1rem 0;
+  border-bottom: 2px solid black;
+  transition: all 800ms ease-in-out;
+  cursor: help;
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: $before-margin;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    transform: $before-rotation;
+    transition: all 800ms ease-in-out;
+  }
+}
+
+// TODO: voir pour la taille de la response => modifier showResponse.ts ???????
+
+@mixin faq-response(
+  $visible: false,
+  $animation: fadeOut,
+  $margin-bottom: 0,
+  $padding: 0 2rem 1rem 2rem
+) {
+  @if ($visible == true) {
+    $animation: fadeIn;
+    $margin-bottom: 2rem;
+    $padding: 0 2rem 2rem 2rem;
+  }
+  margin-bottom: $margin-bottom;
+  padding: $padding;
+  animation: $animation 800ms ease-in-out forwards;
+  -webkit-animation: $animation 800ms ease-in-out forwards;
+  transition: all 800ms ease-in-out;
+}

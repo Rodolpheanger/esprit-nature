@@ -189,6 +189,63 @@ section {
   h2 {
     color: $color-secondary;
     line-height: 4rem;
-    font-style: oblique;
+    font-style: italic;
+  }
+}
+
+.tarifs {
+  //  non utilisé pour l'instant, voir si besoin
+  //   p {
+  //     text-align: center;
+  //     padding: 2rem;
+  //   }
+  th {
+    color: $color-primary;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;
+  }
+  td:last-child {
+    text-align: end;
+  }
+}
+
+.infos {
+  .content__container {
+    text-align: center;
+  }
+  &__contact {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    @include responsive("medium") {
+      font-size: 2.2rem;
+    }
+  }
+  &__phonenumber {
+    font-size: 2.5rem;
+    font-weight: 600;
+    @include responsive("small") {
+      font-size: 4rem;
+    }
+  }
+  &__sector {
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+  }
+  .day {
+    color: $color-primary;
+    font-weight: 700;
+  }
+  .hours {
+    font-style: italic;
+  }
+}
+
+.faq {
+  &__question {
+    font-size: 2rem;
+    font-weight: 700;
   }
 }

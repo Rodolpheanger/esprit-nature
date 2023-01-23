@@ -314,7 +314,57 @@ section li::before {
 .presentation__title h2 {
   color: #4e6b17;
   line-height: 4rem;
-  font-style: oblique;
+  font-style: italic;
+}
+
+.tarifs th {
+  color: #f2055c;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+}
+.tarifs td:last-child {
+  text-align: end;
+}
+
+.infos .content__container {
+  text-align: center;
+}
+.infos__contact {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+@media screen and (min-width: 769px) {
+  .infos__contact {
+    font-size: 2.2rem;
+  }
+}
+.infos__phonenumber {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+@media screen and (min-width: 426px) {
+  .infos__phonenumber {
+    font-size: 4rem;
+  }
+}
+.infos__sector {
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+}
+.infos .day {
+  color: #f2055c;
+  font-weight: 700;
+}
+.infos .hours {
+  font-style: italic;
+}
+
+.faq__question {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .header {
@@ -759,10 +809,6 @@ nav li:hover::after {
 .tarifs .content__container {
   margin: 3rem 0;
 }
-.tarifs .content__container p {
-  text-align: center;
-  padding: 2rem;
-}
 .tarifs .tables__container {
   display: flex;
   justify-content: center;
@@ -771,15 +817,10 @@ nav li:hover::after {
 }
 .tarifs .table__container {
   padding: 2rem;
-  border: 1px solid black;
 }
 .tarifs table th {
   padding: 0.75rem 1rem;
-  color: #f2055c;
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: left;
-  background-color: white;
+  background-color: #faf2e5;
 }
 .tarifs table tr,
 .tarifs table td {
@@ -787,44 +828,25 @@ nav li:hover::after {
   padding: 0.5rem 1rem;
 }
 .tarifs table tr:nth-child(even) {
-  background-color: rgb(236, 221, 238);
+  background-color: rgb(252, 231, 208);
 }
 .tarifs table tr:nth-child(odd) {
-  background-color: #faf2e5;
-}
-.tarifs table td:last-child {
-  text-align: end;
+  background-color: white;
 }
 
 .infos .title__container {
   background-image: url(/src/assets/images/infos.jpeg);
 }
-.infos .content__container {
-  text-align: center;
-}
 .infos__contact {
   padding: 2rem;
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
 }
 .infos__phonenumber {
   display: inline-block;
   padding: 2rem;
   color: #f2055c;
-  font-size: 3rem;
-  font-weight: 600;
-}
-@media screen and (min-width: 426px) {
-  .infos__phonenumber {
-    font-size: 4rem;
-  }
 }
 .infos__sector {
   padding: 2rem;
-  font-size: 2rem;
-  font-style: italic;
-  font-weight: 400;
 }
 .infos .opening-hours__container {
   display: grid;
@@ -839,8 +861,6 @@ nav li:hover::after {
   }
 }
 .infos .opening-hours__container .day {
-  color: #f2055c;
-  font-weight: 700;
   background-color: white;
 }
 .infos .opening-hours__container .hours {
@@ -850,7 +870,6 @@ nav li:hover::after {
   flex-direction: raw;
   gap: 0;
   flex-wrap: nowrap;
-  font-style: italic;
   background-color: rgb(236, 221, 238);
 }
 
@@ -871,68 +890,40 @@ iframe {
   0% {
     max-height: 0;
     opacity: 0;
-    overflow: hidden;
-  }
-  95% {
-    max-height: var(--max-height);
-    opacity: 0.5;
-    overflow: visible;
   }
   100% {
     max-height: var(--max-height);
     opacity: 1;
-    overflow: visible;
   }
 }
 @keyframes fadeIn {
   0% {
     max-height: 0;
     opacity: 0;
-    overflow: hidden;
-  }
-  95% {
-    max-height: var(--max-height);
-    opacity: 0.5;
-    overflow: visible;
   }
   100% {
     max-height: var(--max-height);
     opacity: 1;
-    overflow: visible;
   }
 }
 @-webkit-keyframes fadeOut {
   0% {
     max-height: var(--max-height);
     opacity: 1;
-    overflow: visible;
-  }
-  5% {
-    max-height: var(--max-height);
-    opacity: 0.5;
-    overflow: visible;
   }
   100% {
     max-height: 0;
     opacity: 0;
-    overflow: hidden;
   }
 }
 @keyframes fadeOut {
   0% {
     max-height: var(--max-height);
     opacity: 1;
-    overflow: visible;
-  }
-  5% {
-    max-height: var(--max-height);
-    opacity: 0.5;
-    overflow: visible;
   }
   100% {
     max-height: 0;
     opacity: 0;
-    overflow: hidden;
   }
 }
 .faq .title__container {
@@ -945,7 +936,6 @@ iframe {
   margin: 0 2rem;
   padding: 1rem 0;
   border-bottom: 2px solid black;
-  font-size: 2rem;
   transition: all 800ms ease-in-out;
   cursor: help;
 }
@@ -954,10 +944,9 @@ iframe {
   display: inline-block;
   height: 1.5rem;
   width: 1.5rem;
-  margin-right: 1.5rem;
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
-  font-weight: 500;
+  margin: 0 1.5rem 0 0;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
   transform: rotate(-45deg);
   transition: all 800ms ease-in-out;
 }
@@ -968,7 +957,6 @@ iframe {
   margin: 0 2rem 2rem 2rem;
   padding: 1rem 0;
   border-bottom: 2px solid black;
-  font-size: 2rem;
   transition: all 800ms ease-in-out;
   cursor: help;
 }
@@ -978,13 +966,13 @@ iframe {
   height: 1.5rem;
   width: 1.5rem;
   margin: 0 1rem 0.25rem 0.5rem;
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
-  font-weight: 500;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
   transform: rotate(45deg);
   transition: all 800ms ease-in-out;
 }
 .faq__response:not(.faq__response--visible) {
+  margin-bottom: 0;
   padding: 0 2rem 1rem 2rem;
   animation: fadeOut 800ms ease-in-out forwards;
   -webkit-animation: fadeOut 800ms ease-in-out forwards;
@@ -994,7 +982,7 @@ iframe {
   margin-bottom: 2rem;
   padding: 0 2rem 2rem 2rem;
   animation: fadeIn 800ms ease-in-out forwards;
-  -webkit-animation: fadeIn 800ms ease-in-out;
+  -webkit-animation: fadeIn 800ms ease-in-out forwards;
   transition: all 800ms ease-in-out;
 }
 
