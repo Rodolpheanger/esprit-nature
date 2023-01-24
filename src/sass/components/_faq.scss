@@ -1,66 +1,52 @@
 @-webkit-keyframes fadeIn {
-  0% {
+  from {
     max-height: 0;
     opacity: 0;
-    // overflow: hidden;
+    overflow: hidden;
   }
-  // 95% {
-  //   max-height: var(--max-height);
-  //   opacity: 0.5;
-  //   overflow: visible;
-  // }
-  100% {
+  to {
     max-height: var(--max-height);
     opacity: 1;
+    overflow: visible;
   }
 }
 
 @keyframes fadeIn {
-  0% {
+  from {
     max-height: 0;
     opacity: 0;
-    // overflow: hidden;
+    overflow: hidden;
   }
-  // 95% {
-  //   max-height: var(--max-height);
-  //   opacity: 0.5;
-  //   overflow: visible;
-  // }
-  100% {
+  to {
     max-height: var(--max-height);
     opacity: 1;
-    // overflow: visible;
+    overflow: visible;
   }
 }
 
 @-webkit-keyframes fadeOut {
-  0% {
+  from {
     max-height: var(--max-height);
     opacity: 1;
-    // overflow: visible;
+    overflow: visible;
   }
-  // 5% {
-  //   max-height: var(--max-height);
-  //   opacity: 0.5;
-  //   overflow: visible;
-  // }
-  100% {
+  to {
     max-height: 0;
     opacity: 0;
-    // overflow: hidden;
+    overflow: hidden;
   }
 }
 
 @keyframes fadeOut {
-  0% {
+  from {
     max-height: var(--max-height);
     opacity: 1;
-    // overflow: visible;
+    overflow: visible;
   }
-  100% {
+  to {
     max-height: 0;
     opacity: 0;
-    // overflow: hidden;
+    overflow: hidden;
   }
 }
 
@@ -68,14 +54,31 @@
   .title__container {
     background-image: url(/src/assets/images/adam-winger-yGCj9aMSBNI-unsplash.jpg);
   }
+  .content__container {
+    p {
+      max-width: 90%;
+    }
+    @include responsive("medium") {
+      margin-left: 100px;
+    }
+    @include responsive("large") {
+      margin-left: 200px;
+    }
+    @include responsive("xlarge") {
+      p {
+        max-width: 1200px;
+      }
+      margin-left: 500px;
+    }
+  }
 
-  &__question:not(.faq__question--active) {
+  &__question {
     @include faq-question;
   }
   &__question--active {
     @include faq-question($active: true);
   }
-  &__response:not(.faq__response--visible) {
+  &__response {
     @include faq-response;
   }
   &__response--visible {

@@ -14,20 +14,23 @@
     padding: 2rem;
   }
   .opening-hours__container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+  }
+  .opening-hours__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    width: 90%;
+    gap: 2rem;
     margin: 5rem auto;
     @include responsive("xlarge") {
       width: 50%;
     }
     .day {
-      background-color: white;
+      background-color: #fff;
     }
     .hours {
-      @include flex(center, center);
-      background-color: rgb(236, 221, 238);
+      background-color: rgb(252, 231, 208);
     }
   }
 }

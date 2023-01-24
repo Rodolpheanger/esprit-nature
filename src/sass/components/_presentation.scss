@@ -19,8 +19,8 @@
     display: inline-block;
     margin: 0 auto 4rem auto;
     max-width: 90%;
-    @include overliner($color-secondary, 50%);
-    @include underliner($color-secondary, 50%);
+    @include overliner($color-secondary, 100%, 4px, double);
+    @include underliner($color-secondary, 100%, 4px, double);
   }
   h2 {
     padding-top: 2rem;

@@ -119,13 +119,13 @@ a {
   font-weight: 700;
 }
 .header__phonenumber {
-  color: white;
+  color: #f2055c;
 }
 .header__phonenumber:hover {
   color: #59314b;
 }
 .header__facebook-logo {
-  color: white;
+  color: #f2055c;
   font-size: 3rem;
 }
 .header__facebook-logo:hover {
@@ -137,13 +137,8 @@ a {
 .header__logo {
   color: #4e6b17;
   font-family: "Darleston";
-  font-size: 6rem;
+  font-size: 7rem;
   text-align: center;
-}
-@media screen and (min-width: 376px) {
-  .header__logo {
-    font-size: 7rem;
-  }
 }
 @media screen and (min-width: 426px) {
   .header__logo {
@@ -172,7 +167,7 @@ a {
 .nav .navlink {
   color: #f2055c;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 @media screen and (min-width: 376px) {
   .nav .navlink {
@@ -269,7 +264,7 @@ section h2 {
   }
 }
 section h3 {
-  color: #59314b;
+  color: #f73116;
   font-size: 1.8rem;
   text-align: center;
 }
@@ -284,7 +279,7 @@ section h3 {
   }
 }
 section h4 {
-  color: #59314b;
+  color: #f73116;
   font-size: 1.6rem;
   text-align: center;
   text-decoration: underline;
@@ -312,16 +307,43 @@ section li::before {
 }
 
 .presentation__title h2 {
-  color: #4e6b17;
+  color: #f73116;
   line-height: 4rem;
   font-style: italic;
 }
 
-.tarifs th {
-  color: #f2055c;
+.tarifs h3 {
   font-size: 2rem;
+}
+@media screen and (min-width: 426px) {
+  .tarifs h3 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .tarifs h3 {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .tarifs h3 {
+    font-size: 5rem;
+  }
+}
+.tarifs th,
+.tarifs tr,
+.tarifs td {
+  line-height: normal;
+}
+.tarifs th {
+  font-size: 1.8rem;
   font-weight: 700;
   text-align: left;
+}
+@media screen and (min-width: 1025px) {
+  .tarifs th {
+    font-size: 2rem;
+  }
 }
 .tarifs td:last-child {
   text-align: end;
@@ -355,7 +377,7 @@ section li::before {
   text-align: center;
 }
 .infos .day {
-  color: #f2055c;
+  color: #59314b;
   font-weight: 700;
 }
 .infos .hours {
@@ -389,7 +411,7 @@ section li::before {
   flex-wrap: nowrap;
   width: 100%;
   padding: 0.5rem 2rem;
-  background-color: #f2055c;
+  background-color: #faf2e5;
 }
 .header__container {
   width: 100%;
@@ -446,7 +468,7 @@ main {
 }
 @media screen and (min-width: 1025px) {
   .content__container {
-    margin: 5rem 0;
+    margin: 5rem auto;
   }
 }
 
@@ -490,18 +512,18 @@ section h3 {
 section h3::before {
   content: "";
   display: block;
-  width: 25%;
+  width: 100%;
   margin: 0 auto 2rem auto;
   padding-bottom: 2rem;
-  border-bottom: 2px solid #59314b;
+  border-bottom: 4px double #f73116;
 }
 section h3::after {
   content: "";
   display: block;
-  width: 25%;
+  width: 50%;
   margin: 0 auto;
   padding-bottom: 2rem;
-  border-bottom: 2px solid #59314b;
+  border-bottom: 4px double #f73116;
 }
 @media screen and (min-width: 769px) {
   section h3 {
@@ -511,6 +533,11 @@ section h3::after {
 @media screen and (min-width: 1025px) {
   section h3 {
     max-width: 50%;
+  }
+}
+@media screen and (min-width: 1441px) {
+  section h3 {
+    max-width: 33%;
   }
 }
 section h4 {
@@ -724,18 +751,18 @@ nav li:hover::after {
 .presentation__title::before {
   content: "";
   display: block;
-  width: 50%;
+  width: 100%;
   margin: 0 auto 2rem auto;
   padding-bottom: 2rem;
-  border-bottom: 2px solid #4e6b17;
+  border-bottom: 4px double #f73116;
 }
 .presentation__title::after {
   content: "";
   display: block;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 2rem;
-  border-bottom: 2px solid #4e6b17;
+  border-bottom: 4px double #f73116;
 }
 .presentation h2 {
   padding-top: 2rem;
@@ -807,7 +834,8 @@ nav li:hover::after {
   background-image: url(/src/assets/images/polina-rytova-1dGMs4hhcVA-unsplash.jpg);
 }
 .tarifs .content__container {
-  margin: 3rem 0;
+  max-width: 1200px;
+  margin: 3rem auto;
 }
 .tarifs .tables__container {
   display: flex;
@@ -815,17 +843,60 @@ nav li:hover::after {
   gap: 3rem;
   flex-wrap: wrap;
 }
+.tarifs h3 {
+  width: 75%;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  padding: 0;
+  margin: 5rem auto;
+}
+.tarifs h3::before {
+  content: "";
+  display: block;
+  width: 100%;
+  margin: 0 auto 2rem auto;
+  padding-bottom: 0;
+  border-bottom: 4px double #f73116;
+}
+.tarifs h3::after {
+  content: "";
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  border-bottom: 4px double #f73116;
+}
+@media screen and (min-width: 1025px) {
+  .tarifs h3 {
+    max-width: 50%;
+  }
+}
 .tarifs .table__container {
   padding: 2rem;
 }
 .tarifs table th {
   padding: 0.75rem 1rem;
   background-color: #faf2e5;
+  border-bottom: 1px solid #59314b;
 }
 .tarifs table tr,
 .tarifs table td {
+  height: 4rem;
   width: 25rem;
   padding: 0.5rem 1rem;
+}
+@media screen and (min-width: 769px) {
+  .tarifs table tr,
+.tarifs table td {
+    height: 5rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .tarifs table tr,
+.tarifs table td {
+    height: 6rem;
+  }
 }
 .tarifs table tr:nth-child(even) {
   background-color: rgb(252, 231, 208);
@@ -849,28 +920,26 @@ nav li:hover::after {
   padding: 2rem;
 }
 .infos .opening-hours__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+}
+.infos .opening-hours__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  width: 90%;
+  gap: 2rem;
   margin: 5rem auto;
 }
 @media screen and (min-width: 1441px) {
-  .infos .opening-hours__container {
+  .infos .opening-hours__grid {
     width: 50%;
   }
 }
-.infos .opening-hours__container .day {
-  background-color: white;
+.infos .opening-hours__grid .day {
+  background-color: #fff;
 }
-.infos .opening-hours__container .hours {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: raw;
-  gap: 0;
-  flex-wrap: nowrap;
-  background-color: rgb(236, 221, 238);
+.infos .opening-hours__grid .hours {
+  background-color: rgb(252, 231, 208);
 }
 
 iframe {
@@ -887,76 +956,105 @@ iframe {
 }
 
 @-webkit-keyframes fadeIn {
-  0% {
+  from {
     max-height: 0;
     opacity: 0;
+    overflow: hidden;
   }
-  100% {
+  to {
     max-height: var(--max-height);
     opacity: 1;
+    overflow: visible;
   }
 }
 @keyframes fadeIn {
-  0% {
+  from {
     max-height: 0;
     opacity: 0;
+    overflow: hidden;
   }
-  100% {
+  to {
     max-height: var(--max-height);
     opacity: 1;
+    overflow: visible;
   }
 }
 @-webkit-keyframes fadeOut {
-  0% {
+  from {
     max-height: var(--max-height);
     opacity: 1;
+    overflow: visible;
   }
-  100% {
+  to {
     max-height: 0;
     opacity: 0;
+    overflow: hidden;
   }
 }
 @keyframes fadeOut {
-  0% {
+  from {
     max-height: var(--max-height);
     opacity: 1;
+    overflow: visible;
   }
-  100% {
+  to {
     max-height: 0;
     opacity: 0;
+    overflow: hidden;
   }
 }
 .faq .title__container {
   background-image: url(/src/assets/images/adam-winger-yGCj9aMSBNI-unsplash.jpg);
 }
-.faq__question:not(.faq__question--active) {
-  width: fit-content;
-  width: -moz-fit-content;
-  width: -webkit-fit-content;
+.faq .content__container p {
+  max-width: 90%;
+}
+@media screen and (min-width: 769px) {
+  .faq .content__container {
+    margin-left: 100px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .faq .content__container {
+    margin-left: 200px;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .faq .content__container {
+    margin-left: 500px;
+  }
+  .faq .content__container p {
+    max-width: 1200px;
+  }
+}
+.faq__question {
+  width: max-content;
+  width: -moz-max-content;
+  width: -webkit-max-content;
   margin: 0 2rem;
-  padding: 1rem 0;
-  border-bottom: 2px solid black;
+  padding: 0;
+  border-bottom: 2px solid rgb(28, 17, 46);
   transition: all 800ms ease-in-out;
   cursor: help;
 }
-.faq__question:not(.faq__question--active)::before {
+.faq__question::before {
   content: "";
   display: inline-block;
   height: 1.5rem;
   width: 1.5rem;
   margin: 0 1.5rem 0 0;
-  border-bottom: 3px solid black;
-  border-right: 3px solid black;
+  border-bottom: 3px solid #f2055c;
+  border-right: 3px solid #f2055c;
   transform: rotate(-45deg);
   transition: all 800ms ease-in-out;
 }
 .faq__question--active {
-  width: fit-content;
-  width: -moz-fit-content;
-  width: -webkit-fit-content;
+  width: max-content;
+  width: -moz-max-content;
+  width: -webkit-max-content;
   margin: 0 2rem 2rem 2rem;
-  padding: 1rem 0;
-  border-bottom: 2px solid black;
+  padding: 0;
+  border-bottom: 2px solid rgb(28, 17, 46);
   transition: all 800ms ease-in-out;
   cursor: help;
 }
@@ -966,21 +1064,23 @@ iframe {
   height: 1.5rem;
   width: 1.5rem;
   margin: 0 1rem 0.25rem 0.5rem;
-  border-bottom: 3px solid black;
-  border-right: 3px solid black;
+  border-bottom: 3px solid #f2055c;
+  border-right: 3px solid #f2055c;
   transform: rotate(45deg);
   transition: all 800ms ease-in-out;
 }
-.faq__response:not(.faq__response--visible) {
+.faq__response {
+  margin: 0;
   margin-bottom: 0;
-  padding: 0 2rem 1rem 2rem;
+  padding: 0 0 3rem 2rem;
   animation: fadeOut 800ms ease-in-out forwards;
   -webkit-animation: fadeOut 800ms ease-in-out forwards;
   transition: all 800ms ease-in-out;
 }
 .faq__response--visible {
+  margin: 0;
   margin-bottom: 2rem;
-  padding: 0 2rem 2rem 2rem;
+  padding: 0 0 3rem 2rem;
   animation: fadeIn 800ms ease-in-out forwards;
   -webkit-animation: fadeIn 800ms ease-in-out forwards;
   transition: all 800ms ease-in-out;

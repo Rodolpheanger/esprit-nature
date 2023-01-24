@@ -25,13 +25,16 @@ section {
   h3 {
     margin: 0 auto 2rem auto;
     padding: 0 2rem;
-    @include overliner($color-tertiary, 25%);
-    @include underliner($color-tertiary, 25%);
+    @include overliner($color-secondary, 100%, 4px, double);
+    @include underliner($color-secondary, 50%, 4px, double);
     @include responsive("medium") {
       max-width: 80%;
     }
     @include responsive("large") {
       max-width: 50%;
+    }
+    @include responsive("xlarge") {
+      max-width: 33%;
     }
   }
   h4 {

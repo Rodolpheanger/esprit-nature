@@ -9,7 +9,7 @@
     @include flex(center, space-between);
     width: 100%;
     padding: 0.5rem 2rem;
-    background-color: $color-primary;
+    background-color: $color-bg;
   }
   &__container {
     width: 100%;
@@ -23,7 +23,7 @@
   &__logo {
     margin: 1rem 0;
     padding: 2rem 0;
-    @include underliner($color-secondary, 50%, 0);
+    @include underliner($color-logo, 50%, 2px, solid, 0);
     @include responsive("small") {
       margin: 1.5rem 0;
     }

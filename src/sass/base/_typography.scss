@@ -36,7 +36,7 @@ a {
     font-weight: 700;
   }
   &__phonenumber {
-    color: white;
+    color: $color-primary;
   }
   // TODO: trouver une couleur pour le hover du phonenumber et du facebook
 
@@ -44,7 +44,7 @@ a {
     color: $color-tertiary;
   }
   &__facebook-logo {
-    color: white;
+    color: $color-primary;
     font-size: 3rem;
     &:hover {
       color: $color-tertiary;
@@ -54,13 +54,10 @@ a {
     text-align: center;
   }
   &__logo {
-    color: $color-secondary;
+    color: $color-logo;
     font-family: "Darleston";
-    font-size: 6rem;
+    font-size: 7rem;
     text-align: center;
-    @include responsive("xsmall") {
-      font-size: 7rem;
-    }
     @include responsive("small") {
       font-size: 8rem;
     }
@@ -84,7 +81,7 @@ a {
   .navlink {
     color: $color-primary;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 600;
     @include responsive("xsmall") {
       font-size: 1.6rem;
     }
@@ -152,7 +149,7 @@ section {
     }
   }
   h3 {
-    color: $color-tertiary;
+    color: $color-secondary;
     font-size: 1.8rem;
     text-align: center;
     @include responsive("small") {
@@ -163,7 +160,7 @@ section {
     }
   }
   h4 {
-    color: $color-tertiary;
+    color: $color-secondary;
     font-size: 1.6rem;
     text-align: center;
     text-decoration: underline;
@@ -199,11 +196,30 @@ section {
   //     text-align: center;
   //     padding: 2rem;
   //   }
-  th {
-    color: $color-primary;
+  h3 {
     font-size: 2rem;
+    @include responsive("small") {
+      font-size: 3rem;
+    }
+    @include responsive("medium") {
+      font-size: 4rem;
+    }
+    @include responsive("large") {
+      font-size: 5rem;
+    }
+  }
+  th,
+  tr,
+  td {
+    line-height: normal;
+  }
+  th {
+    font-size: 1.8rem;
     font-weight: 700;
     text-align: left;
+    @include responsive("large") {
+      font-size: 2rem;
+    }
   }
   td:last-child {
     text-align: end;
@@ -235,7 +251,7 @@ section {
     text-align: center;
   }
   .day {
-    color: $color-primary;
+    color: $color-tertiary;
     font-weight: 700;
   }
   .hours {

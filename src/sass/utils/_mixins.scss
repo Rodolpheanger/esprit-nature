@@ -19,20 +19,11 @@
   flex-wrap: $wrap;
 }
 
-@mixin underliner($color, $width, $padding-bottom: 2rem, $margin: 0 auto) {
-  &::after {
-    content: "";
-    display: block;
-    width: $width;
-    margin: $margin;
-    padding-bottom: $padding-bottom;
-    border-bottom: 2px solid $color;
-  }
-}
-
 @mixin overliner(
   $color,
   $width,
+  $weight,
+  $style,
   $padding-bottom: 2rem,
   $margin: 0 auto 2rem auto
 ) {
@@ -42,7 +33,25 @@
     width: $width;
     margin: $margin;
     padding-bottom: $padding-bottom;
-    border-bottom: 2px solid $color;
+    border-bottom: $weight $style $color;
+  }
+}
+
+@mixin underliner(
+  $color,
+  $width,
+  $weight,
+  $style,
+  $padding-bottom: 2rem,
+  $margin: 0 auto
+) {
+  &::after {
+    content: "";
+    display: block;
+    width: $width;
+    margin: $margin;
+    padding-bottom: $padding-bottom;
+    border-bottom: $weight $style $color;
   }
 }
 
@@ -58,12 +67,12 @@
     $before-rotation: rotate(45deg);
   }
 
-  width: fit-content;
-  width: -moz-fit-content;
-  width: -webkit-fit-content;
+  width: max-content;
+  width: -moz-max-content;
+  width: -webkit-max-content;
   margin: $margin;
-  padding: 1rem 0;
-  border-bottom: 2px solid black;
+  padding: 0;
+  border-bottom: 2px solid $text-color-primary;
   transition: all 800ms ease-in-out;
   cursor: help;
   &::before {
@@ -72,28 +81,22 @@
     height: 1.5rem;
     width: 1.5rem;
     margin: $before-margin;
-    border-bottom: 3px solid black;
-    border-right: 3px solid black;
+    border-bottom: 3px solid $color-primary;
+    border-right: 3px solid $color-primary;
     transform: $before-rotation;
     transition: all 800ms ease-in-out;
   }
 }
 
-// TODO: voir pour la taille de la response => modifier showResponse.ts ???????
-
-@mixin faq-response(
-  $visible: false,
-  $animation: fadeOut,
-  $margin-bottom: 0,
-  $padding: 0 2rem 1rem 2rem
-) {
+@mixin faq-response($visible: false, $animation: fadeOut, $margin-bottom: 0) {
   @if ($visible == true) {
     $animation: fadeIn;
+    $padding: 0 0 3rem 2rem;
     $margin-bottom: 2rem;
-    $padding: 0 2rem 2rem 2rem;
   }
+  margin: 0;
   margin-bottom: $margin-bottom;
-  padding: $padding;
+  padding: 0 0 3rem 2rem;
   animation: $animation 800ms ease-in-out forwards;
   -webkit-animation: $animation 800ms ease-in-out forwards;
   transition: all 800ms ease-in-out;
