@@ -5,5 +5,7 @@ export const scrollToTop = (): void => {
       ? button.classList.add("scroll-top--visible")
       : button.classList.remove("scroll-top--visible");
   });
-  button.addEventListener("click", () => window.scrollTo(0, 0));
+  button.addEventListener("click", () => {
+    window.scrollTo(0, 0);
+  });
 };

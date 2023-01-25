@@ -5,7 +5,6 @@ export const showFaqResponse = (): void => {
 
   questions.forEach((question) => {
     const response = question?.nextElementSibling as HTMLParagraphElement;
-    console.log(response.offsetHeight);
     response &&
       response.style.setProperty("--max-height", response.offsetHeight + "px");
     response &&
