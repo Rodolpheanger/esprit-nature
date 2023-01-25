@@ -88,15 +88,12 @@
   }
 }
 
-@mixin faq-response($visible: false, $animation: fadeOut, $margin-bottom: 0) {
+@mixin faq-response($visible: false, $animation: fadeOut) {
   @if ($visible == true) {
     $animation: fadeIn;
-    $padding: 0 0 3rem 2rem;
-    $margin-bottom: 2rem;
   }
-  margin: 0;
-  margin-bottom: $margin-bottom;
-  padding: 0 0 3rem 2rem;
+  margin: 0 0 2rem 0;
+  padding: 0 0 0 2rem;
   animation: $animation 800ms ease-in-out forwards;
   -webkit-animation: $animation 800ms ease-in-out forwards;
   transition: all 800ms ease-in-out;

@@ -6,7 +6,6 @@ import { showFaqResponse } from "./showFaqResponse";
 import { it, expect } from "vitest";
 
 describe("showFaqResponse", () => {
-  //   let questions: HTMLDivElement;
   let question: HTMLParagraphElement;
   let response: HTMLParagraphElement;
 

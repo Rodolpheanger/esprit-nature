@@ -264,7 +264,7 @@ section h2 {
   }
 }
 section h3 {
-  color: #f73116;
+  color: #59314b;
   font-size: 1.8rem;
   text-align: center;
 }
@@ -279,7 +279,7 @@ section h3 {
   }
 }
 section h4 {
-  color: #f73116;
+  color: #59314b;
   font-size: 1.6rem;
   text-align: center;
   text-decoration: underline;
@@ -307,7 +307,7 @@ section li::before {
 }
 
 .presentation__title h2 {
-  color: #f73116;
+  color: #59314b;
   line-height: 4rem;
   font-style: italic;
 }
@@ -385,7 +385,7 @@ section li::before {
 }
 
 .faq__question {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
@@ -512,10 +512,10 @@ section h3 {
 section h3::before {
   content: "";
   display: block;
-  width: 100%;
+  width: 75%;
   margin: 0 auto 2rem auto;
   padding-bottom: 2rem;
-  border-bottom: 4px double #f73116;
+  border-bottom: 2px solid #f73116;
 }
 section h3::after {
   content: "";
@@ -523,7 +523,7 @@ section h3::after {
   width: 50%;
   margin: 0 auto;
   padding-bottom: 2rem;
-  border-bottom: 4px double #f73116;
+  border-bottom: 2px solid #f73116;
 }
 @media screen and (min-width: 769px) {
   section h3 {
@@ -751,18 +751,18 @@ nav li:hover::after {
 .presentation__title::before {
   content: "";
   display: block;
-  width: 100%;
+  width: 75%;
   margin: 0 auto 2rem auto;
   padding-bottom: 2rem;
-  border-bottom: 4px double #f73116;
+  border-bottom: 2px solid #f73116;
 }
 .presentation__title::after {
   content: "";
   display: block;
-  width: 100%;
+  width: 75%;
   margin: 0 auto;
   padding-bottom: 2rem;
-  border-bottom: 4px double #f73116;
+  border-bottom: 2px solid #f73116;
 }
 .presentation h2 {
   padding-top: 2rem;
@@ -857,7 +857,7 @@ nav li:hover::after {
   width: 100%;
   margin: 0 auto 2rem auto;
   padding-bottom: 0;
-  border-bottom: 4px double #f73116;
+  border-bottom: 2px solid #f73116;
 }
 .tarifs h3::after {
   content: "";
@@ -865,7 +865,7 @@ nav li:hover::after {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 2rem;
-  border-bottom: 4px double #f73116;
+  border-bottom: 2px solid #f73116;
 }
 @media screen and (min-width: 1025px) {
   .tarifs h3 {
@@ -1070,17 +1070,15 @@ iframe {
   transition: all 800ms ease-in-out;
 }
 .faq__response {
-  margin: 0;
-  margin-bottom: 0;
-  padding: 0 0 3rem 2rem;
+  margin: 0 0 2rem 0;
+  padding: 0 0 0 2rem;
   animation: fadeOut 800ms ease-in-out forwards;
   -webkit-animation: fadeOut 800ms ease-in-out forwards;
   transition: all 800ms ease-in-out;
 }
 .faq__response--visible {
-  margin: 0;
-  margin-bottom: 2rem;
-  padding: 0 0 3rem 2rem;
+  margin: 0 0 2rem 0;
+  padding: 0 0 0 2rem;
   animation: fadeIn 800ms ease-in-out forwards;
   -webkit-animation: fadeIn 800ms ease-in-out forwards;
   transition: all 800ms ease-in-out;

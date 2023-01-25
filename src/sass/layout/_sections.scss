@@ -25,8 +25,8 @@ section {
   h3 {
     margin: 0 auto 2rem auto;
     padding: 0 2rem;
-    @include overliner($color-secondary, 100%, 4px, double);
-    @include underliner($color-secondary, 50%, 4px, double);
+    @include overliner($color-secondary, 75%, 2px, solid);
+    @include underliner($color-secondary, 50%, 2px, solid);
     @include responsive("medium") {
       max-width: 80%;
     }

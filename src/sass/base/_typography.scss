@@ -149,7 +149,7 @@ section {
     }
   }
   h3 {
-    color: $color-secondary;
+    color: $color-tertiary;
     font-size: 1.8rem;
     text-align: center;
     @include responsive("small") {
@@ -160,7 +160,7 @@ section {
     }
   }
   h4 {
-    color: $color-secondary;
+    color: $color-tertiary;
     font-size: 1.6rem;
     text-align: center;
     text-decoration: underline;
@@ -184,7 +184,7 @@ section {
 }
 .presentation__title {
   h2 {
-    color: $color-secondary;
+    color: $color-tertiary;
     line-height: 4rem;
     font-style: italic;
   }
@@ -261,7 +261,7 @@ section {
 
 .faq {
   &__question {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
   }
 }

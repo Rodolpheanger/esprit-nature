@@ -16,8 +16,8 @@
     min-width: -moz-max-content;
     min-width: max-content;
     padding: 0;
-    @include overliner($color-secondary, 100%, 4px, double, 0);
-    @include underliner($color-secondary, 100%, 4px, double, 2rem);
+    @include overliner($color-secondary, 100%, 2px, solid, 0);
+    @include underliner($color-secondary, 100%, 2px, solid, 2rem);
     margin: 5rem auto;
     @include responsive("large") {
       max-width: 50%;
