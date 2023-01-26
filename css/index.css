@@ -388,6 +388,51 @@ section li::before {
   font-size: 1.8rem;
   font-weight: 700;
 }
+@media screen and (min-width: 1025px) {
+  .faq__question {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .faq__question {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 1921px) {
+  .faq__question {
+    font-size: 2.5rem;
+  }
+}
+
+footer {
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.legals {
+  line-height: 4rem;
+}
+.legals h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.legals h2 {
+  font-size: 2.2rem;
+  text-decoration: underline;
+}
+.legals a {
+  font-size: 1.8rem;
+}
+.legals .back-link {
+  font-size: 2.5rem;
+  color: #f2055c;
+}
 
 .header {
   display: flex;
@@ -572,7 +617,6 @@ footer {
   flex-wrap: nowrap;
   min-height: 10vh;
   padding: 2rem;
-  color: azure;
   background-color: rgb(37, 25, 14);
 }
 footer .footer__links {
@@ -715,7 +759,6 @@ nav li:hover::after {
 .hero h2 {
   opacity: 0;
   padding: 1rem;
-  border: solid 1px rgb(28, 17, 46);
   background-color: rgba(255, 255, 255, 0.5);
   animation: fadeInAndOut 6000ms ease-in-out;
   -webkit-animation: fadeInAndOut 3000ms ease-in-out;
@@ -723,7 +766,7 @@ nav li:hover::after {
 
 .presentation {
   padding: 2rem;
-  background-image: url("/src/assets/images/accueil_background02.webp");
+  background-image: url("/src/assets/images/presentation_background.webp");
   background-position: center;
   background-size: cover;
 }
@@ -793,7 +836,7 @@ nav li:hover::after {
 }
 
 .colorations .title__container {
-  background-image: url(/src/assets/images/coloration-cheveux-vegetale-henne-couleur-poudres1.jpg);
+  background-image: url(/src/assets/images/colorations.jpg);
 }
 .colorations__plus-minus {
   max-width: 90%;
@@ -827,11 +870,11 @@ nav li:hover::after {
 }
 
 .meches .title__container {
-  background-image: url(/src/assets/images/meches_header_bg.webp);
+  background-image: url(/src/assets/images/meches.webp);
 }
 
 .tarifs .title__container {
-  background-image: url(/src/assets/images/polina-rytova-1dGMs4hhcVA-unsplash.jpg);
+  background-image: url(/src/assets/images/tarifs.jpg);
 }
 .tarifs .content__container {
   max-width: 1200px;
@@ -1004,27 +1047,32 @@ iframe {
   }
 }
 .faq .title__container {
-  background-image: url(/src/assets/images/adam-winger-yGCj9aMSBNI-unsplash.jpg);
+  background-image: url(/src/assets/images/faq.jpg);
 }
 .faq .content__container p {
   max-width: 90%;
 }
 @media screen and (min-width: 769px) {
   .faq .content__container {
-    margin-left: 100px;
+    margin-left: 15%;
   }
 }
 @media screen and (min-width: 1025px) {
   .faq .content__container {
-    margin-left: 200px;
+    margin-left: 20%;
   }
 }
 @media screen and (min-width: 1441px) {
   .faq .content__container {
-    margin-left: 500px;
+    margin-left: 25%;
   }
   .faq .content__container p {
     max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1921px) {
+  .faq .content__container {
+    margin-left: 30%;
   }
 }
 .faq__question {

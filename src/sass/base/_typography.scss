@@ -263,5 +263,44 @@ section {
   &__question {
     font-size: 1.8rem;
     font-weight: 700;
+    @include responsive("large") {
+      font-size: 2rem;
+    }
+    @include responsive("xlarge") {
+      font-size: 2.2rem;
+    }
+    @include responsive("xxlarge") {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+footer {
+  color: #fff;
+  a {
+    color: #fff;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.legals {
+  line-height: 4rem;
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  h2 {
+    font-size: 2.2rem;
+    text-decoration: underline;
+  }
+  a {
+    font-size: 1.8rem;
+  }
+  .back-link {
+    font-size: 2.5rem;
+    color: $color-primary;
   }
 }

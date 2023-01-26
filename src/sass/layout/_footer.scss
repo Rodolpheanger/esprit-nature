@@ -2,7 +2,6 @@ footer {
   @include flex(center, center, column);
   min-height: 10vh;
   padding: 2rem;
-  color: azure;
   background-color: rgb(37, 25, 14);
   .footer__links {
     @include flex(null, space-evenly);

@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "jest",
-    "vitest": "vitest --globals"
+    "test": "vitest --globals"
   },
   "devDependencies": {
     "@types/jest": "^29.2.5",

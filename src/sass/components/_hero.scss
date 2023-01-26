@@ -61,7 +61,9 @@
   h2 {
     opacity: 0;
     padding: 1rem;
-    border: solid 1px $text-color-primary;
+    // box-shadow: 0 0 50px 25px $color-primary;
+    // border-radius: 0.5rem;
+    // border: solid 5px rgba(255, 255, 255, 0.25);
     background-color: rgba(255, 255, 255, 0.5);
     animation: fadeInAndOut 6000ms ease-in-out;
     -webkit-animation: fadeInAndOut 3000ms ease-in-out;
