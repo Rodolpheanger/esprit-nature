@@ -21,7 +21,7 @@
     }
     // TRY RESPONSIVE: header row
     @include responsive("large") {
-      @include flex(center, space-between);
+      @include flex(center, space-around);
     }
     // TRY ------- END ----------
   }

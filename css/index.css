@@ -163,13 +163,12 @@ a {
 }
 @media screen and (min-width: 1025px) {
   .header__logo {
-    font-size: 12rem;
     white-space: nowrap;
   }
 }
 @media screen and (min-width: 1441px) {
   .header__logo {
-    font-size: 15rem;
+    font-size: 10rem;
   }
 }
 
@@ -198,15 +197,16 @@ a {
 }
 @media screen and (min-width: 1921px) {
   .nav .navlink {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 }
 
 .hero h2 {
-  color: #59314b;
+  color: #9b063d;
   font-family: "Carattere", sans-serif;
   font-size: 8rem;
   font-weight: 700;
+  -webkit-text-stroke: #c393b2 1px;
 }
 @media screen and (min-width: 376px) {
   .hero h2 {
@@ -230,7 +230,7 @@ a {
 }
 @media screen and (min-width: 1441px) {
   .hero h2 {
-    font-size: 20rem;
+    font-size: 30rem;
   }
 }
 @media screen and (min-width: 1921px) {
@@ -505,7 +505,7 @@ footer a:hover {
   .header__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: raw;
     gap: 0;
     flex-wrap: nowrap;
