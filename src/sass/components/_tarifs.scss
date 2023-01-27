@@ -16,8 +16,8 @@
     min-width: -moz-max-content;
     min-width: max-content;
     padding: 0;
-    @include overliner($color-secondary, 100%, 2px, solid, 0);
-    @include underliner($color-secondary, 100%, 2px, solid, 2rem);
+    @include overliner($text-color, 100%, 2px, solid, 0);
+    @include underliner($text-color, 100%, 2px, solid, 2rem);
     margin: 5rem auto;
     @include responsive("large") {
       max-width: 50%;
@@ -31,7 +31,7 @@
     th {
       padding: 0.75rem 1rem;
       background-color: $color-bg;
-      border-bottom: 1px solid $color-tertiary;
+      border-bottom: 2px solid $color-tertiary;
     }
     tr,
     td {

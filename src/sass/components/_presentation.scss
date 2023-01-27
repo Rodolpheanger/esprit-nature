@@ -6,8 +6,6 @@
   &__container {
     margin: 3rem 0 3rem 0;
     padding: 3rem 0;
-    border: 1px solid black;
-    background-color: rgba(255, 255, 255, 0.3);
     @include responsive("small") {
       padding: 4rem 3rem;
     }
@@ -19,8 +17,8 @@
     display: inline-block;
     margin: 0 auto 4rem auto;
     max-width: 90%;
-    @include overliner($color-secondary, 75%, 2px, solid);
-    @include underliner($color-secondary, 75%, 2px, solid);
+    @include overliner($color-tertiary, 75%, 2px, solid);
+    @include underliner($color-tertiary, 75%, 2px, solid);
   }
   h2 {
     padding-top: 2rem;

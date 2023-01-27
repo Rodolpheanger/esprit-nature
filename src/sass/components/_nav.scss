@@ -1,7 +1,19 @@
 nav {
   width: 100%;
+  // TRY RESPONSIVE: header row
+  @include responsive("large") {
+    width: 60%;
+    // padding: 1.8rem;
+  }
+  // TRY ------- END ----------;
+
   ul {
     @include flex(null, center, null, null, wrap);
+    @include responsive("large") {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
   }
   li {
     padding: 1rem;
@@ -11,15 +23,18 @@ nav {
     @include responsive("small") {
       padding: 1.4rem;
     }
+
+    // TRY RESPONSIVE: header row
     @include responsive("large") {
-      padding: 1.8rem;
+      // padding: 1.8rem;
     }
     @include responsive("xlarge") {
-      padding: 2.5rem;
+      // padding: 2.5rem;
     }
     @include responsive("xxlarge") {
-      padding: 3rem;
+      // padding: 3rem;
     }
+    // TRY ------- END ----------
     @include underliner($color-primary, 75%, 2px, solid, 0, 1rem auto 0 auto);
     &::after {
       transform: scaleX(0);

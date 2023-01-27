@@ -19,11 +19,16 @@
     h1 {
       display: inline-block;
     }
+    // TRY RESPONSIVE: header row
+    @include responsive("large") {
+      @include flex(center, space-between);
+    }
+    // TRY ------- END ----------
   }
   &__logo {
     margin: 1rem 0;
     padding: 2rem 0;
-    @include underliner($color-logo, 50%, 2px, solid, 0);
+    @include underliner($color-secondary, 50%, 2px, solid, 0);
     @include responsive("small") {
       margin: 1.5rem 0;
     }
@@ -32,7 +37,11 @@
     }
 
     @include responsive("large") {
-      margin: 2rem 0;
+      // margin: 2rem 0;
+      // TRY RESPONSIVE header row
+      margin: 2rem 2rem;
+      @include underliner(transparent, null, null, null, 0);
+      // TRY ------- END ----------
     }
   }
 }

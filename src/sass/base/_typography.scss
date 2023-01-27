@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  color: $text-color-primary;
+  color: $text-color;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -22,10 +22,16 @@ a {
   &--strong {
     font-weight: 700;
     color: $color-primary;
+    &:hover {
+      color: lighten($color: $color-primary, $amount: 30);
+    }
   }
   &--normal {
     font-weight: 400;
     color: $color-primary;
+    &:hover {
+      color: lighten($color: $color-primary, $amount: 30);
+    }
   }
 }
 
@@ -38,38 +44,53 @@ a {
   &__phonenumber {
     color: $color-primary;
   }
-  // TODO: trouver une couleur pour le hover du phonenumber et du facebook
 
   &__phonenumber:hover {
-    color: $color-tertiary;
+    color: lighten($color: $color-primary, $amount: 30);
   }
   &__facebook-logo {
     color: $color-primary;
     font-size: 3rem;
     &:hover {
-      color: $color-tertiary;
+      color: lighten($color: $color-primary, $amount: 30);
     }
   }
   &__container {
     text-align: center;
   }
   &__logo {
-    color: $color-logo;
-    font-family: "Darleston";
-    font-size: 7rem;
+    color: $color-secondary;
+    // font-family: "Darleston", sans-serif;
+    // TRY FONT-FAMILY:
+    // font-family: "Imperial Script", sans-serif;
+    // font-family: "Luxurious Script", sans-serif;
+    // font-family: "Pinyon Script", sans-serif;
+    // font-family: "Fleur De Leah", sans-serif;
+    font-family: "Carattere", sans-serif;
+    // TRY ------- END ----------
+    font-size: 6rem;
     text-align: center;
+    @include responsive("xsmall") {
+      font-size: 7rem;
+    }
     @include responsive("small") {
       font-size: 8rem;
     }
     @include responsive("medium") {
       font-size: 9rem;
     }
-
     @include responsive("large") {
-      font-size: 10rem;
+      //font-size: 10rem;
+      // TRY RESPONSIVE: header row
+      font-size: 12rem;
+      white-space: nowrap;
+      // TRY ------- END ----------
     }
     @include responsive("xlarge") {
-      font-size: 12rem;
+      // font-size: 12rem;
+      // TRY RESPONSIVE: header row
+      font-size: 15rem;
+      // TRY ------- END ----------
     }
   }
 }
@@ -86,10 +107,13 @@ a {
       font-size: 1.6rem;
     }
     @include responsive("large") {
-      font-size: 1.8rem;
+      // font-size: 1.8rem;
+      // TRY RESPONSIVE: header row
+      font-size: 1.4rem;
+      // TRY ------- END ----------
     }
     @include responsive("xlarge") {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
     @include responsive("xxlarge") {
       font-size: 2.2rem;
@@ -98,22 +122,35 @@ a {
 }
 .hero {
   h2 {
-    color: $text-color-primary;
-    font-size: 4rem;
+    color: $color-tertiary;
+    // TRY FONT-FAMILY:
+    // font-family: "Darleston", sans-serif;
+    // font-family: "Imperial Script", sans-serif;
+    // font-family: "Luxurious Script", sans-serif;
+    // font-family: "Pinyon Script", sans-serif;
+    // font-family: "Fleur De Leah", sans-serif;
+    font-family: "Carattere", sans-serif;
+    // TRY ------- END ----------;
+
+    font-size: 8rem;
+    font-weight: 700;
     @include responsive("xsmall") {
-      font-size: 5rem;
+      font-size: 10rem;
     }
     @include responsive("small") {
-      font-size: 6rem;
+      font-size: 12rem;
     }
     @include responsive("medium") {
-      font-size: 7rem;
+      font-size: 14rem;
     }
     @include responsive("large") {
-      font-size: 8rem;
+      font-size: 16rem;
     }
     @include responsive("xlarge") {
-      font-size: 9rem;
+      font-size: 20rem;
+    }
+    @include responsive("xxlarge") {
+      font-size: 30rem;
     }
   }
 }
@@ -132,7 +169,7 @@ a {
 }
 section {
   h2 {
-    color: $text-color-primary;
+    color: $color-tertiary;
     font-size: 2rem;
     text-align: center;
     @include responsive("small") {
@@ -149,14 +186,17 @@ section {
     }
   }
   h3 {
-    color: $color-tertiary;
+    color: $color-secondary;
     font-size: 1.8rem;
     text-align: center;
     @include responsive("small") {
       font-size: 2rem;
     }
-    @include responsive("large") {
+    @include responsive("medium") {
       font-size: 2.5rem;
+    }
+    @include responsive("large") {
+      font-size: 3rem;
     }
   }
   h4 {
@@ -197,6 +237,7 @@ section {
   //     padding: 2rem;
   //   }
   h3 {
+    font-weight: 600;
     font-size: 2rem;
     @include responsive("small") {
       font-size: 3rem;
@@ -239,8 +280,12 @@ section {
     }
   }
   &__phonenumber {
+    color: $color-primary;
     font-size: 2.5rem;
     font-weight: 600;
+    &:hover {
+      color: lighten($color: $color-primary, $amount: 30);
+    }
     @include responsive("small") {
       font-size: 4rem;
     }
@@ -250,6 +295,12 @@ section {
     font-weight: 400;
     text-align: center;
   }
+  &__sector-extra {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.4rem;
+  }
+
   .day {
     color: $color-tertiary;
     font-weight: 700;

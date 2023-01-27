@@ -8,10 +8,12 @@
   &__phonenumber {
     display: inline-block;
     padding: 2rem;
-    color: $color-primary;
   }
   &__sector {
     padding: 2rem;
+  }
+  &__sector-extra {
+    margin: 0 auto 4rem auto;
   }
   .opening-hours__container {
     max-width: 1200px;
@@ -38,7 +40,7 @@
 iframe {
   height: 50vh;
   width: 95%;
-  margin: 3rem 0;
+  margin: 3rem auto 0 auto;
   @include responsive("small") {
     height: 60vh;
     width: 75%;
