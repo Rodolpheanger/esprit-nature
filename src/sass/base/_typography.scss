@@ -135,8 +135,6 @@ a {
 
     font-size: 8rem;
     font-weight: 700;
-    // -webkit-text-stroke: $color-tertiary 1px;
-    -webkit-text-stroke: lighten($color-tertiary, 40) 1px;
     @include responsive("xsmall") {
       font-size: 10rem;
     }

@@ -206,7 +206,6 @@ a {
   font-family: "Carattere", sans-serif;
   font-size: 8rem;
   font-weight: 700;
-  -webkit-text-stroke: #c393b2 1px;
 }
 @media screen and (min-width: 376px) {
   .hero h2 {
