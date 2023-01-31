@@ -134,7 +134,7 @@ a {
     // TRY ------- END ----------;
 
     font-size: 8rem;
-    font-weight: 700;
+    font-weight: 500;
     @include responsive("xsmall") {
       font-size: 10rem;
     }
@@ -148,7 +148,7 @@ a {
       font-size: 16rem;
     }
     @include responsive("xlarge") {
-      font-size: 30rem;
+      font-size: 22rem;
     }
     @include responsive("xxlarge") {
       font-size: 30rem;
@@ -327,7 +327,7 @@ section {
   }
 }
 
-footer {
+.footer {
   color: #fff;
   a {
     color: #fff;
@@ -335,24 +335,40 @@ footer {
       text-decoration: underline;
     }
   }
+  &__links {
+    font-size: 5rem;
+  }
+  &__copyright {
+    text-align: center;
+  }
 }
 
 .legals {
   line-height: 4rem;
   h1 {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     font-weight: 700;
     text-decoration: underline;
   }
   h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-decoration: underline;
   }
-  a {
-    font-size: 1.8rem;
+  p {
+    font-size: 1.4rem;
   }
-  .back-link {
-    font-size: 2.5rem;
+  .underline {
+    text-decoration: underline;
+  }
+  li {
+    font-size: 1.4rem;
+  }
+  &__back-link {
+    font-size: 1.8rem;
+    font-weight: 500;
     color: $color-primary;
+    &:hover {
+      color: lighten($color-primary, 40);
+    }
   }
 }

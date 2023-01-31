@@ -1,12 +1,11 @@
-footer {
+.footer {
   @include flex(center, center, column);
   min-height: 10vh;
   padding: 2rem;
   background-color: rgb(37, 25, 14);
-  .footer__links {
+  &__links {
     @include flex(null, space-evenly);
     width: 100%;
-    font-size: 5rem;
 
     @include responsive("small") {
       width: 50%;
@@ -18,7 +17,8 @@ footer {
   .marcapar__logo {
     width: 10rem;
   }
-  .footer__copyright {
+  &__copyright {
+    text-align: center;
     padding: 1.5rem;
   }
 }

@@ -205,7 +205,7 @@ a {
   color: #9b063d;
   font-family: "Carattere", sans-serif;
   font-size: 8rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 @media screen and (min-width: 376px) {
   .hero h2 {
@@ -229,7 +229,7 @@ a {
 }
 @media screen and (min-width: 1441px) {
   .hero h2 {
-    font-size: 30rem;
+    font-size: 22rem;
   }
 }
 @media screen and (min-width: 1921px) {
@@ -437,34 +437,50 @@ section li::before {
   }
 }
 
-footer {
+.footer {
   color: #fff;
 }
-footer a {
+.footer a {
   color: #fff;
 }
-footer a:hover {
+.footer a:hover {
   text-decoration: underline;
+}
+.footer__links {
+  font-size: 5rem;
+}
+.footer__copyright {
+  text-align: center;
 }
 
 .legals {
   line-height: 4rem;
 }
 .legals h1 {
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   font-weight: 700;
   text-decoration: underline;
 }
 .legals h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-decoration: underline;
 }
-.legals a {
-  font-size: 1.8rem;
+.legals p {
+  font-size: 1.4rem;
 }
-.legals .back-link {
-  font-size: 2.5rem;
+.legals .underline {
+  text-decoration: underline;
+}
+.legals li {
+  font-size: 1.4rem;
+}
+.legals__back-link {
+  font-size: 1.8rem;
+  font-weight: 500;
   color: #9b063d;
+}
+.legals__back-link:hover {
+  color: #fa73a5;
 }
 
 .header {
@@ -658,7 +674,7 @@ section li {
   padding: 0.5rem;
 }
 
-footer {
+.footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -669,28 +685,42 @@ footer {
   padding: 2rem;
   background-color: rgb(37, 25, 14);
 }
-footer .footer__links {
+.footer__links {
   display: flex;
   justify-content: space-evenly;
   flex-direction: raw;
   gap: 0;
   flex-wrap: nowrap;
   width: 100%;
-  font-size: 5rem;
 }
 @media screen and (min-width: 426px) {
-  footer .footer__links {
+  .footer__links {
     width: 50%;
   }
 }
-footer .fa-facebook {
+.footer .fa-facebook {
   color: white;
 }
-footer .marcapar__logo {
+.footer .marcapar__logo {
   width: 10rem;
 }
-footer .footer__copyright {
+.footer__copyright {
+  text-align: center;
   padding: 1.5rem;
+}
+
+.legals {
+  padding: 1.5rem;
+}
+.legals h1 {
+  padding: 5rem 0;
+  margin: auto;
+}
+.legals h2,
+.legals p,
+.legals ul {
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
 }
 
 nav {
