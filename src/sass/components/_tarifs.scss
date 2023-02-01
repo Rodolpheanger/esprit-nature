@@ -1,6 +1,12 @@
 .tarifs {
   .title__container {
-    background-image: url(/src/assets/images/tarifs.jpg);
+    background-image: url(/src/assets/images/tarifs_xs-s.jpg);
+    @include responsive("medium") {
+      background-image: url(/src/assets/images/tarifs_m-l-xl.jpg);
+    }
+    @include responsive("xxlarge") {
+      background-image: url(/src/assets/images/tarifs_xxl.jpg);
+    }
   }
   .content__container {
     max-width: 1200px;

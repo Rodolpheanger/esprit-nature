@@ -1,6 +1,15 @@
 .infos {
   .title__container {
-    background-image: url(/src/assets/images/infos.jpeg);
+    background-image: url(/src/assets/images/infos_xs-s.jpg);
+    @include responsive("medium") {
+      background-image: url(/src/assets/images/infos_m.jpg);
+    }
+    @include responsive("large") {
+      background-image: url(/src/assets/images/infos_l-xl.jpg);
+    }
+    @include responsive("xxlarge") {
+      background-image: url(/src/assets/images/infos_xxl.jpg);
+    }
   }
   &__contact {
     padding: 2rem;

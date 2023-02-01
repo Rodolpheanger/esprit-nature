@@ -842,7 +842,7 @@ nav li:hover::after {
 
 .presentation {
   padding: 2rem;
-  background-image: url("/src/assets/images/presentation_background.webp");
+  background-image: url("/src/assets/images/presentation.webp");
   background-position: center;
   background-size: cover;
 }
@@ -910,7 +910,17 @@ nav li:hover::after {
 }
 
 .colorations .title__container {
-  background-image: url(/src/assets/images/colorations.jpg);
+  background-image: url(/src/assets/images/colorations_03_xs-s.jpg);
+}
+@media screen and (min-width: 769px) {
+  .colorations .title__container {
+    background-image: url(/src/assets/images/colorations_03_m-l-xl.jpg);
+  }
+}
+@media screen and (min-width: 1921px) {
+  .colorations .title__container {
+    background-image: url(/src/assets/images/colorations_03_xxl.jpg);
+  }
 }
 .colorations__plus-minus {
   max-width: 90%;
@@ -944,11 +954,36 @@ nav li:hover::after {
 }
 
 .meches .title__container {
-  background-image: url(/src/assets/images/meches.webp);
+  background-image: url(/src/assets/images/meches_xs-s.jpg);
+}
+@media screen and (min-width: 769px) {
+  .meches .title__container {
+    background-image: url(/src/assets/images/meches_m.jpg);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .meches .title__container {
+    background-image: url(/src/assets/images/meches_l-xl.jpg);
+  }
+}
+@media screen and (min-width: 1921px) {
+  .meches .title__container {
+    background-image: url(/src/assets/images/meches_xxl.jpg);
+  }
 }
 
 .tarifs .title__container {
-  background-image: url(/src/assets/images/tarifs.jpg);
+  background-image: url(/src/assets/images/tarifs_xs-s.jpg);
+}
+@media screen and (min-width: 769px) {
+  .tarifs .title__container {
+    background-image: url(/src/assets/images/tarifs_m-l-xl.jpg);
+  }
+}
+@media screen and (min-width: 1921px) {
+  .tarifs .title__container {
+    background-image: url(/src/assets/images/tarifs_xxl.jpg);
+  }
 }
 .tarifs .content__container {
   max-width: 1200px;
@@ -1023,7 +1058,22 @@ nav li:hover::after {
 }
 
 .infos .title__container {
-  background-image: url(/src/assets/images/infos.jpeg);
+  background-image: url(/src/assets/images/infos_xs-s.jpg);
+}
+@media screen and (min-width: 769px) {
+  .infos .title__container {
+    background-image: url(/src/assets/images/infos_m.jpg);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .infos .title__container {
+    background-image: url(/src/assets/images/infos_l-xl.jpg);
+  }
+}
+@media screen and (min-width: 1921px) {
+  .infos .title__container {
+    background-image: url(/src/assets/images/infos_xxl.jpg);
+  }
 }
 .infos__contact {
   padding: 2rem;
@@ -1123,7 +1173,17 @@ iframe {
   }
 }
 .faq .title__container {
-  background-image: url(/src/assets/images/faq.jpg);
+  background-image: url(/src/assets/images/faq_xs-s.jpg);
+}
+@media screen and (min-width: 769px) {
+  .faq .title__container {
+    background-image: url(/src/assets/images/faq_m-l-xl.jpg);
+  }
+}
+@media screen and (min-width: 1921px) {
+  .faq .title__container {
+    background-image: url(/src/assets/images/faq_xxl.jpg);
+  }
 }
 .faq .content__container p {
   max-width: 90%;

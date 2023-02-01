@@ -1,6 +1,12 @@
 .colorations {
   .title__container {
-    background-image: url(/src/assets/images/colorations.jpg);
+    background-image: url(/src/assets/images/colorations_03_xs-s.jpg);
+    @include responsive("medium") {
+      background-image: url(/src/assets/images/colorations_03_m-l-xl.jpg);
+    }
+    @include responsive("xxlarge") {
+      background-image: url(/src/assets/images/colorations_03_xxl.jpg);
+    }
   }
   &__plus-minus {
     max-width: 90%;

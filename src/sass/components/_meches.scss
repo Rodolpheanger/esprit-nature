@@ -1,5 +1,14 @@
 .meches {
   .title__container {
-    background-image: url(/src/assets/images/meches.webp);
+    background-image: url(/src/assets/images/meches_xs-s.jpg);
+    @include responsive("medium") {
+      background-image: url(/src/assets/images/meches_m.jpg);
+    }
+    @include responsive("large") {
+      background-image: url(/src/assets/images/meches_l-xl.jpg);
+    }
+    @include responsive("xxlarge") {
+      background-image: url(/src/assets/images/meches_xxl.jpg);
+    }
   }
 }
