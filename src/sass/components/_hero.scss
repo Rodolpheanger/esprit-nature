@@ -1,10 +1,10 @@
 .hero {
   @include flex(center, center);
-  overflow: hidden;
   height: 100%;
   background-image: url("/src/assets/images/hero_banner_s.webp");
   background-position: center;
   background-size: cover;
+  overflow: hidden;
   @include responsive("small") {
     background-image: url("/src/assets/images/hero_banner_m.webp");
   }
@@ -18,54 +18,39 @@
     background-image: url("/src/assets/images/hero_banner_xl.webp");
   }
 
-  // TODO: voir si avec ou sans translate !!!
-
   @-webkit-keyframes fadeInAndOut {
     0% {
       opacity: 0;
-      // transform: translate(-70vh);
     }
     40% {
       opacity: 1;
-      // transform: translate(0);
     }
     60% {
       opacity: 1;
-      // transform: translate(0);
     }
     100% {
       opacity: 0;
-      // transform: translate(70vh);
     }
   }
 
   @keyframes fadeInAndOut {
     0% {
       opacity: 0;
-      // transform: translate(-70vh);
     }
     40% {
       opacity: 1;
-      // transform: translate(0);
     }
     60% {
       opacity: 1;
-      // transform: translate(0);
     }
     100% {
       opacity: 0;
-      // transform: translate(70vh);
     }
   }
 
   h2 {
-    opacity: 0;
     padding: 1rem;
-    // box-shadow: 0 0 50px 25px $color-primary;
-    // border-radius: 0.5rem;
-    // border: solid 5px rgba(255, 255, 255, 0.25);
-    // background-color: rgba(255, 255, 255, 0.5);
-
+    opacity: 0;
     animation: fadeInAndOut 6000ms ease-in-out;
     -webkit-animation: fadeInAndOut 3000ms ease-in-out;
   }

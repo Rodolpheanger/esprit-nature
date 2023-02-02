@@ -10,9 +10,7 @@ nav {
   ul {
     @include flex(null, center, null, null, wrap);
     @include responsive("large") {
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      align-items: flex-end;
+      @include flex(flex-end, space-between);
     }
   }
   li {

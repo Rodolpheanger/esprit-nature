@@ -4,11 +4,11 @@ section {
     height: 25vh;
     background-position: center;
     background-size: cover;
-    @include responsive("small") {
-      height: 25vh;
+    @include responsive("medium") {
+      height: 30vh;
     }
     @include responsive("xlarge") {
-      height: 33vh;
+      height: 40vh;
     }
   }
 
@@ -42,9 +42,9 @@ section {
     padding: 0 4rem;
   }
   p {
+    max-width: 90%;
     padding: 1rem;
     margin: auto;
-    max-width: 90%;
     @include responsive("medium") {
       max-width: 80%;
     }

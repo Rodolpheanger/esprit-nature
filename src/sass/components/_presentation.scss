@@ -15,8 +15,8 @@
   }
   &__title {
     display: inline-block;
-    margin: 0 auto 4rem auto;
     max-width: 90%;
+    margin: 0 auto 4rem auto;
     @include overliner($color-tertiary, 75%, 2px, solid);
     @include underliner($color-tertiary, 75%, 2px, solid);
   }

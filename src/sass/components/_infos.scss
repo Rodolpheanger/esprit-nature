@@ -31,8 +31,8 @@
   }
   .opening-hours__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    grid-template-columns: 1fr 1fr;
     margin: 5rem auto;
     @include responsive("xlarge") {
       width: 50%;

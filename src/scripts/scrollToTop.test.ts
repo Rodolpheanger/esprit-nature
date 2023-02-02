@@ -1,20 +1,18 @@
 /**
  * @vitest-environment jsdom
  */
-import { afterEach, beforeEach, describe, it } from "vitest";
+import { beforeEach, describe, it } from "vitest";
 import { scrollToTop } from "./scrollToTop";
 
 describe("scrollToTop", () => {
   let scrollToTopButton: HTMLButtonElement;
   beforeEach(() => {
-    scrollToTopButton = document.createElement("button");
-    scrollToTopButton.classList.add("scroll-top");
-    document.body.appendChild(scrollToTopButton);
+    document.body.innerHTML = `
+    <button class="scroll-top">Top</button>`;
+    scrollToTopButton = document.querySelector(
+      ".scroll-top"
+    ) as HTMLButtonElement;
     scrollToTop();
-  });
-
-  afterEach(() => {
-    document.body.removeChild(scrollToTopButton);
   });
 
   it("should add the 'scroll-top--visible' class to the button when the scrollY is greater than 300", () => {

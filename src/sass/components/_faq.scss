@@ -63,19 +63,17 @@
   .content__container {
     p {
       max-width: 90%;
+      @include responsive("xlarge") {
+        max-width: 1200px;
+      }
     }
     @include responsive("medium") {
       margin-left: 15%;
     }
-
     @include responsive("large") {
       margin-left: 20%;
     }
     @include responsive("xlarge") {
-      p {
-        max-width: 1200px;
-      }
-
       margin-left: 25%;
     }
     @include responsive("xxlarge") {

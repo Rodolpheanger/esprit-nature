@@ -105,15 +105,15 @@ a {
 }
 
 .link-to--strong {
-  font-weight: 700;
   color: #9b063d;
+  font-weight: 700;
 }
 .link-to--strong:hover {
   color: #f84285;
 }
 .link-to--normal {
-  font-weight: 400;
   color: #9b063d;
+  font-weight: 400;
 }
 .link-to--normal:hover {
   color: #f84285;
@@ -239,9 +239,9 @@ a {
 }
 
 .main {
-  line-height: 3rem;
   font-size: 1.4rem;
   font-weight: 500;
+  line-height: 3rem;
 }
 @media screen and (min-width: 769px) {
   .main {
@@ -336,8 +336,8 @@ section li::before {
 }
 
 .tarifs h3 {
-  font-weight: 600;
   font-size: 2rem;
+  font-weight: 600;
 }
 @media screen and (min-width: 426px) {
   .tarifs h3 {
@@ -406,8 +406,8 @@ section li::before {
 }
 .infos__sector-extra {
   font-size: 1.2rem;
-  text-align: center;
   line-height: 1.4rem;
+  text-align: center;
 }
 .infos .day {
   color: #59314b;
@@ -475,9 +475,9 @@ section li::before {
   font-size: 1.4rem;
 }
 .legals__back-link {
+  color: #9b063d;
   font-size: 1.8rem;
   font-weight: 500;
-  color: #9b063d;
 }
 .legals__back-link:hover {
   color: #fa73a5;
@@ -496,13 +496,13 @@ section li::before {
 }
 .header__contact {
   z-index: 200;
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: raw;
   gap: 0;
   flex-wrap: nowrap;
+  position: fixed;
   width: 100%;
   padding: 0.5rem 2rem;
   background-color: #faf2e5;
@@ -594,14 +594,14 @@ section .title__container {
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 769px) {
   section .title__container {
-    height: 25vh;
+    height: 30vh;
   }
 }
 @media screen and (min-width: 1441px) {
   section .title__container {
-    height: 33vh;
+    height: 40vh;
   }
 }
 section h2 {
@@ -656,9 +656,9 @@ section h4 {
   padding: 0 4rem;
 }
 section p {
+  max-width: 90%;
   padding: 1rem;
   margin: auto;
-  max-width: 90%;
 }
 @media screen and (min-width: 769px) {
   section p {
@@ -698,14 +698,10 @@ section li {
     width: 50%;
   }
 }
-.footer .fa-facebook {
-  color: white;
-}
 .footer .marcapar__logo {
   width: 10rem;
 }
 .footer__copyright {
-  text-align: center;
   padding: 1.5rem;
 }
 
@@ -738,9 +734,12 @@ nav ul {
 }
 @media screen and (min-width: 1025px) {
   nav ul {
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    display: flex;
     align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: raw;
+    gap: 0;
+    flex-wrap: nowrap;
   }
 }
 nav li {
@@ -779,11 +778,11 @@ nav li:hover::after {
   flex-direction: raw;
   gap: 0;
   flex-wrap: nowrap;
-  overflow: hidden;
   height: 100%;
   background-image: url("/src/assets/images/hero_banner_s.webp");
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 @media screen and (min-width: 426px) {
   .hero {
@@ -834,8 +833,8 @@ nav li:hover::after {
   }
 }
 .hero h2 {
-  opacity: 0;
   padding: 1rem;
+  opacity: 0;
   animation: fadeInAndOut 6000ms ease-in-out;
   -webkit-animation: fadeInAndOut 3000ms ease-in-out;
 }
@@ -862,8 +861,8 @@ nav li:hover::after {
 }
 .presentation__title {
   display: inline-block;
-  margin: 0 auto 4rem auto;
   max-width: 90%;
+  margin: 0 auto 4rem auto;
 }
 .presentation__title::before {
   content: "";
@@ -1029,8 +1028,8 @@ nav li:hover::after {
 }
 .tarifs table th {
   padding: 0.75rem 1rem;
-  background-color: #faf2e5;
   border-bottom: 2px solid #59314b;
+  background-color: #faf2e5;
 }
 .tarifs table tr,
 .tarifs table td {
@@ -1095,8 +1094,8 @@ nav li:hover::after {
 }
 .infos .opening-hours__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  grid-template-columns: 1fr 1fr;
   margin: 5rem auto;
 }
 @media screen and (min-width: 1441px) {
@@ -1188,6 +1187,11 @@ iframe {
 .faq .content__container p {
   max-width: 90%;
 }
+@media screen and (min-width: 1441px) {
+  .faq .content__container p {
+    max-width: 1200px;
+  }
+}
 @media screen and (min-width: 769px) {
   .faq .content__container {
     margin-left: 15%;
@@ -1201,9 +1205,6 @@ iframe {
 @media screen and (min-width: 1441px) {
   .faq .content__container {
     margin-left: 25%;
-  }
-  .faq .content__container p {
-    max-width: 1200px;
   }
 }
 @media screen and (min-width: 1921px) {
@@ -1278,20 +1279,22 @@ iframe {
   transform: translate(60px);
   transition: all 800ms cubic-bezier(0.5, 1.8, 0.64, 1);
 }
-.scroll-top .fa-chevron-circle-up {
-  font-size: 2.8rem;
-}
-.scroll-top .fa-chevron-circle-up:hover {
-  cursor: pointer;
-}
 @media screen and (min-width: 426px) {
   .scroll-top {
     bottom: 30px;
     right: 30px;
   }
-  .scroll-top .fas {
+}
+.scroll-top .fa-chevron-circle-up {
+  font-size: 2.8rem;
+}
+@media screen and (min-width: 426px) {
+  .scroll-top .fa-chevron-circle-up {
     font-size: 4rem;
   }
+}
+.scroll-top .fa-chevron-circle-up:hover {
+  cursor: pointer;
 }
 
 .scroll-top--visible {

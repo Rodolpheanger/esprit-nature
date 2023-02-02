@@ -5,8 +5,8 @@
   background-color: $color-bg;
   &__contact {
     z-index: 200;
-    position: fixed;
     @include flex(center, space-between);
+    position: fixed;
     width: 100%;
     padding: 0.5rem 2rem;
     background-color: $color-bg;

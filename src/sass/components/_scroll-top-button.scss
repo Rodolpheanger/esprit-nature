@@ -7,18 +7,18 @@
   color: $color-primary;
   transform: translate(60px);
   transition: all 800ms cubic-bezier(0.5, 1.8, 0.64, 1);
-
-  .fa-chevron-circle-up {
-    font-size: 2.8rem;
-    &:hover {
-      cursor: pointer;
-    }
-  }
   @include responsive("small") {
     bottom: 30px;
     right: 30px;
-    .fas {
+  }
+
+  .fa-chevron-circle-up {
+    font-size: 2.8rem;
+    @include responsive("small") {
       font-size: 4rem;
+    }
+    &:hover {
+      cursor: pointer;
     }
   }
 }
