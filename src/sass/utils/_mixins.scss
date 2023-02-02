@@ -7,7 +7,7 @@
 @mixin flex(
   $align-items,
   $justify-content,
-  $direction: raw,
+  $direction: row,
   $gap: 0,
   $wrap: nowrap
 ) {

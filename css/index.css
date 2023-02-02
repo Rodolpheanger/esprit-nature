@@ -468,9 +468,6 @@ section li::before {
 .legals p {
   font-size: 1.4rem;
 }
-.legals .underline {
-  text-decoration: underline;
-}
 .legals li {
   font-size: 1.4rem;
 }
@@ -499,7 +496,7 @@ section li::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: raw;
+  flex-direction: row;
   gap: 0;
   flex-wrap: nowrap;
   position: fixed;
@@ -521,7 +518,7 @@ section li::before {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: raw;
+    flex-direction: row;
     gap: 0;
     flex-wrap: nowrap;
   }
@@ -587,7 +584,7 @@ section .title__container {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: raw;
+  flex-direction: row;
   gap: 0;
   flex-wrap: nowrap;
   height: 25vh;
@@ -688,7 +685,7 @@ section li {
 .footer__links {
   display: flex;
   justify-content: space-evenly;
-  flex-direction: raw;
+  flex-direction: row;
   gap: 0;
   flex-wrap: nowrap;
   width: 100%;
@@ -737,7 +734,7 @@ nav ul {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    flex-direction: raw;
+    flex-direction: row;
     gap: 0;
     flex-wrap: nowrap;
   }
@@ -775,7 +772,7 @@ nav li:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: raw;
+  flex-direction: row;
   gap: 0;
   flex-wrap: nowrap;
   height: 100%;
