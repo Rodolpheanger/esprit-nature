@@ -118,6 +118,12 @@ a {
 .link-to--normal:hover {
   color: #f84285;
 }
+.link-to--hidden {
+  visibility: hidden;
+}
+.link-to--visible {
+  visibility: visible;
+}
 
 .header__contact {
   color: #9b063d;
@@ -141,7 +147,7 @@ a {
   text-align: center;
 }
 .header__logo {
-  color: #5e8811;
+  color: #547a10;
   font-family: "Carattere", sans-serif;
   font-size: 6rem;
   text-align: center;
@@ -282,7 +288,7 @@ section h2 {
   }
 }
 section h3 {
-  color: #5e8811;
+  color: #547a10;
   font-size: 1.8rem;
   text-align: center;
 }
@@ -418,6 +424,7 @@ section li::before {
 }
 
 .faq__question {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
 }
@@ -534,7 +541,7 @@ section li::before {
   width: 50%;
   margin: 0 auto;
   padding-bottom: 0;
-  border-bottom: 2px solid #5e8811;
+  border-bottom: 2px solid #547a10;
 }
 @media screen and (min-width: 426px) {
   .header__logo {
@@ -777,24 +784,19 @@ nav li:hover::after {
   gap: 0;
   flex-wrap: nowrap;
   height: 100%;
-  background-image: url("/src/assets/images/hero_banner_s.webp");
+  background-image: url("/src/assets/images/hero_banner_xs-s.webp");
   background-position: center;
   background-size: cover;
   overflow: hidden;
 }
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 769px) {
   .hero {
     background-image: url("/src/assets/images/hero_banner_m.webp");
   }
 }
-@media screen and (min-width: 769px) {
-  .hero {
-    background-image: url("/src/assets/images/hero_banner_l.webp");
-  }
-}
 @media screen and (min-width: 1025px) {
   .hero {
-    background-image: url("/src/assets/images/hero_banner_xl.webp");
+    background-image: url("/src/assets/images/hero_banner_l.webp");
   }
 }
 @media screen and (min-width: 1441px) {
@@ -907,16 +909,26 @@ nav li:hover::after {
 }
 
 .colorations .title__container {
-  background-image: url(/src/assets/images/colorations_03_xs-s.jpg);
+  background-image: url(/src/assets/images/colorations_xs-s.jpg);
 }
 @media screen and (min-width: 769px) {
   .colorations .title__container {
-    background-image: url(/src/assets/images/colorations_03_m-l-xl.jpg);
+    background-image: url(/src/assets/images/colorations_m.jpg);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .colorations .title__container {
+    background-image: url(/src/assets/images/colorations_l.jpg);
+  }
+}
+@media screen and (min-width: 1441px) {
+  .colorations .title__container {
+    background-image: url(/src/assets/images/colorations_xl.jpg);
   }
 }
 @media screen and (min-width: 1921px) {
   .colorations .title__container {
-    background-image: url(/src/assets/images/colorations_03_xxl.jpg);
+    background-image: url(/src/assets/images/colorations_xxl.jpg);
   }
 }
 .colorations__plus-minus {
@@ -960,7 +972,12 @@ nav li:hover::after {
 }
 @media screen and (min-width: 1025px) {
   .meches .title__container {
-    background-image: url(/src/assets/images/meches_l-xl.jpg);
+    background-image: url(/src/assets/images/meches_l.jpg);
+  }
+}
+@media screen and (min-width: 1441px) {
+  .meches .title__container {
+    background-image: url(/src/assets/images/meches_xl.jpg);
   }
 }
 @media screen and (min-width: 1921px) {
@@ -974,7 +991,17 @@ nav li:hover::after {
 }
 @media screen and (min-width: 769px) {
   .tarifs .title__container {
-    background-image: url(/src/assets/images/tarifs_m-l-xl.jpg);
+    background-image: url(/src/assets/images/tarifs_m.jpg);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .tarifs .title__container {
+    background-image: url(/src/assets/images/tarifs_l.jpg);
+  }
+}
+@media screen and (min-width: 1441px) {
+  .tarifs .title__container {
+    background-image: url(/src/assets/images/tarifs_xl.jpg);
   }
 }
 @media screen and (min-width: 1921px) {
@@ -1064,7 +1091,12 @@ nav li:hover::after {
 }
 @media screen and (min-width: 1025px) {
   .infos .title__container {
-    background-image: url(/src/assets/images/infos_l-xl.jpg);
+    background-image: url(/src/assets/images/infos_l.jpg);
+  }
+}
+@media screen and (min-width: 1441px) {
+  .infos .title__container {
+    background-image: url(/src/assets/images/infos_xl.jpg);
   }
 }
 @media screen and (min-width: 1921px) {
@@ -1177,16 +1209,31 @@ iframe {
     background-image: url(/src/assets/images/faq_m-l-xl.jpg);
   }
 }
+@media screen and (min-width: 1025px) {
+  .faq .title__container {
+    background-image: url(/src/assets/images/faq_l.jpg);
+  }
+}
+@media screen and (min-width: 1441px) {
+  .faq .title__container {
+    background-image: url(/src/assets/images/faq_xl.jpg);
+  }
+}
 @media screen and (min-width: 1921px) {
   .faq .title__container {
     background-image: url(/src/assets/images/faq_xxl.jpg);
   }
 }
-.faq .content__container p {
+.faq .content__container button {
+  padding-bottom: 1rem;
+}
+.faq .content__container p,
+.faq .content__container button {
   max-width: 90%;
 }
 @media screen and (min-width: 1441px) {
-  .faq .content__container p {
+  .faq .content__container p,
+.faq .content__container button {
     max-width: 1200px;
   }
 }
@@ -1216,7 +1263,9 @@ iframe {
   width: -webkit-max-content;
   margin: 0 2rem;
   padding: 0;
+  border: none;
   border-bottom: 2px solid rgb(28, 17, 46);
+  background-color: transparent;
   transition: all 800ms ease-in-out;
   cursor: help;
 }
@@ -1237,7 +1286,9 @@ iframe {
   width: -webkit-max-content;
   margin: 0 2rem 2rem 2rem;
   padding: 0;
+  border: none;
   border-bottom: 2px solid rgb(28, 17, 46);
+  background-color: transparent;
   transition: all 800ms ease-in-out;
   cursor: help;
 }

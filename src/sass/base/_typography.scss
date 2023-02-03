@@ -33,6 +33,12 @@ a {
       color: lighten($color: $color-primary, $amount: 30);
     }
   }
+  &--hidden {
+    visibility: hidden;
+  }
+  &--visible {
+    visibility: visible;
+  }
 }
 
 .header {
@@ -308,6 +314,7 @@ section {
 
 .faq {
   &__question {
+    font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
     @include responsive("large") {

@@ -5,7 +5,10 @@
       background-image: url(/src/assets/images/meches_m.jpg);
     }
     @include responsive("large") {
-      background-image: url(/src/assets/images/meches_l-xl.jpg);
+      background-image: url(/src/assets/images/meches_l.jpg);
+    }
+    @include responsive("xlarge") {
+      background-image: url(/src/assets/images/meches_xl.jpg);
     }
     @include responsive("xxlarge") {
       background-image: url(/src/assets/images/meches_xxl.jpg);

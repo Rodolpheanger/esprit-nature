@@ -56,12 +56,22 @@
     @include responsive("medium") {
       background-image: url(/src/assets/images/faq_m-l-xl.jpg);
     }
+    @include responsive("large") {
+      background-image: url(/src/assets/images/faq_l.jpg);
+    }
+    @include responsive("xlarge") {
+      background-image: url(/src/assets/images/faq_xl.jpg);
+    }
     @include responsive("xxlarge") {
       background-image: url(/src/assets/images/faq_xxl.jpg);
     }
   }
   .content__container {
-    p {
+    button {
+      padding-bottom: 1rem;
+    }
+    p,
+    button {
       max-width: 90%;
       @include responsive("xlarge") {
         max-width: 1200px;

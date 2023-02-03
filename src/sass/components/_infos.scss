@@ -5,7 +5,10 @@
       background-image: url(/src/assets/images/infos_m.jpg);
     }
     @include responsive("large") {
-      background-image: url(/src/assets/images/infos_l-xl.jpg);
+      background-image: url(/src/assets/images/infos_l.jpg);
+    }
+    @include responsive("xlarge") {
+      background-image: url(/src/assets/images/infos_xl.jpg);
     }
     @include responsive("xxlarge") {
       background-image: url(/src/assets/images/infos_xxl.jpg);

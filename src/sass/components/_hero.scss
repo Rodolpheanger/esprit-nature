@@ -1,18 +1,15 @@
 .hero {
   @include flex(center, center);
   height: 100%;
-  background-image: url("/src/assets/images/hero_banner_s.webp");
+  background-image: url("/src/assets/images/hero_banner_xs-s.webp");
   background-position: center;
   background-size: cover;
   overflow: hidden;
-  @include responsive("small") {
+  @include responsive("medium") {
     background-image: url("/src/assets/images/hero_banner_m.webp");
   }
-  @include responsive("medium") {
-    background-image: url("/src/assets/images/hero_banner_l.webp");
-  }
   @include responsive("large") {
-    background-image: url("/src/assets/images/hero_banner_xl.webp");
+    background-image: url("/src/assets/images/hero_banner_l.webp");
   }
   @include responsive("xlarge") {
     background-image: url("/src/assets/images/hero_banner_xl.webp");

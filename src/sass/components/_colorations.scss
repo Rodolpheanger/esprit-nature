@@ -1,11 +1,17 @@
 .colorations {
   .title__container {
-    background-image: url(/src/assets/images/colorations_03_xs-s.jpg);
+    background-image: url(/src/assets/images/colorations_xs-s.jpg);
     @include responsive("medium") {
-      background-image: url(/src/assets/images/colorations_03_m-l-xl.jpg);
+      background-image: url(/src/assets/images/colorations_m.jpg);
+    }
+    @include responsive("large") {
+      background-image: url(/src/assets/images/colorations_l.jpg);
+    }
+    @include responsive("xlarge") {
+      background-image: url(/src/assets/images/colorations_xl.jpg);
     }
     @include responsive("xxlarge") {
-      background-image: url(/src/assets/images/colorations_03_xxl.jpg);
+      background-image: url(/src/assets/images/colorations_xxl.jpg);
     }
   }
   &__plus-minus {

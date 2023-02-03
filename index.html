@@ -8,7 +8,7 @@
   <meta name="description"
     content="Envie d'une coloration végétale naturelle réalisée par une professionnelle à votre domicile sur le secteur de Besançon ouest, appelez vite Nadège.">
 
-  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/index.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -106,7 +106,13 @@
           .
         </p>
         <div class="image__container">
-          <img src="/src/assets/images/nadege_profil.webp" alt="Photo Nadège">
+          <picture>
+            <source srcset="/src/assets/images/nadege_profil_xs.webp">
+            <source srcset="/src/assets/images/nadege_profil_s.webp" media="(min-width: 376px)">
+            <source srcset="/src/assets/images/nadege_profil_m.webp" media="(min-width: 426px)">
+            <source srcset="/src/assets/images/nadege_profil_l-xxl.webp" media="(min-width: 769px)">
+            <img src="/src/assets/images/nadege_profil_l-xxl.webp" alt="Photo Nadège">
+          </picture>
         </div>
       </div>
     </section>
@@ -560,56 +566,59 @@
       </div>
 
       <div class="content__container">
-        <p class="faq__question">
+        <button class="faq__question">
           Esprit Nature c'est seulement pour les femmes ?
-        </p>
+        </button>
 
         <p class="faq__response">
           Pas du tout ! Je propose des prestations pour toute la famille:
           hommes, ados et enfants.
         </p>
 
-        <p class="faq__question">Dois-je me laver les cheveux avant ?</p>
+        <button class="faq__question">Dois-je me laver les cheveux avant ?</button>
 
         <p class="faq__response">
           Pour vous mesdames, cela n'est pas nécessaire, je dispose d'un bac
           adaptable pour réaliser les shampooings. Pour vous messieurs, cela
           dépend de si vous prenez l'option shampooing !
         </p>
-        <p class="faq__question">
+        <button class="faq__question">
           Comment préparer au mieux mon rendez-vous ?
-        </p>
+        </button>
 
         <p class="faq__response">
           Laissez moi simplement suffisamment d'espace pour pouvoir vous
           installer confortablement et installer mon materiel et ensuite
           relaxez-vous, je m'occupe du reste !
         </p>
-        <p class="faq__question">Puis-je acheter des produits ?</p>
+        <button class="faq__question">Puis-je acheter des produits ?</button>
 
         <p class="faq__response">
           Bien sûr je dispose de toute la gamme
           <a href="https://www.marcapar.com/fr/produits-marcapar" class="link-to--strong" target="_blank"
-            rel="noopener noreferrer">MARCAPAR</a>: shampooings, masques, gel, spray, mousse...
+            rel="noopener noreferrer" tabindex="-1">MARCAPAR</a>: shampooings, masques, gel, spray,
+          mousse...
         </p>
 
-        <p class="faq__question">Dans quel secteur vous déplacez vous ?</p>
+        <button class="faq__question">Dans quel secteur vous déplacez vous ?</button>
 
         <p class="faq__response">
           Je me déplace dans le
           <strong>
-            <a href="#secteur" class="link-to--normal">secteur de Besançon ouest</a> </strong>, plus précisément dans
+            <a href="#secteur" class="link-to--normal" tabindex="-1">secteur de Besançon ouest</a> </strong>,
+          plus
+          précisément dans
           un
           rayon d'environ 15km autour de
           Grandfontaine.
         </p>
-        <p class="faq__question">Comment puis-je vous payer ?</p>
+        <button class="faq__question">Comment puis-je vous payer ?</button>
 
         <p class="faq__response">
           Vous pouvez me régler en chèques ou en espèces.
         </p>
 
-        <p class="faq__question">Comment puis-je prendre rendez-vous ?</p>
+        <button class="faq__question">Comment puis-je prendre rendez-vous ?</button>
 
         <p class="faq__response">
           C'est simple comme au coup de fil, il suffit de m'appeler au
@@ -618,7 +627,7 @@
           miennes !
         </p>
 
-        <p class="faq__question">Ai-je droit à des petits plus ?</p>
+        <button class="faq__question">Ai-je droit à des petits plus ?</button>
 
         <p class="faq__response">
           Bien sûr, une carte de fidélité vous est offerte lors de votre 1er
@@ -634,7 +643,8 @@
         target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
       <a href="https://www.marcapar.com" aria-label="Lien vers le site de Marcapar" target="_blank"
         rel="noopener noreferrer">
-        <img class="marcapar__logo" src="/src/assets/images/logo-Marcapar-white.png" alt="Logo Marcapar"></a>
+        <img class="marcapar__logo" src="/src/assets/images/logo-Marcapar.webp" alt="Logo Marcapar" width="100px"
+          height="67px"></a>
     </div>
     <p class="footer__copyright">
       copyright &copy; Esprit Nature 2023 - Dev by Rodolphe ANGER<br><a href="/legals/">Mentions légales</a>

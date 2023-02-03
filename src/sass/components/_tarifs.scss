@@ -2,7 +2,13 @@
   .title__container {
     background-image: url(/src/assets/images/tarifs_xs-s.jpg);
     @include responsive("medium") {
-      background-image: url(/src/assets/images/tarifs_m-l-xl.jpg);
+      background-image: url(/src/assets/images/tarifs_m.jpg);
+    }
+    @include responsive("large") {
+      background-image: url(/src/assets/images/tarifs_l.jpg);
+    }
+    @include responsive("xlarge") {
+      background-image: url(/src/assets/images/tarifs_xl.jpg);
     }
     @include responsive("xxlarge") {
       background-image: url(/src/assets/images/tarifs_xxl.jpg);
