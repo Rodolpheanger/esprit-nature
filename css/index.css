@@ -891,6 +891,8 @@ nav li:hover::after {
 .presentation .image__container {
   width: 50vw;
   margin: 6rem auto;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 @media screen and (min-width: 426px) {
   .presentation .image__container {
@@ -1206,7 +1208,7 @@ iframe {
 }
 @media screen and (min-width: 769px) {
   .faq .title__container {
-    background-image: url(/src/assets/images/faq_m-l-xl.jpg);
+    background-image: url(/src/assets/images/faq_m.jpg);
   }
 }
 @media screen and (min-width: 1025px) {

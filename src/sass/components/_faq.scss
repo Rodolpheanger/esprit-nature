@@ -54,7 +54,7 @@
   .title__container {
     background-image: url(/src/assets/images/faq_xs-s.jpg);
     @include responsive("medium") {
-      background-image: url(/src/assets/images/faq_m-l-xl.jpg);
+      background-image: url(/src/assets/images/faq_m.jpg);
     }
     @include responsive("large") {
       background-image: url(/src/assets/images/faq_l.jpg);
