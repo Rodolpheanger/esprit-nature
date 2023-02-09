@@ -812,20 +812,6 @@ nav li:hover::after {
     background-image: url("/src/assets/images/hero_banner_xl.webp");
   }
 }
-@-webkit-keyframes fadeInAndOut {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 @keyframes fadeInAndOut {
   0% {
     opacity: 0;
@@ -1031,7 +1017,6 @@ nav li:hover::after {
 }
 .tarifs h3 {
   width: 75%;
-  min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
   padding: 0;
@@ -1074,13 +1059,13 @@ nav li:hover::after {
 }
 @media screen and (min-width: 769px) {
   .tarifs table tr,
-.tarifs table td {
+  .tarifs table td {
     height: 5rem;
   }
 }
 @media screen and (min-width: 1025px) {
   .tarifs table tr,
-.tarifs table td {
+  .tarifs table td {
     height: 6rem;
   }
 }
@@ -1162,19 +1147,6 @@ iframe {
     max-width: 90vh;
   }
 }
-
-@-webkit-keyframes fadeIn {
-  from {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-  }
-  to {
-    max-height: var(--max-height);
-    opacity: 1;
-    overflow: visible;
-  }
-}
 @keyframes fadeIn {
   from {
     max-height: 0;
@@ -1185,18 +1157,6 @@ iframe {
     max-height: var(--max-height);
     opacity: 1;
     overflow: visible;
-  }
-}
-@-webkit-keyframes fadeOut {
-  from {
-    max-height: var(--max-height);
-    opacity: 1;
-    overflow: visible;
-  }
-  to {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
   }
 }
 @keyframes fadeOut {
@@ -1243,7 +1203,7 @@ iframe {
 }
 @media screen and (min-width: 1441px) {
   .faq .content__container p,
-.faq .content__container button {
+  .faq .content__container button {
     max-width: 1200px;
   }
 }

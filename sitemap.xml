@@ -3,7 +3,7 @@
 	<url>
 		<loc>https://www.nadege-esprit-nature.com</loc>
 		<priority>1.00</priority>
-		<lastmod>2023-02-06</lastmod>
+		<lastmod>2023-02-09</lastmod>
 	</url>
 	<url>
 		<loc>https://www.nadege-esprit-nature.com/legals</loc>
@@ -11,32 +11,17 @@
 		<lastmod>2023-02-03</lastmod>
 	</url>
 	<url>
-		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/node_modules/tslib/tslib.es6.html</loc>
-		<priority>0.38</priority>
-		<lastmod>2022-12-23</lastmod>
-	</url>
-	<url>
 		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/node_modules/tslib/tslib.html</loc>
 		<priority>0.38</priority>
 		<lastmod>2022-12-23</lastmod>
 	</url>
 	<url>
-		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/node_modules/flatted/php/flatted.php</loc>
-		<priority>0.25</priority>
+		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/node_modules/tslib/tslib.es6.html</loc>
+		<priority>0.38</priority>
 		<lastmod>2022-12-23</lastmod>
 	</url>
 	<url>
-		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/node_modules/sprintf-js/demo/angular.html</loc>
-		<priority>0.25</priority>
-		<lastmod>2023-01-18</lastmod>
-	</url>
-	<url>
-		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/tslib@1.14.1/node_modules/tslib/tslib.es6.html</loc>
-		<priority>0.25</priority>
-		<lastmod>2022-12-23</lastmod>
-	</url>
-	<url>
-		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/tslib@1.14.1/node_modules/tslib/tslib.html</loc>
+		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/tsutils@3.21.0_typescript@4.9.4/node_modules/tslib/tslib.html</loc>
 		<priority>0.25</priority>
 		<lastmod>2022-12-23</lastmod>
 	</url>
@@ -46,19 +31,29 @@
 		<lastmod>2022-12-23</lastmod>
 	</url>
 	<url>
-		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/tsutils@3.21.0_typescript@4.9.4/node_modules/tslib/tslib.html</loc>
+		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/tslib@1.14.1/node_modules/tslib/tslib.html</loc>
 		<priority>0.25</priority>
 		<lastmod>2022-12-23</lastmod>
 	</url>
 	<url>
-		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/argparse@1.0.10/node_modules/sprintf-js/demo/angular.html</loc>
-		<priority>0.13</priority>
+		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/tslib@1.14.1/node_modules/tslib/tslib.es6.html</loc>
+		<priority>0.25</priority>
+		<lastmod>2022-12-23</lastmod>
+	</url>
+	<url>
+		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/node_modules/sprintf-js/demo/angular.html</loc>
+		<priority>0.25</priority>
 		<lastmod>2023-01-18</lastmod>
 	</url>
 	<url>
-		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/flat-cache@3.0.4/node_modules/flatted/php/flatted.php</loc>
-		<priority>0.13</priority>
+		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/node_modules/flatted/php/flatted.php</loc>
+		<priority>0.25</priority>
 		<lastmod>2022-12-23</lastmod>
+	</url>
+	<url>
+		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/sprintf-js@1.0.3/node_modules/sprintf-js/demo/angular.html</loc>
+		<priority>0.13</priority>
+		<lastmod>2023-01-18</lastmod>
 	</url>
 	<url>
 		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/flatted@3.2.7/node_modules/flatted/php/flatted.php</loc>
@@ -66,7 +61,12 @@
 		<lastmod>2022-12-23</lastmod>
 	</url>
 	<url>
-		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/sprintf-js@1.0.3/node_modules/sprintf-js/demo/angular.html</loc>
+		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/flat-cache@3.0.4/node_modules/flatted/php/flatted.php</loc>
+		<priority>0.13</priority>
+		<lastmod>2022-12-23</lastmod>
+	</url>
+	<url>
+		<loc>https://www.nadege-esprit-nature.com/node_modules/.pnpm/argparse@1.0.10/node_modules/sprintf-js/demo/angular.html</loc>
 		<priority>0.13</priority>
 		<lastmod>2023-01-18</lastmod>
 	</url>
