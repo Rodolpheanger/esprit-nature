@@ -792,24 +792,24 @@ nav li:hover::after {
   gap: 0;
   flex-wrap: nowrap;
   height: 100%;
-  background-image: url("/src/assets/images/hero_banner_xs-s.webp");
+  background-image: url("/src/assets/images/hero_banner_xs-s.jpg");
   background-position: center;
   background-size: cover;
   overflow: hidden;
 }
 @media screen and (min-width: 769px) {
   .hero {
-    background-image: url("/src/assets/images/hero_banner_m.webp");
+    background-image: url("/src/assets/images/hero_banner_m.jpg");
   }
 }
 @media screen and (min-width: 1025px) {
   .hero {
-    background-image: url("/src/assets/images/hero_banner_l.webp");
+    background-image: url("/src/assets/images/hero_banner_l.jpg");
   }
 }
 @media screen and (min-width: 1441px) {
   .hero {
-    background-image: url("/src/assets/images/hero_banner_xl.webp");
+    background-image: url("/src/assets/images/hero_banner_xl.jpg");
   }
 }
 @keyframes fadeInAndOut {
