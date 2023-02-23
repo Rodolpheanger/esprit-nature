@@ -23,7 +23,7 @@ describe("showFaqResponse", () => {
   it("should set the max-height CSS variable to the offsetHeight of the response element", () => {
     showFaqResponse();
     expect(response.style.getPropertyValue("--max-height")).toBe(
-      `${response.offsetHeight}px`
+      `${response.offsetHeight + 200}px`
     );
   });
 

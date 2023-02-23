@@ -16,7 +16,6 @@
   }
   .content__container {
     max-width: 1200px;
-    margin: 3rem auto;
   }
   .tables__container {
     @include flex(null, center, null, 3rem, wrap);
@@ -28,11 +27,12 @@
     min-width: -moz-max-content;
     min-width: max-content;
     padding: 0;
-    margin: 5rem auto;
+    margin: 6rem auto 3rem auto;
     @include overliner($text-color, 100%, 2px, solid, 0);
     @include underliner($text-color, 100%, 2px, solid, 2rem);
     @include responsive("large") {
       max-width: 50%;
+      margin: 10rem auto 5rem auto;
     }
   }
 

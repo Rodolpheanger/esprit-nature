@@ -22,6 +22,7 @@ section {
       padding: 2rem 2.5rem;
     }
   }
+
   h3 {
     margin: 0 auto 2rem auto;
     padding: 0 2rem;
@@ -29,9 +30,11 @@ section {
     @include underliner($text-color, 50%, 2px, solid);
     @include responsive("medium") {
       max-width: 100%;
+      margin-bottom: 6rem;
     }
     @include responsive("large") {
       max-width: 60%;
+      margin-bottom: 8rem;
     }
     @include responsive("xxlarge") {
       max-width: 50%;

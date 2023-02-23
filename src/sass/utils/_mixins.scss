@@ -57,7 +57,7 @@
 
 @mixin faq-question(
   $active: false,
-  $margin: 0 2rem,
+  $margin: 0 0 1rem 2rem,
   $before-margin: 0 1.5rem 0 0,
   $before-rotation: rotate(-45deg)
 ) {

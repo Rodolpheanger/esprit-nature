@@ -323,9 +323,11 @@ section {
 
 .faq {
   &__question {
+    color: $text-color;
     font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
+    text-align: left;
     @include responsive("large") {
       font-size: 2rem;
     }

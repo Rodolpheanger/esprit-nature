@@ -7,7 +7,10 @@ export const showFaqResponse = (): void => {
     const response = question?.nextElementSibling as HTMLParagraphElement;
     const link = response.querySelector("a");
     response &&
-      response.style.setProperty("--max-height", response.offsetHeight + "px");
+      response.style.setProperty(
+        "--max-height",
+        response.offsetHeight + 200 + "px"
+      );
     response &&
       question.addEventListener("click", () => {
         response.classList.toggle("faq__response--visible");

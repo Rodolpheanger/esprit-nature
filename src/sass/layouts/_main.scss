@@ -3,11 +3,11 @@ main {
   width: 100%;
 }
 .content__container {
-  margin: 2rem 0;
+  margin: 7rem 0;
   @include responsive("medium") {
-    margin: 4rem 0;
+    margin: 10rem 0;
   }
   @include responsive("large") {
-    margin: 5rem auto;
+    margin: 15rem auto;
   }
 }
